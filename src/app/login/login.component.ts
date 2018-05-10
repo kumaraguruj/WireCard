@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule} from '@angular/forms';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +9,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  username:string='admin';
+  password:string="admin";
+
+  constructor( private _router:Router) { }
 
   ngOnInit() {
   }
 
+  VerifyUser():void
+  {
+    if(this.username==='admin' && this.password==='admin')
+{
+
+  this._router.navigate(['land']);
 }
+else
+{
+alert('invalid username/password');
+
+}
+
+  }
+
+}
+
