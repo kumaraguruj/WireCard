@@ -1,11 +1,12 @@
+<app-launch></app-launch>
 <div  class="col-sm-6">      
     <div class="col-xs-3">
         <!-- required for floating -->
         <!-- Nav tabs -->
         <ul class="nav nav-tabs tabs-left">
-            <li><a [routerLink]="['/CardTransfers', {outlets: {'CardTransfers': ['WalletTransfers']}}]"  data-toggle="tab">Wallet Transfers</a></li>
-            <li><a [routerLink]="['/CardTransfers', {outlets: {'CardTransfers': ['SupplementTransfers']}}]" data-toggle="tab">Supplement Transfers</a></li>
-            <li><a [routerLink]="['/CardTransfers', {outlets: {'CardTransfers': ['calculateTransfers']}}]" data-toggle="tab">calculate Transfers</a></li>
+            <li><a [routerLink]="['/CardTransfers', {outlets: {'CardTransfers': ['WalletTransfers']}}]"  data-toggle="tab">Self Card Transfers</a></li>
+            <li><a [routerLink]="['/CardTransfers', {outlets: {'CardTransfers': ['SupplementTransfers']}}]" data-toggle="tab">Supplement Card Transfers</a></li>
+            <!-- <li><a [routerLink]="['/CardTransfers', {outlets: {'CardTransfers': ['calculateTransfers']}}]" data-toggle="tab">calculate Transfers</a></li> -->
 
         </ul>
     </div>

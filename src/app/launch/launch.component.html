@@ -1,6 +1,3 @@
-<p>
-  launch works!
-</p>
 <style>
   /*!
  * bootstrap-vertical-tabs - v1.1.0
@@ -96,197 +93,220 @@
 }
 </style>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">   
-    <ul class="nav navbar-nav">
-      <!-- <li class="active"><a routerLink="Home" (click)="setTab('Home')" >Home</a></li>      
-      <li><a routerLink="Emps" (click)="setTab('CardSummary')">Card Summary</a></li>
-      <li><a routerLink="Emps" (click)="setTab('RecentActivity')">Recent Activity</a></li>
-      <li><a routerLink="Emps" (click)="setTab('SelfService')">Self Service</a></li>
-      <li><a routerLink="Emps" (click)="setTab('CardTransfers')">Card Transfers</a></li>
-      <li><a routerLink="Emps" (click)="setTab('Reports')">Reports</a></li>    -->
-      
-      <li ><a  (click)="setTab('Home')" >Home</a></li>      
-      <li ><a (click)="setTab('CardSummary')">Card Summary</a></li>
-      <li><a  (click)="setTab('RecentActivity')">Recent Activity</a></li>
-      <li><a (click)="setTab('SelfService')">Self Service</a></li>
-      <li><a  (click)="setTab('CardTransfers')">Card Transfers</a></li>
-      <li><a (click)="setTab('Reports')">Reports</a></li>      
-    </ul>
-  </div>
-</nav>
+<div style="height: 95%; width: 100%">
+<div class="row" style="height: 85px; background-color: black">
+  <div class="col-sm-12">.col-sm-12</div>  
+</div> 
 
-<div>
-  <router-outlet></router-outlet>
-  <router-outlet name="Home"></router-outlet>
-  <router-outlet name="CardSummary"></router-outlet>
-  <router-outlet name="RecentActivity"></router-outlet>
-  <router-outlet name="SelfService"></router-outlet>
-  <router-outlet name="CardTransfers"></router-outlet>
-  <router-outlet name="Reports"></router-outlet>
-  <!-- {{tab}} -->
-  <div [ngSwitch]="tab" *ngIf="false">
-    <div *ngSwitchCase="'Home'">
-        
-      <div  class="col-sm-6">      
-        <div class="col-xs-3">
-            <!-- required for floating -->
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs tabs-left">
-                <li class="active"><a href="#home" data-toggle="tab">Accounts</a></li>
-                <li><a href="#profile" data-toggle="tab">Deposits</a></li>
-                <li><a href="#messages" data-toggle="tab">Credit cards</a></li>
-                <li><a href="#settings" data-toggle="tab">Loans</a></li>
+<div class="row" style="height: 95px; background-color:beige">
+    <div class="col-sm-4" style=" background-color:rgb(61, 95, 95)"></div>  
+    <div class="col-sm-4" style=" background-color:rgb(117, 112, 105)"></div>  
+    <div class="col-sm-4" style=" background-color:rgb(150, 167, 182)"></div>  
+  </div> 
+
+<div class="row" style="height: 60%;">
+
+  <div class="col-sm-12">   
+   
+
+      <nav class="navbar navbar-inverse">
+          <div class="container-fluid">  
+             
+            <ul class="nav navbar-nav">
+              
+              <!-- <li class="active"><a routerLink="Home" (click)="setTab('Home')" >Home</a></li>      
+              <li><a routerLink="Emps" (click)="setTab('CardSummary')">Card Summary</a></li>
+              <li><a routerLink="Emps" (click)="setTab('RecentActivity')">Recent Activity</a></li>
+              <li><a routerLink="Emps" (click)="setTab('SelfService')">Self Service</a></li>
+              <li><a routerLink="Emps" (click)="setTab('CardTransfers')">Card Transfers</a></li>
+              <li><a routerLink="Emps" (click)="setTab('Reports')">Reports</a></li>    -->
+              
+              <li [class.active]="active" ><a  (click)="setTab('Home')" >HOME</a></li>      
+              <!-- <li ><a (click)="setTab('CardSummary')">CARD SUMMARY</a></li>
+              <li><a  (click)="setTab('RecentActivity')">RECENT ACTIVITY</a></li> -->
+              <li [class.active]="active"><a (click)="setTab('SelfService')">SELF SERVICE</a></li>
+              <li [class.active]="active"><a  (click)="setTab('CardTransfers')">CARD TRANSFER</a></li>
+              <li [class.active]="active"><a (click)="setTab('Reports')">REPORTS</a></li>      
             </ul>
-        </div>
-        <div class="col-xs-9">
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div class="tab-pane active" id="home">Home Tab.</div>
-                <div class="tab-pane" id="profile">Profile Tab.</div>
-                <div class="tab-pane" id="messages">Messages Tab.</div>
-                <div class="tab-pane" id="settings">Settings Tab.</div>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-            
-    </div>
-    
-    <div *ngSwitchCase="'CardSummary'">
-        
-      <div  class="col-sm-6">      
-        <div class="col-xs-3">
-            <!-- required for floating -->
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs tabs-left">
-                <li class="active"><a href="#home" data-toggle="tab">Demographic</a></li>
-                <li><a href="#profile" data-toggle="tab">Summary</a></li>
-                <li><a href="#messages" data-toggle="tab">Fees & Waivers</a></li>
-                <li><a href="#settings" data-toggle="tab">Recent Transactions</a></li>
-            </ul>
-        </div>
-        <div class="col-xs-9">
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div class="tab-pane active" id="home">Home Tab.</div>
-                <div class="tab-pane" id="profile">Profile Tab.</div>
-                <div class="tab-pane" id="messages">Messages Tab.</div>
-                <div class="tab-pane" id="settings">Settings Tab.</div>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-
-
-   </div>
-   <div *ngSwitchCase="'RecentActivity'">
-        
-    <div  class="col-sm-6">      
-      <div class="col-xs-3">
-          <!-- required for floating -->
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs tabs-left">
-              <li class="active"><a href="#home" data-toggle="tab">List Cards</a></li>
-              <li><a href="#profile" data-toggle="tab">Transactions</a></li>
-              <li><a href="#messages" data-toggle="tab">Notifications</a></li>            
-          </ul>
-      </div>
-      <div class="col-xs-9">
-          <!-- Tab panes -->
-          <div class="tab-content">
-              <div class="tab-pane active" id="home">Home Tab.</div>
-              <div class="tab-pane" id="profile">Profile Tab.</div>
-              <div class="tab-pane" id="messages">Messages Tab.</div>
-              <div class="tab-pane" id="settings">Settings Tab.</div>
           </div>
-      </div>
-      <div class="clearfix"></div>
-  </div>
-
- </div>
- <div *ngSwitchCase="'SelfService'">
+        </nav>
         
-  <div  class="col-sm-6">      
-    <div class="col-xs-3">
-        <!-- required for floating -->
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs tabs-left">
-            <li class="active"><a href="#home" data-toggle="tab">Self Limit</a></li>
-            <li><a href="#profile" data-toggle="tab">Supplementary Limit</a></li>
-            <li><a href="#messages" data-toggle="tab">Statement</a></li>
-            <li><a href="#settings" data-toggle="tab">Generate Pin</a></li>
-        </ul>
-    </div>
-    <div class="col-xs-9">
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <div class="tab-pane active" id="home">Home Tab.</div>
-            <div class="tab-pane" id="profile">Profile Tab.</div>
-            <div class="tab-pane" id="messages">Messages Tab.</div>
-            <div class="tab-pane" id="settings">Settings Tab.</div>
+        <div>
+          <!-- <router-outlet></router-outlet>
+          <router-outlet name="Home"></router-outlet>
+          <router-outlet name="CardSummary"></router-outlet>
+          <router-outlet name="RecentActivity"></router-outlet>
+          <router-outlet name="SelfService"></router-outlet>
+          <router-outlet name="CardTransfers"></router-outlet>
+          <router-outlet name="Reports"></router-outlet> -->
+          <!-- {{tab}} -->
+          <div [ngSwitch]="tab" *ngIf="false">
+            <div *ngSwitchCase="'Home'">
+                
+              <div  class="col-sm-6">      
+                <div class="col-xs-3">
+                    <!-- required for floating -->
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs tabs-left">
+                        <li class="active"><a href="#home" data-toggle="tab">Accounts</a></li>
+                        <li><a href="#profile" data-toggle="tab">Deposits</a></li>
+                        <li><a href="#messages" data-toggle="tab">Credit cards</a></li>
+                        <li><a href="#settings" data-toggle="tab">Loans</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-9">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home">Home Tab.</div>
+                        <div class="tab-pane" id="profile">Profile Tab.</div>
+                        <div class="tab-pane" id="messages">Messages Tab.</div>
+                        <div class="tab-pane" id="settings">Settings Tab.</div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+                    
+            </div>
+            
+            <div *ngSwitchCase="'CardSummary'">
+                
+              <div  class="col-sm-6">      
+                <div class="col-xs-3">
+                    <!-- required for floating -->
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs tabs-left">
+                        <li class="active"><a href="#home" data-toggle="tab">Demographic</a></li>
+                        <li><a href="#profile" data-toggle="tab">Summary</a></li>
+                        <li><a href="#messages" data-toggle="tab">Fees & Waivers</a></li>
+                        <li><a href="#settings" data-toggle="tab">Recent Transactions</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-9">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home">Home Tab.</div>
+                        <div class="tab-pane" id="profile">Profile Tab.</div>
+                        <div class="tab-pane" id="messages">Messages Tab.</div>
+                        <div class="tab-pane" id="settings">Settings Tab.</div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        
+        
+           </div>
+           <div *ngSwitchCase="'RecentActivity'">
+                
+            <div  class="col-sm-6">      
+              <div class="col-xs-3">
+                  <!-- required for floating -->
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs tabs-left">
+                      <li class="active"><a href="#home" data-toggle="tab">List Cards</a></li>
+                      <li><a href="#profile" data-toggle="tab">Transactions</a></li>
+                      <li><a href="#messages" data-toggle="tab">Notifications</a></li>            
+                  </ul>
+              </div>
+              <div class="col-xs-9">
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                      <div class="tab-pane active" id="home">Home Tab.</div>
+                      <div class="tab-pane" id="profile">Profile Tab.</div>
+                      <div class="tab-pane" id="messages">Messages Tab.</div>
+                      <div class="tab-pane" id="settings">Settings Tab.</div>
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+          </div>
+        
+         </div>
+         <div *ngSwitchCase="'SelfService'">
+                
+          <div  class="col-sm-6">      
+            <div class="col-xs-3">
+                <!-- required for floating -->
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs tabs-left">
+                    <li class="active"><a href="#home" data-toggle="tab">Self Limit</a></li>
+                    <li><a href="#profile" data-toggle="tab">Supplementary Limit</a></li>
+                    <li><a href="#messages" data-toggle="tab">Statement</a></li>
+                    <li><a href="#settings" data-toggle="tab">Generate Pin</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-9">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home">Home Tab.</div>
+                    <div class="tab-pane" id="profile">Profile Tab.</div>
+                    <div class="tab-pane" id="messages">Messages Tab.</div>
+                    <div class="tab-pane" id="settings">Settings Tab.</div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
         </div>
-    </div>
-    <div class="clearfix"></div>
-</div>
-
-
-</div>
-<div *ngSwitchCase="'CardTransfers'">
         
-  <div  class="col-sm-6">      
-    <div class="col-xs-3">
-        <!-- required for floating -->
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs tabs-left">
-            <li class="active"><a href="#home" data-toggle="tab">Wallet Transfers</a></li>
-            <li><a href="#profile" data-toggle="tab">Supplement Transfers</a></li>
-            <li><a href="#messages" data-toggle="tab">
-              calculate Transfers</a></li>           
-        </ul>
-    </div>
-    <div class="col-xs-9">
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <div class="tab-pane active" id="home">Home Tab.</div>
-            <div class="tab-pane" id="profile">Profile Tab.</div>
-            <div class="tab-pane" id="messages">Messages Tab.</div>
-            <div class="tab-pane" id="settings">Settings Tab.</div>
+        
         </div>
-    </div>
-    <div class="clearfix"></div>
-</div>
-
-</div>
-<div *ngSwitchCase="'Reports'">
-        
-  <div  class="col-sm-6">      
-    <div class="col-xs-3">
-        <!-- required for floating -->
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs tabs-left">
-            <li class="active"><a href="#home" data-toggle="tab">Yearly</a></li>
-            <li><a href="#profile" data-toggle="tab">Monthly</a></li>
-           
-        </ul>
-    </div>
-    <div class="col-xs-9">
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <div class="tab-pane active" id="home">Home Tab.</div>
-            <div class="tab-pane" id="profile">Profile Tab.</div>
-            <div class="tab-pane" id="messages">Messages Tab.</div>
-            <div class="tab-pane" id="settings">Settings Tab.</div>
+        <div *ngSwitchCase="'CardTransfers'">
+                
+          <div  class="col-sm-6">      
+            <div class="col-xs-3">
+                <!-- required for floating -->
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs tabs-left">
+                    <li class="active"><a href="#home" data-toggle="tab">Wallet Transfers</a></li>
+                    <li><a href="#profile" data-toggle="tab">Supplement Transfers</a></li>
+                    <li><a href="#messages" data-toggle="tab">
+                      calculate Transfers</a></li>           
+                </ul>
+            </div>
+            <div class="col-xs-9">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home">Home Tab.</div>
+                    <div class="tab-pane" id="profile">Profile Tab.</div>
+                    <div class="tab-pane" id="messages">Messages Tab.</div>
+                    <div class="tab-pane" id="settings">Settings Tab.</div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
         </div>
-    </div>
-    <div class="clearfix"></div>
-</div>
-
-
-</div>
-<div *ngSwitchDefault>
         
-    Select a tab
+        </div>
+        <div *ngSwitchCase="'Reports'">
+                
+          <div  class="col-sm-6">      
+            <div class="col-xs-3">
+                <!-- required for floating -->
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs tabs-left">
+                    <li class="active"><a href="#home" data-toggle="tab">Yearly</a></li>
+                    <li><a href="#profile" data-toggle="tab">Monthly</a></li>
+                   
+                </ul>
+            </div>
+            <div class="col-xs-9">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home">Home Tab.</div>
+                    <div class="tab-pane" id="profile">Profile Tab.</div>
+                    <div class="tab-pane" id="messages">Messages Tab.</div>
+                    <div class="tab-pane" id="settings">Settings Tab.</div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        
+        
+        </div>
+         </div>
+        <router-outlet></router-outlet>
+  
+  
+  
+  
+  
+  </div> 
+</div> 
 </div>
 
-  </div>

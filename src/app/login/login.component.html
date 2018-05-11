@@ -1,4 +1,4 @@
-  
+<!--   
 <table style="border: 2px solid silver">
 <tr style="height:15%">
   <td colspan="2" >
@@ -29,4 +29,21 @@
 </tr>
 </table>
 
-  
+   -->
+   <div class="login-page">
+    <div class="form">
+      <form class="register-form">
+        <input type="text" placeholder="name"/>
+        <input type="password" placeholder="password"/>
+        <input type="text" placeholder="email address"/>
+        <button>create</button>
+        <p class="message">Already registered? <a href="#">Sign In</a></p>
+      </form>
+      <form class="login-form">
+        <input type="username" [(ngModel)]="username" placeholder="username" value="admin"/>
+        <input type="password" [(ngModel)]="password" placeholder="password" value="admin"/>
+        <button (click)="VerifyUser()">login</button>
+        <p class="message">Not registered? <a href="#">Create an account</a></p>
+      </form>
+    </div>
+  </div>

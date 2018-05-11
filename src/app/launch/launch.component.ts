@@ -15,7 +15,7 @@ export class LaunchComponent implements OnInit {
   }
 
   setTab(pagename: string) {
-    debugger;
+   
     this._router.navigate([pagename]);
     this.tab = pagename;
   }

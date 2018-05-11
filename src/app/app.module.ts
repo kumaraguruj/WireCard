@@ -183,6 +183,6 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
     BrowserModule,FormsModule,RouterModule.forRoot(appRoutes)
   ],
   providers: [],
-  bootstrap: [LaunchComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
