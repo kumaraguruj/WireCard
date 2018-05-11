@@ -11,5 +11,17 @@ export class StatementComponent implements OnInit {
 
   ngOnInit() {
   }
+  
 
+  btnChanged()
+  {
+    var x = document.getElementById('dv_Main');
+    if (x.style.display = "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+
+
+  }
 }

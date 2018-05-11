@@ -12,4 +12,17 @@ export class SupplementTransfersComponent implements OnInit {
   ngOnInit() {
   }
 
+  divFlag:boolean=false;
+
+  Calculate()
+  {
+    this.divFlag=!this.divFlag;
+
+  }
+
+  toggle()
+  {
+
+    
+  }
 }
