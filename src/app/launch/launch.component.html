@@ -106,8 +106,8 @@
       <li><a routerLink="Emps" (click)="setTab('CardTransfers')">Card Transfers</a></li>
       <li><a routerLink="Emps" (click)="setTab('Reports')">Reports</a></li>    -->
       
-      <li class="active"><a (click)="setTab('Home')" >Home</a></li>      
-      <li><a (click)="setTab('CardSummary')">Card Summary</a></li>
+      <li ><a  (click)="setTab('Home')" >Home</a></li>      
+      <li ><a (click)="setTab('CardSummary')">Card Summary</a></li>
       <li><a  (click)="setTab('RecentActivity')">Recent Activity</a></li>
       <li><a (click)="setTab('SelfService')">Self Service</a></li>
       <li><a  (click)="setTab('CardTransfers')">Card Transfers</a></li>
@@ -117,8 +117,15 @@
 </nav>
 
 <div>
+  <router-outlet></router-outlet>
+  <router-outlet name="Home"></router-outlet>
+  <router-outlet name="CardSummary"></router-outlet>
+  <router-outlet name="RecentActivity"></router-outlet>
+  <router-outlet name="SelfService"></router-outlet>
+  <router-outlet name="CardTransfers"></router-outlet>
+  <router-outlet name="Reports"></router-outlet>
   <!-- {{tab}} -->
-  <div [ngSwitch]="tab">
+  <div [ngSwitch]="tab" *ngIf="false">
     <div *ngSwitchCase="'Home'">
         
       <div  class="col-sm-6">      

@@ -21,13 +21,24 @@ import { WalletTransfersComponent } from './wallet-transfers/wallet-transfers.co
 import { SupplementTransfersComponent } from './supplement-transfers/supplement-transfers.component';
 import { CalculateTransfersComponent } from './calculate-transfers/calculate-transfers.component';
 import { ReportsComponent } from './reports/reports.component';
+import { HomeComponent } from './home/home.component';
+import { CardSummaryComponent } from './card-summary/card-summary.component';
+import { RecentActivityComponent } from './recent-activity/recent-activity.component';
+import { SelfServiceComponent } from './self-service/self-service.component';
+import { CardTransfersComponent } from './card-transfers/card-transfers.component';
+import { DepositsComponent } from './deposits/deposits.component';
+import { CreditCardsComponent } from './credit-cards/credit-cards.component';
+import { LoansComponent } from './loans/loans.component';
+import { FeesWaiversComponent } from './fees-waivers/fees-waivers.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { YearlyReportsComponent } from './yearly-reports/yearly-reports.component';
+import { MonthlyReportsComponent } from './monthly-reports/monthly-reports.component';
 
 
 
 const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
   { path: 'login', component: LoginComponent },
   { path: 'land', component: LaunchComponent},
-  { path: 'accounts', component: AccountsComponent},
   { path: 'demographic', component: DemographicComponent},
   { path: 'summary', component: SummaryComponent},
   { path: 'recentTransactions', component: RecentTransactionsComponent},
@@ -35,13 +46,99 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
   { path: 'transactions', component: TransactionsComponent},
   { path: 'selfLimit', component: SelfLimitComponent},
   { path: 'supplementaryLimit', component: SupplementaryLimitComponent},
-  { path: 'statement', component: StatementComponent},
-  { path: 'generatePin', component: GeneratePinComponent},
+  // { path: 'statement', component: StatementComponent},
+  // { path: 'generatePin', component: GeneratePinComponent},
   { path: 'walletTransfers', component: WalletTransfersComponent},
   { path: 'supplementTransfers', component: SupplementTransfersComponent},
   { path: 'calculateTransfers', component: CalculateTransfersComponent},
-  { path: 'Reports', component: ReportsComponent},
+  { path: 'Reports', component: ReportsComponent,children:
+  [
+    {
+      path: 'yearlyReports', component: YearlyReportsComponent, outlet:'Reports'
+    },
+    {
+      path: 'monthlyReports', component: MonthlyReportsComponent, outlet:'Reports'
+    }
+  ]
+},
   { path: 'Signout', component: SignoutComponent},
+  { path: 'Home', component: HomeComponent,children:
+  [
+    {
+      path: 'loans', component: LoansComponent, outlet:'Accounts'
+    },
+    {
+    path: 'accounts', component: AccountsComponent, outlet:'Accounts'
+    },
+    {
+      path: 'deposits', component: DepositsComponent, outlet:'Accounts'
+    },
+    {
+      path: 'creditCards', component: CreditCardsComponent, outlet:'Accounts'
+    }
+    
+]
+},
+  { path: 'CardSummary', component: CardSummaryComponent,children:
+  [
+    {
+      path: 'Demographic', component: DemographicComponent, outlet:'CardSummary'
+    },
+    {
+    path: 'Summary', component: SummaryComponent, outlet:'CardSummary'
+    },
+    {
+      path: 'FeesWaivers', component: FeesWaiversComponent, outlet:'CardSummary'
+    },
+    {
+      path: 'RecentTransactions', component: RecentTransactionsComponent, outlet:'CardSummary'
+    }
+    
+]},
+  { path: 'RecentActivity', component: RecentActivityComponent,children:
+  [
+    {
+      path: 'listCards', component: ListCardsComponent, outlet:'RecentActivity'
+    },
+    {
+    path: 'transactions', component: TransactionsComponent, outlet:'RecentActivity'
+    },
+    {
+      path: 'notifications', component: NotificationsComponent, outlet:'RecentActivity'
+    }
+]
+},
+  { path: 'SelfService', component: SelfServiceComponent,children:
+  [
+    {
+      path: 'SelfLimit', component: SelfLimitComponent, outlet:'SelfService'
+    },
+    {
+    path: 'SupplementaryLimit', component: SupplementaryLimitComponent, outlet:'SelfService'
+    },
+    {
+      path: 'Statement', component: StatementComponent, outlet:'SelfService'
+    },
+    {
+      path: 'GeneratePin', component: GeneratePinComponent, outlet:'SelfService'
+    }
+]
+
+
+
+},
+  { path: 'CardTransfers', component: CardTransfersComponent,children:
+  [
+    {
+      path: 'WalletTransfers', component: WalletTransfersComponent, outlet:'CardTransfers'
+    },
+    {
+    path: 'SupplementTransfers', component: SupplementTransfersComponent, outlet:'CardTransfers'
+    },
+    {
+      path: 'calculateTransfers', component: CalculateTransfersComponent, outlet:'CardTransfers'
+    }
+]},
   { path: '',redirectTo:'/login', pathMatch: 'full' },
   { path: '**', component: PageNotComponent }  
 ];
@@ -68,12 +165,24 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
     SupplementTransfersComponent,
     CalculateTransfersComponent,
     ReportsComponent ,
-    SignoutComponent   
+    SignoutComponent,
+    HomeComponent,
+    CardSummaryComponent,
+    RecentActivityComponent,
+    SelfServiceComponent,
+    CardTransfersComponent,
+    DepositsComponent,
+    CreditCardsComponent,
+    LoansComponent,
+    FeesWaiversComponent,
+    NotificationsComponent,
+    YearlyReportsComponent,
+    MonthlyReportsComponent   
   ],
   imports: [
     BrowserModule,FormsModule,RouterModule.forRoot(appRoutes)
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [LaunchComponent]
 })
 export class AppModule { }
