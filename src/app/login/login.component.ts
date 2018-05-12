@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
     if(this.username==='admin' && this.password==='admin')
 {
 
-  this._router.navigate(['CardSummary']);
+  this._router.navigate(['Home']);
 }
 else
 {

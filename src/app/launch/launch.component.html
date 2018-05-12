@@ -91,28 +91,94 @@
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
+.nav-tabs
+ {
+   border-color:#1A3E5E;
+   width:60%;
+ }
+
+.nav-tabs > li a { 
+    /* border: 1px solid #1A3E5E; */
+    background-color:#574c4a;
+    color:#fff;
+    }
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover{
+    background-color:#d3d0d3;
+    color:#000;
+    border: 1px solid #1A3E5E;
+    border-bottom-color: transparent;
+    }
+
+.nav-tabs > li > a:hover{
+  background-color: #d3d0d3 !important;
+    border-radius: 5px;
+    color:#000;
+    border-color: #d3d0d3;
+
+} 
+
+.tab-pane {
+    border:solid 1px #1A3E5E;
+    border-top: 0; 
+    width:60%;
+    background-color:#D6E6F3;
+    padding:5px;
+
+}
 </style>
 
-<div style="height: 95%; width: 100%">
-<div class="row" style="height: 85px; background-color: black">
-  <div class="col-sm-12">.col-sm-12</div>  
+<div class="container-fluid">
+<div class="row" >
+  <div style="background-color: #000d16" class="col-sm-12">
+    
+    
+      <img src="assets/images/logo.png" style="padding:15px;" >
+  </div>  
 </div> 
 
-<div class="row" style="height: 95px; background-color:beige">
-    <div class="col-sm-4" style=" background-color:rgb(61, 95, 95)"></div>  
-    <div class="col-sm-4" style=" background-color:rgb(117, 112, 105)"></div>  
-    <div class="col-sm-4" style=" background-color:rgb(150, 167, 182)"></div>  
-  </div> 
+<div class="row" style="background-color: #574c4a;padding: 6px;">
+    <div class="col-sm-4" >  
+        <div class="container-fluid" style=" background-color: #efdfcf;border: solid 1px black; border-radius: 5px; max-width: 450px; padding: 0px">
+            <div class="row-fluid" style="  border-top-left-radius: 10px; border-top-right-radius: 10px;">
+               <div class="span3">
+                    <img src="assets/images/myAccountIcon.png" style="padding: 15px;" >  
+               </div>  
+               
+            </div>           
+        </div>
 
-<div class="row" style="height: 60%;">
+    </div>  
+    <div class="col-sm-4" >
+        <div class="container-fluid" style="background-color: #efdfcf;border: solid 1px black; border-radius: 5px; max-width: 450px; padding: 0px">
+            <div class="row-fluid" style=" border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    <div class="span3">
+                            <img src="assets/images/infoGraphic1.png" style="padding: 15px; height: 120px;" >  
+                       </div> 
+            </div>
+        </div>
+    </div>  
+    <div class="col-sm-4" >
+        <div class="container-fluid" style="background-color: #efdfcf;border: solid 1px black; border-radius: 5px; max-width: 450px; padding: 0px">
+            <div class="row-fluid" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    <div class="span3">
+                            <img src="assets/images/infoGraphic2.png" style="padding: 15px; height: 120px;" >  
+                       </div> 
+            </div>
+        </div>
+    </div>  
+</div> 
+
+<div class="row" style="height: 60%; background-color: #574c4a; padding-bottom: 10px; padding-left: 8px;">
 
   <div class="col-sm-12">   
    
 
-      <nav class="navbar navbar-inverse">
-          <div class="container-fluid">  
-             
-            <ul class="nav navbar-nav">
+   
+          <!-- <div class="container-fluid">    -->
+            <ul class="nav nav-tabs" role="tablist">
               
               <!-- <li class="active"><a routerLink="Home" (click)="setTab('Home')" >Home</a></li>      
               <li><a routerLink="Emps" (click)="setTab('CardSummary')">Card Summary</a></li>
@@ -121,15 +187,14 @@
               <li><a routerLink="Emps" (click)="setTab('CardTransfers')">Card Transfers</a></li>
               <li><a routerLink="Emps" (click)="setTab('Reports')">Reports</a></li>    -->
               
-              <li [class.active]="active" ><a  (click)="setTab('Home')" >HOME</a></li>      
+              <li [class.active]="active" ><a role="tab" data-toggle="tab"  (click)="setTab('Home')" >HOME</a></li>      
               <!-- <li ><a (click)="setTab('CardSummary')">CARD SUMMARY</a></li>
               <li><a  (click)="setTab('RecentActivity')">RECENT ACTIVITY</a></li> -->
-              <li [class.active]="active"><a (click)="setTab('SelfService')">SELF SERVICE</a></li>
-              <li [class.active]="active"><a  (click)="setTab('CardTransfers')">CARD TRANSFER</a></li>
-              <li [class.active]="active"><a (click)="setTab('Reports')">REPORTS</a></li>      
+              <li [class.active]="active"><a role="tab" data-toggle="tab" (click)="setTab('SelfService')">SELF SERVICE</a></li>
+              <li [class.active]="active"><a role="tab" data-toggle="tab" (click)="setTab('CardTransfers')">CARD TRANSFER</a></li>
+              <li [class.active]="active"><a role="tab" data-toggle="tab" (click)="setTab('Reports')">REPORTS</a></li>      
             </ul>
-          </div>
-        </nav>
+         <!-- </div> -->
         
         <div>
           <!-- <router-outlet></router-outlet>
@@ -300,7 +365,7 @@
         
         </div>
          </div>
-        <router-outlet></router-outlet>
+        <!-- <router-outlet></router-outlet> -->
   
   
   
@@ -308,5 +373,7 @@
   
   </div> 
 </div> 
+</div>
+
 </div>
 

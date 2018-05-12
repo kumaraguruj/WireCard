@@ -19,10 +19,5 @@ export class LaunchComponent implements OnInit {
     this._router.navigate([pagename]);
     this.tab = pagename;
   }
-
-  isSelected(pagename: string) {
-
-    this._router.navigate(['listCards']);
-    return this.tab===pagename;
-  }
+ 
 }

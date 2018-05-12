@@ -162,3 +162,40 @@ div.bhoechie-tab-content{
 div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   display: none;
 }
+
+.nav-tabs {
+  float: left;
+  border-bottom: 0;
+}
+
+.nav-tabs li {
+  float: none;
+  margin: 0;
+}
+
+.nav-tabs li a {
+  margin-right: 0;
+  border: 0;
+  background-color:#d3d0d3;;
+}
+
+.nav-tabs li a:hover { background-color: #fff }
+
+.nav-tabs .glyphicon { color:black }
+
+.nav-tabs .active .glyphicon { color: #333; }
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus { border: 0; }
+
+.tab-content { margin-left: 45px; }
+
+.tab-content .tab-pane {
+  display: none;
+  background-color: #fff;
+  padding: 1.6rem;
+  overflow-y: auto;
+}
+
+.tab-content .active { display: block; }
