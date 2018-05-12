@@ -12,5 +12,30 @@ export class GeneratePinComponent implements OnInit {
   ngOnInit() {
   }
  
+  private selectedLink: string="";        
+  
+  setradio(e: string): void   
+  {  
+  
+   this.selectedLink = e;  
+         
+  }  
+  
+    isSelected(OldPin: string): boolean   
+  {  
+ 
+        if (!this.selectedLink) { // if no radio button is selected, always return false so every nothing is shown  
+            return false;  
+ }  
+  
+        return (this.selectedLink === OldPin); // if current radio button is selected, return true, else return false  
+    }  
 
+    OldPinGenerated()
+    {
+       
+     alert('Pin has been generated and sent to your registerd mobile number and Email')
+    
+    }
 }
+
