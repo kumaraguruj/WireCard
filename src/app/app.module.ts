@@ -33,6 +33,7 @@ import { FeesWaiversComponent } from './fees-waivers/fees-waivers.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { YearlyReportsComponent } from './yearly-reports/yearly-reports.component';
 import { MonthlyReportsComponent } from './monthly-reports/monthly-reports.component';
+import { AmChartsModule} from "@amcharts/amcharts3-angular";
 
 
 
@@ -180,9 +181,11 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
     MonthlyReportsComponent   
   ],
   imports: [
-    BrowserModule,FormsModule,RouterModule.forRoot(appRoutes)
+    BrowserModule,FormsModule,AmChartsModule,RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { }
