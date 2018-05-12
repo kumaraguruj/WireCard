@@ -11,5 +11,6 @@ export class GeneratePinComponent implements OnInit {
 
   ngOnInit() {
   }
+ 
 
 }
