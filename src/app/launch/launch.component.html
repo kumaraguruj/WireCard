@@ -1,380 +1,64 @@
-<style>
-  /*!
- * bootstrap-vertical-tabs - v1.1.0
- * https://dbtek.github.io/bootstrap-vertical-tabs
- * 2014-06-06
- * Copyright (c) 2014 Ä°smail Demirbilek
- * License: MIT
- */
-.tabs-left, .tabs-right {
-  border-bottom: none;
-  padding-top: 2px;
-}
-.tabs-left {
-  border-right: 1px solid #ddd;
-}
-.tabs-right {
-  border-left: 1px solid #ddd;
-}
-.tabs-left>li, .tabs-right>li {
-  float: none;
-  margin-bottom: 2px;
-}
-.tabs-left>li {
-  margin-right: -1px;
-}
-.tabs-right>li {
-  margin-left: -1px;
-}
-.tabs-left>li.active>a,
-.tabs-left>li.active>a:hover,
-.tabs-left>li.active>a:focus {
-  border-bottom-color: #ddd;
-  border-right-color: transparent;
-}
-
-.tabs-right>li.active>a,
-.tabs-right>li.active>a:hover,
-.tabs-right>li.active>a:focus {
-  border-bottom: 1px solid #ddd;
-  border-left-color: transparent;
-}
-.tabs-left>li>a {
-  border-radius: 4px 0 0 4px;
-  margin-right: 0;
-  display:block;
-}
-.tabs-right>li>a {
-  border-radius: 0 4px 4px 0;
-  margin-right: 0;
-}
-.vertical-text {
-  margin-top:50px;
-  border: none;
-  position: relative;
-}
-.vertical-text>li {
-  height: 20px;
-  width: 120px;
-  margin-bottom: 100px;
-}
-.vertical-text>li>a {
-  border-bottom: 1px solid #ddd;
-  border-right-color: transparent;
-  text-align: center;
-  border-radius: 4px 4px 0px 0px;
-}
-.vertical-text>li.active>a,
-.vertical-text>li.active>a:hover,
-.vertical-text>li.active>a:focus {
-  border-bottom-color: transparent;
-  border-right-color: #ddd;
-  border-left-color: #ddd;
-}
-.vertical-text.tabs-left {
-  left: -50px;
-}
-.vertical-text.tabs-right {
-  right: -50px;
-}
-.vertical-text.tabs-right>li {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-.vertical-text.tabs-left>li {
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-.nav-tabs
- {
-   border-color:#1A3E5E;
-   width:60%;
- }
-
-.nav-tabs > li a { 
-    /* border: 1px solid #1A3E5E; */
-    background-color:#574c4a;
-    color:#fff;
-    }
-
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:focus,
-.nav-tabs > li.active > a:hover{
-    background-color:#d3d0d3;
-    color:#000;
-    border: 1px solid #1A3E5E;
-    border-bottom-color: transparent;
-    }
-
-.nav-tabs > li > a:hover{
-  background-color: #d3d0d3 !important;
-    border-radius: 5px;
-    color:#000;
-    border-color: #d3d0d3;
-
-} 
-
-.tab-pane {
-    border:solid 1px #1A3E5E;
-    border-top: 0; 
-    width:60%;
-    background-color:#D6E6F3;
-    padding:5px;
-
-}
-</style>
-
 <div class="container-fluid">
-<div class="row" >
-  <div style="background-color: #000d16" class="col-sm-12">
-    
-    
-      <img src="assets/images/logo.png" style="padding:15px;" >
-  </div>  
+        <div class="row">
+                <div style="background-color: #000d16" class="col-sm-12">    
+                    <img src="assets/images/logo.png" style="padding:15px;" >
+                </div>  
+        </div> 
+        <div class="row" style="background-color: #574c4a;padding: 6px;">
+
+                    <div class="row" style="background-color: #574c4a;padding: 6px;">
+                        <div class="col-sm-4" >  
+                            <div class="container-fluid" style=" background-color: #efdfcf;border: solid 1px black; border-radius: 5px; max-width: 450px; padding: 0px">
+                                <div class="row-fluid" style="  border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                                <div class="span3">
+                                        <img src="assets/images/myAccountIcon.png" style="padding: 15px;" >  
+                                </div>  
+                                
+                                </div>           
+                            </div>
+
+                        </div>  
+                        <div class="col-sm-4" >
+                            <div class="container-fluid" style="background-color: #efdfcf;border: solid 1px black; border-radius: 5px; max-width: 450px; padding: 0px">
+                                <div class="row-fluid" style=" border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                                        <div class="span3">
+                                                <img src="assets/images/infoGraphic1.png" style="padding: 15px; height: 120px;" >  
+                                        </div> 
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="col-sm-4" >
+                            <div class="container-fluid" style="background-color: #efdfcf;border: solid 1px black; border-radius: 5px; max-width: 450px; padding: 0px">
+                                <div class="row-fluid" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                                        <div class="span3">
+                                                <img src="assets/images/infoGraphic2.png" style="padding: 15px; height: 120px;" >  
+                                        </div> 
+                                </div>
+                            </div>
+                        </div>  
+                    </div> 
+
+                    <div class="row" style="height: 60%; background-color: #574c4a; margin-bottom: 0px; padding-left: 8px;">
+
+                                <div class="col-sm-12">   
+                                            <ul class="nav nav-tabs" role="tablist">         
+                                            <li>
+                                               
+                                                <a role="tab" data-toggle="tab" routerLinkActive="actiVV"   [routerLink]="['/Home']"  >HOME</a>
+                                                </li>      
+                                            <li >
+                                                <a role="tab" routerLinkActive="actiVV" [routerLink]="['/SelfService']" data-toggle="tab" >SELF SERVICE</a>
+                                                </li>
+                                            <li >
+                                                <a role="tab" routerLinkActive="actiVV" data-toggle="tab" [routerLink]="['/CardTransfers']" >CARD TRANSFER</a>
+                                                </li>
+                                            <li >
+                                                <a role="tab" routerLinkActive="actiVV" data-toggle="tab" [routerLink]="['/Reports']">REPORTS</a>
+                                            </li> 
+                                            </ul>
+                                <div>
+                    </div> 
+        </div>
 </div> 
 
-<div class="row" style="background-color: #574c4a;padding: 6px;">
-    <div class="col-sm-4" >  
-        <div class="container-fluid" style=" background-color: #efdfcf;border: solid 1px black; border-radius: 5px; max-width: 450px; padding: 0px">
-            <div class="row-fluid" style="  border-top-left-radius: 10px; border-top-right-radius: 10px;">
-               <div class="span3">
-                    <img src="assets/images/myAccountIcon.png" style="padding: 15px;" >  
-               </div>  
-               
-            </div>           
-        </div>
-
-    </div>  
-    <div class="col-sm-4" >
-        <div class="container-fluid" style="background-color: #efdfcf;border: solid 1px black; border-radius: 5px; max-width: 450px; padding: 0px">
-            <div class="row-fluid" style=" border-top-left-radius: 10px; border-top-right-radius: 10px;">
-                    <div class="span3">
-                            <img src="assets/images/infoGraphic1.png" style="padding: 15px; height: 120px;" >  
-                       </div> 
-            </div>
-        </div>
-    </div>  
-    <div class="col-sm-4" >
-        <div class="container-fluid" style="background-color: #efdfcf;border: solid 1px black; border-radius: 5px; max-width: 450px; padding: 0px">
-            <div class="row-fluid" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
-                    <div class="span3">
-                            <img src="assets/images/infoGraphic2.png" style="padding: 15px; height: 120px;" >  
-                       </div> 
-            </div>
-        </div>
-    </div>  
-</div> 
-
-<div class="row" style="height: 60%; background-color: #574c4a; padding-bottom: 10px; padding-left: 8px;">
-
-  <div class="col-sm-12">   
-   
-
-   
-          <!-- <div class="container-fluid">    -->
-            <ul class="nav nav-tabs" role="tablist">
-              
-              <!-- <li class="active"><a routerLink="Home" (click)="setTab('Home')" >Home</a></li>      
-              <li><a routerLink="Emps" (click)="setTab('CardSummary')">Card Summary</a></li>
-              <li><a routerLink="Emps" (click)="setTab('RecentActivity')">Recent Activity</a></li>
-              <li><a routerLink="Emps" (click)="setTab('SelfService')">Self Service</a></li>
-              <li><a routerLink="Emps" (click)="setTab('CardTransfers')">Card Transfers</a></li>
-              <li><a routerLink="Emps" (click)="setTab('Reports')">Reports</a></li>    -->
-              
-              <li [class.active]="active" ><a role="tab" data-toggle="tab"  (click)="setTab('Home')" >HOME</a></li>      
-              <!-- <li ><a (click)="setTab('CardSummary')">CARD SUMMARY</a></li>
-              <li><a  (click)="setTab('RecentActivity')">RECENT ACTIVITY</a></li> -->
-              <li [class.active]="active"><a role="tab" data-toggle="tab" (click)="setTab('SelfService')">SELF SERVICE</a></li>
-              <li [class.active]="active"><a role="tab" data-toggle="tab" (click)="setTab('CardTransfers')">CARD TRANSFER</a></li>
-              <li [class.active]="active"><a role="tab" data-toggle="tab" (click)="setTab('Reports')">REPORTS</a></li> 
-              
-            </ul>
-         <!-- </div> -->
-        
-        <div>
-          <!-- <router-outlet></router-outlet>
-          <router-outlet name="Home"></router-outlet>
-          <router-outlet name="CardSummary"></router-outlet>
-          <router-outlet name="RecentActivity"></router-outlet>
-          <router-outlet name="SelfService"></router-outlet>
-          <router-outlet name="CardTransfers"></router-outlet>
-          <router-outlet name="Reports"></router-outlet> -->
-          <!-- {{tab}} -->
-          <div [ngSwitch]="tab" *ngIf="false">
-            <div *ngSwitchCase="'Home'">
-                
-              <div  class="col-sm-6">      
-                <div class="col-xs-3">
-                    <!-- required for floating -->
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs tabs-left">
-                        <li class="active"><a href="#home" data-toggle="tab">Accounts</a></li>
-                        <li><a href="#profile" data-toggle="tab">Deposits</a></li>
-                        <li><a href="#messages" data-toggle="tab">Credit cards</a></li>
-                        <li><a href="#settings" data-toggle="tab">Loans</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-9">
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="home">Home Tab.</div>
-                        <div class="tab-pane" id="profile">Profile Tab.</div>
-                        <div class="tab-pane" id="messages">Messages Tab.</div>
-                        <div class="tab-pane" id="settings">Settings Tab.</div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-                    
-            </div>
-            
-            <div *ngSwitchCase="'CardSummary'">
-                
-              <div  class="col-sm-6">      
-                <div class="col-xs-3">
-                    <!-- required for floating -->
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs tabs-left">
-                        <li class="active"><a href="#home" data-toggle="tab">Demographic</a></li>
-                        <li><a href="#profile" data-toggle="tab">Summary</a></li>
-                        <li><a href="#messages" data-toggle="tab">Fees & Waivers</a></li>
-                        <li><a href="#settings" data-toggle="tab">Recent Transactions</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-9">
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="home">Home Tab.</div>
-                        <div class="tab-pane" id="profile">Profile Tab.</div>
-                        <div class="tab-pane" id="messages">Messages Tab.</div>
-                        <div class="tab-pane" id="settings">Settings Tab.</div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        
-        
-           </div>
-           <div *ngSwitchCase="'RecentActivity'">
-                
-            <div  class="col-sm-6">      
-              <div class="col-xs-3">
-                  <!-- required for floating -->
-                  <!-- Nav tabs -->
-                  <ul class="nav nav-tabs tabs-left">
-                      <li class="active"><a href="#home" data-toggle="tab">List Cards</a></li>
-                      <li><a href="#profile" data-toggle="tab">Transactions</a></li>
-                      <li><a href="#messages" data-toggle="tab">Notifications</a></li>            
-                  </ul>
-              </div>
-              <div class="col-xs-9">
-                  <!-- Tab panes -->
-                  <div class="tab-content">
-                      <div class="tab-pane active" id="home">Home Tab.</div>
-                      <div class="tab-pane" id="profile">Profile Tab.</div>
-                      <div class="tab-pane" id="messages">Messages Tab.</div>
-                      <div class="tab-pane" id="settings">Settings Tab.</div>
-                  </div>
-              </div>
-              <div class="clearfix"></div>
-          </div>
-        
-         </div>
-         <div *ngSwitchCase="'SelfService'">
-                
-          <div  class="col-sm-6">      
-            <div class="col-xs-3">
-                <!-- required for floating -->
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs tabs-left">
-                    <li class="active"><a href="#home" data-toggle="tab">Self Limit</a></li>
-                    <li><a href="#profile" data-toggle="tab">Supplementary Limit</a></li>
-                    <li><a href="#messages" data-toggle="tab">Statement</a></li>
-                    <li><a href="#settings" data-toggle="tab">Generate Pin</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-9">
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div class="tab-pane active" id="home">Home Tab.</div>
-                    <div class="tab-pane" id="profile">Profile Tab.</div>
-                    <div class="tab-pane" id="messages">Messages Tab.</div>
-                    <div class="tab-pane" id="settings">Settings Tab.</div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        
-        
-        </div>
-        <div *ngSwitchCase="'CardTransfers'">
-                
-          <div  class="col-sm-6">      
-            <div class="col-xs-3">
-                <!-- required for floating -->
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs tabs-left">
-                    <li class="active"><a href="#home" data-toggle="tab">Wallet Transfers</a></li>
-                    <li><a href="#profile" data-toggle="tab">Supplement Transfers</a></li>
-                    <li><a href="#messages" data-toggle="tab">
-                      calculate Transfers</a></li>           
-                </ul>
-            </div>
-            <div class="col-xs-9">
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div class="tab-pane active" id="home">Home Tab.</div>
-                    <div class="tab-pane" id="profile">Profile Tab.</div>
-                    <div class="tab-pane" id="messages">Messages Tab.</div>
-                    <div class="tab-pane" id="settings">Settings Tab.</div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        
-        </div>
-        <div *ngSwitchCase="'Reports'">
-                
-          <div  class="col-sm-6">      
-            <div class="col-xs-3">
-                <!-- required for floating -->
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs tabs-left">
-                    <li class="active"><a href="#home" data-toggle="tab">Yearly</a></li>
-                    <li><a href="#profile" data-toggle="tab">Monthly</a></li>
-                   
-                </ul>
-            </div>
-            <div class="col-xs-9">
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div class="tab-pane active" id="home">Home Tab.</div>
-                    <div class="tab-pane" id="profile">Profile Tab.</div>
-                    <div class="tab-pane" id="messages">Messages Tab.</div>
-                    <div class="tab-pane" id="settings">Settings Tab.</div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        
-        
-        </div>
-         </div>
-        <!-- <router-outlet></router-outlet> -->
-  
-  
-  
-  
-  
-  </div> 
-</div> 
-</div>
-
-</div>
 

@@ -179,7 +179,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   background-color:#d3d0d3;;
 }
 
-.nav-tabs li a:hover { background-color: #fff }
+/* .nav-tabs li a:hover { background-color: #fff } */
 
 .nav-tabs .glyphicon { color:black }
 
@@ -199,3 +199,9 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 }
 
 .tab-content .active { display: block; }
+.actiVV{    
+  background-color:#eeeeee !important;
+  border-radius: 5px;
+  color:#000;
+  border-color: #d3d0d3;   
+}
