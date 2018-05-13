@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { AmChartsService } from "@amcharts/amcharts3-angular";
 
 
-import AmCharts from '../../../typings/globals/AmCharts';
+// import AmCharts from '../../../typings/globals/AmCharts';
 
 @Component({
   selector: 'app-monthly-reports',
