@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { AmChartsService } from "@amcharts/amcharts3-angular";
 import { MonthlyReportsComponent } from './monthly-reports.component';
 
 describe('MonthlyReportsComponent', () => {
