@@ -34,7 +34,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { YearlyReportsComponent } from './yearly-reports/yearly-reports.component';
 import { MonthlyReportsComponent } from './monthly-reports/monthly-reports.component';import { AmChartsModule} from "@amcharts/amcharts3-angular";
 import { ProfileInfoComponent } from './profile-info/profile-info.component';
-
+import { AmChartsModule } from "@amcharts/amcharts3-angular";
 
 
 const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
@@ -55,10 +55,10 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
   { path: 'Reports', component: ReportsComponent,children:
   [
     {
-      path: 'yearlyReports', component: YearlyReportsComponent, outlet:'Reports'
+      path: 'yearlyReports', component: YearlyReportsComponent
     },
     {
-      path: 'monthlyReports', component: MonthlyReportsComponent, outlet:'Reports'
+      path: 'monthlyReports', component: MonthlyReportsComponent
     }
   ]
 },
@@ -66,16 +66,16 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
   { path: 'Home', component: HomeComponent,children:
   [
     {
-      path: 'profileInfo', component: ProfileInfoComponent, outlet:'Accounts'
+      path: 'profileInfo', component: ProfileInfoComponent
     },
     {
-    path: 'Summary', component: SummaryComponent, outlet:'Accounts'
+    path: 'Summary', component: SummaryComponent
     },
     {
-      path: 'transactions', component: TransactionsComponent, outlet:'Accounts'
+      path: 'transactions', component: TransactionsComponent
     },
     {
-      path: 'FeesWaivers', component: FeesWaiversComponent, outlet:'Accounts'
+      path: 'FeesWaivers', component: FeesWaiversComponent
     }
     
 ]
@@ -112,16 +112,16 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
   { path: 'SelfService', component: SelfServiceComponent,children:
   [
     {
-      path: 'SelfLimit', component: SelfLimitComponent, outlet:'SelfService'
+      path: 'SelfLimit', component: SelfLimitComponent
     },
     {
-    path: 'SupplementaryLimit', component: SupplementaryLimitComponent, outlet:'SelfService'
+    path: 'SupplementaryLimit', component: SupplementaryLimitComponent
     },
     {
-      path: 'Statement', component: StatementComponent, outlet:'SelfService'
+      path: 'Statement', component: StatementComponent
     },
     {
-      path: 'GeneratePin', component: GeneratePinComponent, outlet:'SelfService'
+      path: 'GeneratePin', component: GeneratePinComponent
     }
 ]
 
@@ -131,13 +131,13 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
   { path: 'CardTransfers', component: CardTransfersComponent,children:
   [
     {
-      path: 'WalletTransfers', component: WalletTransfersComponent, outlet:'CardTransfers'
+      path: 'WalletTransfers', component: WalletTransfersComponent
     },
     {
-    path: 'SupplementTransfers', component: SupplementTransfersComponent, outlet:'CardTransfers'
+    path: 'SupplementTransfers', component: SupplementTransfersComponent
     },
     {
-      path: 'calculateTransfers', component: CalculateTransfersComponent, outlet:'CardTransfers'
+      path: 'calculateTransfers', component: CalculateTransfersComponent
     }
 ]},
   { path: '',redirectTo:'/login', pathMatch: 'full' },
@@ -179,10 +179,16 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
     NotificationsComponent,
     YearlyReportsComponent,
     MonthlyReportsComponent,
-    ProfileInfoComponent   
+    ProfileInfoComponent ,
+      
   ],
   imports: [
+<<<<<<< HEAD
     BrowserModule,FormsModule,AmChartsModule,RouterModule.forRoot(appRoutes)
+=======
+    BrowserModule,FormsModule,RouterModule.forRoot(appRoutes),
+    AmChartsModule
+>>>>>>> 2495f59c0cb903d65a52be73d54a59bb1d27b2da
   ],
   providers: [],
   bootstrap: [AppComponent]

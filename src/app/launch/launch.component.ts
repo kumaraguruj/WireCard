@@ -19,5 +19,7 @@ export class LaunchComponent implements OnInit {
     this._router.navigate([pagename]);
     this.tab = pagename;
   }
+
+
  
 }
