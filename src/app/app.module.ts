@@ -33,7 +33,11 @@ import { FeesWaiversComponent } from './fees-waivers/fees-waivers.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { YearlyReportsComponent } from './yearly-reports/yearly-reports.component';
 import { MonthlyReportsComponent } from './monthly-reports/monthly-reports.component';
+<<<<<<< HEAD
 import { AmChartsModule} from "@amcharts/amcharts3-angular";
+=======
+import { ProfileInfoComponent } from './profile-info/profile-info.component';
+>>>>>>> b3c330e371eaf3a73ea52a7b77b1b5c837bce995
 
 
 
@@ -41,10 +45,10 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
   { path: 'login', component: LoginComponent },
   { path: 'land', component: LaunchComponent},
   { path: 'demographic', component: DemographicComponent},
-  { path: 'summary', component: SummaryComponent},
+  // { path: 'summary', component: SummaryComponent},
   { path: 'recentTransactions', component: RecentTransactionsComponent},
   { path: 'listCards', component: ListCardsComponent},
-  { path: 'transactions', component: TransactionsComponent},
+  // { path: 'transactions', component: TransactionsComponent},
   { path: 'selfLimit', component: SelfLimitComponent},
   { path: 'supplementaryLimit', component: SupplementaryLimitComponent},
   // { path: 'statement', component: StatementComponent},
@@ -66,16 +70,16 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
   { path: 'Home', component: HomeComponent,children:
   [
     {
-      path: 'loans', component: LoansComponent, outlet:'Accounts'
+      path: 'profileInfo', component: ProfileInfoComponent, outlet:'Accounts'
     },
     {
-    path: 'accounts', component: AccountsComponent, outlet:'Accounts'
+    path: 'Summary', component: SummaryComponent, outlet:'Accounts'
     },
     {
-      path: 'deposits', component: DepositsComponent, outlet:'Accounts'
+      path: 'transactions', component: TransactionsComponent, outlet:'Accounts'
     },
     {
-      path: 'creditCards', component: CreditCardsComponent, outlet:'Accounts'
+      path: 'FeesWaivers', component: FeesWaiversComponent, outlet:'Accounts'
     }
     
 ]
@@ -178,7 +182,8 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
     FeesWaiversComponent,
     NotificationsComponent,
     YearlyReportsComponent,
-    MonthlyReportsComponent   
+    MonthlyReportsComponent,
+    ProfileInfoComponent   
   ],
   imports: [
     BrowserModule,FormsModule,AmChartsModule,RouterModule.forRoot(appRoutes)

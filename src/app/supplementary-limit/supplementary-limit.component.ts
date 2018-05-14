@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./supplementary-limit.component.css']
 })
 export class SupplementaryLimitComponent implements OnInit {
-
-  constructor() { }
+  showHide: boolean;
+  constructor() {this.showHide=false; }
 
   ngOnInit() {
   }
-
+  changeShowStatus(){
+    this.showHide = !this.showHide;
+  }
 }
