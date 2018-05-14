@@ -187,6 +187,8 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
     AccountInfoComponent,
     InfoGraghComponent ,
       
+    ProfileInfoComponent ,
+  
   ],
   imports: [
     BrowserModule,FormsModule,RouterModule.forRoot(appRoutes),
