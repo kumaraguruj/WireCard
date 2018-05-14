@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelfLimitComponent implements OnInit {
 
-  constructor() { }
+  showHide: boolean;
+  constructor() {this.showHide=false; }
 
   ngOnInit() {
   }
-
+  changeShowStatus(){
+    this.showHide = !this.showHide;
+  }
 }

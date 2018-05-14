@@ -32,12 +32,8 @@ import { LoansComponent } from './loans/loans.component';
 import { FeesWaiversComponent } from './fees-waivers/fees-waivers.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { YearlyReportsComponent } from './yearly-reports/yearly-reports.component';
-import { MonthlyReportsComponent } from './monthly-reports/monthly-reports.component';
-<<<<<<< HEAD
-import { AmChartsModule} from "@amcharts/amcharts3-angular";
-=======
+import { MonthlyReportsComponent } from './monthly-reports/monthly-reports.component';import { AmChartsModule} from "@amcharts/amcharts3-angular";
 import { ProfileInfoComponent } from './profile-info/profile-info.component';
->>>>>>> b3c330e371eaf3a73ea52a7b77b1b5c837bce995
 
 
 
