@@ -12,7 +12,7 @@ export class GeneratePinComponent implements OnInit {
   ngOnInit() {
   }
  
-  private selectedLink: string="";        
+  private selectedLink: string="Yes";        
   
   setradio(e: string): void   
   {  
