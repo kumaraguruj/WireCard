@@ -1,9 +1,5 @@
 
 import { Component, OnInit } from '@angular/core';
-import { AmChartsService } from "@amcharts/amcharts3-angular";
-
-
-// import AmCharts from '../../../typings/globals/AmCharts';
 
 @Component({
   selector: 'app-monthly-reports',
@@ -12,13 +8,13 @@ import { AmChartsService } from "@amcharts/amcharts3-angular";
 })
 export class MonthlyReportsComponent implements OnInit {
   private chart: any;
-  constructor(private AmCharts:AmChartsService) {
+  constructor(/*private AmCharts:AmChartsService*/) {
 
     
   }
 
   ngOnInit() {
-    this.chart = this.AmCharts.makeChart("chartdiv", {
+   /* this.chart = this.AmCharts.makeChart("chartdiv", {
       "type": "serial",
       "theme": "light",
       "marginRight": 70,
@@ -99,7 +95,7 @@ export class MonthlyReportsComponent implements OnInit {
         "enabled": true
       }
     
-    });
+    });*/
   }
   
   
