@@ -35,6 +35,9 @@ import { YearlyReportsComponent } from './yearly-reports/yearly-reports.componen
 import { MonthlyReportsComponent } from './monthly-reports/monthly-reports.component';
 import { AmChartsModule} from "@amcharts/amcharts3-angular";
 import { ProfileInfoComponent } from './profile-info/profile-info.component';
+import { AccountInfoComponent } from './account-info/account-info.component';
+import { InfoGraghComponent } from './info-gragh/info-gragh.component';
+import { InformationService} from '../app/Common/information.service';
 
 
 
@@ -180,14 +183,16 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
     NotificationsComponent,
     YearlyReportsComponent,
     MonthlyReportsComponent,
-    ProfileInfoComponent ,
+    ProfileInfoComponent,
+    AccountInfoComponent,
+    InfoGraghComponent ,
       
   ],
   imports: [
     BrowserModule,FormsModule,RouterModule.forRoot(appRoutes),
     AmChartsModule
   ],
-  providers: [],
+  providers: [InformationService],
   bootstrap: [AppComponent]
 })
 

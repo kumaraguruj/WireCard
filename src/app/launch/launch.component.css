@@ -1,3 +1,12 @@
+.actiVV{    
+    
+  color: black;
+    background-color: #d3d0d3 !important;
+    border-radius: 5px;     
+    border-color: #d3d0d3;   
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
 .tabs-left, .tabs-right {
     border-bottom: none;
     padding-top: 2px;
@@ -92,7 +101,7 @@
   .nav-tabs > li a { 
       /* border: 1px solid #1A3E5E; */
       background-color:#574c4a;
-      color:#fff;
+     color:#fff; 
       }
   
   .nav-tabs > li.active > a,
@@ -122,11 +131,3 @@
   
   }
   
-  .actiVV{    
-      background-color: #d3d0d3 !important;
-      border-radius: 5px;
-      color:#000;
-      border-color: #d3d0d3;   
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-  }
