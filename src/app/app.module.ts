@@ -32,9 +32,10 @@ import { LoansComponent } from './loans/loans.component';
 import { FeesWaiversComponent } from './fees-waivers/fees-waivers.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { YearlyReportsComponent } from './yearly-reports/yearly-reports.component';
-import { MonthlyReportsComponent } from './monthly-reports/monthly-reports.component';import { AmChartsModule} from "@amcharts/amcharts3-angular";
+import { MonthlyReportsComponent } from './monthly-reports/monthly-reports.component';
+import { AmChartsModule} from "@amcharts/amcharts3-angular";
 import { ProfileInfoComponent } from './profile-info/profile-info.component';
-import { AmChartsModule } from "@amcharts/amcharts3-angular";
+
 
 
 const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
@@ -183,12 +184,8 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
       
   ],
   imports: [
-<<<<<<< HEAD
-    BrowserModule,FormsModule,AmChartsModule,RouterModule.forRoot(appRoutes)
-=======
     BrowserModule,FormsModule,RouterModule.forRoot(appRoutes),
     AmChartsModule
->>>>>>> 2495f59c0cb903d65a52be73d54a59bb1d27b2da
   ],
   providers: [],
   bootstrap: [AppComponent]
