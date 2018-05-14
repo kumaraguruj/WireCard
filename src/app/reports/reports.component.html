@@ -1,3 +1,41 @@
-<p>
-  reports works!
-</p>
+
+<app-launch></app-launch>
+
+<div class="container-fluid" style="background-color: #574c4a; padding-left: 28px; padding-top: 8px; padding-bottom: 8px; padding-right: 25px;">
+                <div class="row" style="Background-color:#d3d0d3;padding-bottom: 10px;padding-top: 10px;padding-right: 10px;">
+      <div class="col-xs-1" style="Background-color:#d3d0d3; padding-left: 20px;">
+    
+<ul class="nav nav-tabs">
+    <!-- <li class="active"><a href="#home" data-toggle="tab"><span class="glyphicon glyphicon-heart"></span></a></li> -->
+    <li ><a   [routerLink]="['/Reports/yearlyReports']" routerLinkActive="actiVV"  data-toggle="tab">
+            <img src="assets/images/Yearly.png" style="height: 40px;"  alt="Expenses By Category" title="Expenses By Category">
+    </a></li>
+    <li><a routerLinkActive="actiVV"  [routerLink]="['/Reports/monthlyReports']"  data-toggle="tab">
+            <img src="assets/images/Monthly.png" style="height: 40px;"  alt="Monthly Avg Balance" title="Monthly Avg Balance">
+    </a></li>
+       
+  </ul>
+
+</div> 
+<div class="col-sm-11" style="Background-color:#eeeeee;">
+        <div>
+           <router-outlet></router-outlet>   
+        </div>           
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

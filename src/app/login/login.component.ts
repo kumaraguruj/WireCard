@@ -9,8 +9,8 @@ import { Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  username:string='admin';
-  password:string="admin";
+  username:string="";
+  password:string="";
 
   constructor( private _router:Router) { }
 
@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
     if(this.username==='admin' && this.password==='admin')
 {
 
-  this._router.navigate(['land']);
+  this._router.navigate(['/Home/Summary']);
 }
 else
 {

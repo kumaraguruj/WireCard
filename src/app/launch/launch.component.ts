@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LaunchComponent implements OnInit {
 
-  constructor() { }
+  tab:string="CardSummary";
+  constructor(private _router:Router) { }
 
   ngOnInit() {
   }
 
+  setTab(pagename: string) {
+   
+    this._router.navigate([pagename]);
+    this.tab = pagename;
+  }
+
+
+ 
 }
