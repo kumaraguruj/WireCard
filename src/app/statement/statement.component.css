@@ -2,3 +2,27 @@
     margin: 20px;
     display: none;
 }
+
+#displayAccount{
+font-size: 16px;
+}
+
+#detailsid{
+    font-size: 13px; Color:#4f4f4f
+}
+
+#divid{
+    font-size: 20px; Color:#4f4f4f
+}
+
+.table table-striped{
+    font-size: 13px; Color:#4f4f4f;
+}
+
+
+
+#tableid tr:nth-child(odd){background-color: #d7d7d7; font-size: 13px;}
+
+
+
+#tableid tr:nth-child(even){background-color: #e9e9e9; font-size: 13px;}

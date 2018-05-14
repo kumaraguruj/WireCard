@@ -1,163 +1,165 @@
 <form class="form-horizontal">
-  
-<div class="container form-group">
-      <br>
-        <label class="control-label">Do remember your Old Pin ?</label> 
-      <div class="row form-group">
-          <div class="col-xs-6">
-               
-              <div class="col-xs-2">
-              <div class="form-check">
-                
-                 
-              <div class="form-group">
-                 
-                      <input class="form-check-input" name="OldPin" type="radio" id="radio100" [checked]='true'  value="Yes" (click)="setradio('Yes')" />
-                      <label class="form-check-label" for="radio100">Yes</label>
-                  </div>
-                </div>
-                </div>
-                  <div class="col-xs-3">
-                  <div class="form-check">
-                      
-                      <input class="form-check-input" name="OldPin" type="radio" id="radio101" value="No" (click)="setradio('No')" />
-                      <label class="form-check-label" for="radio101">No</label>
-                    </div>
-                    
-  
-            
-                    </div>
-               
-              </div>
-              </div>
-              <div class="row form-group container" >
 
-                  <div class="col-xs-6" *ngIf="isSelected('Yes')" >
-                    <div class="panel panel-default" >
-                              <div class="panel-heading" >Generate Pin</div>
-                              <div class="panel-body form-group" id="collapseOne">
-                            <div class="row form-group">
-                                        <label for="inputOldPin" class="control-label col-xs-3" >
-                                                Old Pin</label>
-                                    <div class="col-xs-8">
-                                            <input type="text" class="form-control" id="inputOldPin" placeholder="Old Pin" />
-                                                </div>
-                                            </div> 
-                                            <div class="row form-group">
-                                                    <label for="inputNewPin" class="control-label col-xs-3" >
-                                                            New Pin</label>
-                                                <div class="col-xs-8">
-                                                        <input type="text" class="form-control" id="inputNewPin" placeholder="New Pin" />
-                                                            </div>
-                                                        </div> 
-                                                        <div class="row form-group">
-                                                                <label for="inputCnfNewPin" class="control-label col-xs-3" >
-                                                                        Confirm New Pin</label>
-                                                            <div class="col-xs-8">
-                                                                    <input type="text" class="form-control" id="inputCnfNewPin" placeholder="Conirm New Pin" />
-                                                                        </div>
-                                                                    </div> 
-                                                                    <div class="row form-group">
-                                                                        <div class="col-xs-3"></div>
-                                                                            <div class="col-xs-8">
-                                                                            <button type="submit" class="btn btn-primary" (click)='OldPinGenerated()' >
-                                                                                    Submit</button>
-                                                                                    </div>
-                                                                    </div> 
-                                                   
-                              </div>
-                              </div>
-                              </div>
+    <div class="container form-group">
+        <br>
+        <label class="control-label" style="font-size:13px;">Do you remember your old pin?</label>
+        <div class="row form-group">
+            <div class="col-xs-6">
 
-                              <div class="col-xs-6" *ngIf="isSelected('No')">
-                                    <div class="panel panel-default">
-                                              <div class="panel-heading">Generate Pin</div>
-                                              <div class="panel-body form-group">
-                                            <div class="row form-group">
-                                                        <label for="inputPhone" class="control-label col-xs-3" >
-                                                                Registerd phone</label>
-                                                    <div class="col-xs-8">
-                                                            <input type="text" class="form-control" id="inputPhone" placeholder="Phone" />
-                                                                </div>
-                                                            </div> 
-                                                            <div class="row form-group">
-                                                                    <label for="inputDob" class="control-label col-xs-3" > Date Of Birth
-                                                                            </label>
-                                                                <div class="col-xs-8">
-                                                                        <input type="text" class="form-control" id="inputDob" placeholder="DOB" />
-                                                                            </div>
-                                                                        </div> 
-                                                                        <div class="row form-group">
-                                                                                <label for="inputOldPin" class="control-label col-xs-3" >
-                                                                                        Confirm New Pin</label>
-                                                                            <div class="col-xs-8">
-                                                                                    <input type="text" class="form-control" id="inputOldPin" placeholder="Old Pin" />
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div class="row form-group" >
-                                                                                            <label for="inputQuestion" class="control-label col-xs-3" >
-                                                                                                    SecurityQuestion</label>
-                                                                                                    <div class="col-xs-8">
-                                                                                                            <select class="btn btn-default dropdown-toggle" >
-                                                                                                                     <span class="caret">Action</span>
-                                                                                                                    <option>What is Your Favourite Food ?</option>
-                                                                                                                    <option>What is your Pet's Name</option>
-                                                                                                                    <option>Who is your child hood hero?</option>
-                                                                                                                    <option>What is first school's name</option>
-                                                                                                                </select>
-                          
-                                                                                          </div>
-                                                                                          </div>
-                                                                                          <div class="row form-group">
-                                                                                                <label for="InputAnswer" class="control-label col-xs-3" >
-                                                                                                        Security Answer</label>
-                                                                                            <div class="col-xs-8">
-                                                                                                    <input type="text" class="form-control" id="InputAnswer" placeholder="Security Answer" />
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                    <div class="row form-group">
-                                                                                            <div class="col-xs-3"></div>
-                                                                                                <div class="col-xs-8">
-                                                                                                <button type="submit" class="btn btn-primary" (click)='OldPinGenerated()'>
-                                                                                                        Submit</button>
-                                                                                                        </div>
-                                                                                        </div>          
-                                                      
-                                                       
-                                                                     
-                                              </div>
-                                              </div>
-                                              </div>
-                              </div>
-                              
+                <div class="col-xs-2">
+                    <div class="form-check">
+
+
+                        <div class="form-group">
+
+                            <input class="form-check-input" name="OldPin" type="radio" id="radio100"  [checked]='true' value="Yes"  (click)="setradio('Yes')" ngModel>
+                            <label class="form-check-label" for="radio100" style="font-size:12px; color:#4f4f4f">Yes</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="form-check">
+
+                        <input class="form-check-input" name="OldPin" type="radio" id="radio101" value="No" (click)="setradio('No')" ngModel>
+                        <label class="form-check-label" for="radio101" style="font-size:12px; color:#4f4f4f">No</label>
+                    </div>
+
+
+
+                </div>
+
+            </div>
         </div>
-        
-<!--BootstrapDialogBox-->
-        <div class="modal fade">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                      <h4 class="modal-title">Modal title</h4>
-                    </div>
-                    <div class="modal-body">
-                      <p>One fine body…</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                  </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-              </div><!-- /.modal -->
+        <div class="row form-group container">
 
-        </form>
-        <script > 
-        function OldPinGenerated(){
-            BootstrapDialog.show({
-                title: 'Say-hello dialog',
-                message: 'Hi Apple!'
-            });
-        }
-           
-            </script>
+            <div class="col-xs-6" *ngIf="isSelected('Yes')">
+                <div class="panel panel-default" id="divId">
+                    <div class="panel-heading" style="font-size: 20px; color: #4f4f4f">Generate Pin</div>
+                    <div class="panel-body form-group" id="collapseOne">
+                        <div class="form-group row">
+                            <label for="inputOldPin" class="control-label col-xs-4">
+                                Old Pin:</label>
+                            <div class="col-xs-4">
+                                <input type="text" class="form-control" id="inputOldPin" placeholder="Old Pin" />
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label for="inputNewPin" class="control-label col-xs-4">
+                                New Pin:</label>
+                            <div class="col-xs-4">
+                                <input type="text" class="form-control" id="inputNewPin" placeholder="New Pin" />
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label for="inputCnfNewPin" class="control-label col-xs-4">
+                                Confirm New Pin:</label>
+                            <div class="col-xs-4">
+                                <input type="text" class="form-control" id="inputCnfNewPin" placeholder="Conirm New Pin" />
+                            </div>
+                        </div>
+                        <div class="row form-group">
+
+                            <div class="col-sm-4 col-sm-offset-4">
+                                <button type="submit" class="btn btn-primary" (click)='OldPinGenerated()'>
+                                    Submit</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6" *ngIf="isSelected('No')">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="font-size:20px; color: #4f4f4f">Generate Pin</div>
+                    <div class="panel-body form-group" id="divId">
+                        <div class="row form-group">
+                            <label for="inputPhone" class="control-label col-xs-4">
+                                Registerd phone:</label>
+                            <div class="col-xs-3">
+                                <input type="text" class="form-control" id="inputPhone" placeholder="Phone" />
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label for="inputDob" class="control-label col-xs-4"> Date Of Birth:
+                            </label>
+                            <div class="col-xs-3">
+                                <input type="text" class="form-control" id="inputDob" placeholder="DOB" />
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label for="inputOldPin" class="control-label col-xs-4">
+                                Confirm New Pin:</label>
+                            <div class="col-xs-3">
+                                <input type="text" class="form-control" id="inputOldPin" placeholder="Old Pin" />
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label for="inputQuestion" class="control-label col-xs-4">
+                                Security Question:</label>
+                            <div class="col-xs-3">
+                                <select class="btn btn-default dropdown-toggle">
+                                    <span class="caret">Action</span>
+                                    <option>What is Your Favourite Food ?</option>
+                                    <option>What is your Pet's Name</option>
+                                    <option>Who is your child hood hero?</option>
+                                    <option>What is first school's name</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label for="InputAnswer" class="control-label col-xs-4">
+                                Security Answer:</label>
+                            <div class="col-xs-3">
+                                <input type="text" class="form-control" id="InputAnswer" placeholder="Security Answer" />
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-sm-4 col-sm-offset-4">
+                                <button type="submit" class="btn btn-primary" (click)='OldPinGenerated()'>
+                                    Submit</button>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--BootstrapDialogBox-->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body…</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+</form>
+<script> 
+    function OldPinGenerated() {
+        BootstrapDialog.show({
+            title: 'Say-hello dialog',
+            message: 'Hi Apple!'
+        });
+    }
+
+</script>
