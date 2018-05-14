@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+
+ 
+
 @Component({
   selector: 'app-yearly-reports',
   templateUrl: './yearly-reports.component.html',
@@ -7,9 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class YearlyReportsComponent implements OnInit {
 
+ 
+
   constructor() { }
 
   ngOnInit() {
-  }
 
+  }
 }

@@ -33,8 +33,9 @@ import { FeesWaiversComponent } from './fees-waivers/fees-waivers.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { YearlyReportsComponent } from './yearly-reports/yearly-reports.component';
 import { MonthlyReportsComponent } from './monthly-reports/monthly-reports.component';
+import { AmChartsModule} from "@amcharts/amcharts3-angular";
 import { ProfileInfoComponent } from './profile-info/profile-info.component';
-import { AmChartsModule } from "@amcharts/amcharts3-angular";
+
 
 
 const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
@@ -189,4 +190,6 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { }
