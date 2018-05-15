@@ -1,15 +1,15 @@
 
          
             <div class="container">
-                <div class="panel panel-info">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Card Transfer</h3>
-                    </div>
-                   
+                
+                    
+                        <h3 style="font-size: 20px;color: #4f4f4f;">Card Transfer</h3>
+                    
+                   <br>
                     <div class="panel-body">
-                        <div class="form-group row">
+                        <div class="form-group row" id="divid">
                             <div class="col-sm-3">
-                                <label for="sourceCard">source Card:</label>
+                                <label for="sourceCard">Source Card:</label>
                             </div>
                             <div class="col-sm-3">
                              <select name="sourceCard" id="sourceCard" class="form-control">
@@ -31,7 +31,7 @@
                             </div>
 
                         </div>
-                       <div class="form-group row">
+                       <div class="form-group row" id="divid">
                             <div class="col-sm-3">
                                 <label for="sourceCard">Card Holder Name:</label>
                             </div>
@@ -47,7 +47,7 @@
                             </div>
 
                         </div>
-                        <div class="form-group row">
+                        <div class="form-group row" id="divid">
                             <div class="col-sm-3">
                                 <label for="sourceCard">Card Currency:</label>
                             </div>
@@ -68,7 +68,7 @@
                                 </select>
                             </div>
                       </div>
-                      <div class="form-group row">
+                      <div class="form-group row" id="divid">
                         <div class="col-sm-3">
                             <label for="sourceCard">Card Balance:</label>
                         </div>
@@ -83,7 +83,7 @@
                         </div>
                   </div>
 
-                  <div class="form-group row">
+                  <div class="form-group row" id="divid">
                     <div class="col-sm-3">
                         <label for="sourceCard">Amount To be Transfered:</label>
                     </div>
@@ -109,7 +109,7 @@
 
                     </div>
               </div>
-              <div class="form-group row">
+              <div class="form-group row" id="divid">
                 <div class="col-sm-3">
                     
                     <label for="Remarks">Remarks:</label>
@@ -120,20 +120,20 @@
                 
               </div>
               </div>
-              </div>
+             
               <button class="btn btn-primary" [disabled]="divFlag" (click)="Calculate()" Value="Calculate">Calculate</button>
               <br>
               <br>
               <div *ngIf="divFlag">
-                <div class="panel panel-info" >
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Card Transfer Information:</h3>
-                    </div>
+                
+                    
+                        <h3 style="font-size: 20px;color: #4f4f4f;">Card Transfer Information:</h3>
+                    <br>
                     <div class="panel-body">
 
-                        <div class="form-group row">
+                        <div class="form-group row" id="divid">
                             <div class="col-sm-3">
-                                <label for="TranAmt">Amount to be Transfer:</label>
+                                <label for="TranAmt">Amount to be transferred:</label>
                             </div>
                             <div class="col-sm-3">
                                 <input type="text" value="1000"  name="TranAmt"  id="TranAmt" class="form-control">
@@ -153,10 +153,10 @@
                           </div>
           
           
-                          <div class="form-group row">
+                          <div class="form-group row" id="divid">
                               <div class="col-sm-3">
                                   
-                                  <label for="TtlAmtEuro">amount to be debited:</label>
+                                  <label for="TtlAmtEuro">Amount to be debited:</label>
                               </div>
                               <div class="col-sm-3">
                                 <select name="DestCard" id="DestCard" class="form-control">
@@ -175,9 +175,10 @@
 
                     </div>
                     
-                </div>
+                
                 <button class="btn btn-primary" Value="Confirm">Confirm</button>
-                <button class="btn btn-primary" Value="Cannel">Cannel</button>
+                <button class="btn btn-primary" Value="Cannel">Cancel</button>
                 <button class="btn btn-primary" Value="Reset">Reset</button>
               </div>
+              <br>
               </div>

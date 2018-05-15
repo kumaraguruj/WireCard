@@ -18,7 +18,9 @@ font-size: 16px;
 .table table-striped{
     font-size: 13px; Color:#4f4f4f;
 }
-
+#summaryPannel{
+    font-size: 13px; Color:#4f4f4f
+}
 
 
 #tableid tr:nth-child(odd){background-color: #d7d7d7; font-size: 13px;}
