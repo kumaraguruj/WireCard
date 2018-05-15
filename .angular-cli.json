@@ -20,9 +20,17 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        
+        "../src/assets/styles/export.css"
       ],
-      "scripts": [],
+      "scripts": ["../src/assets/scripts/amcharts.js",
+        "../src/assets/scripts/serial.js",
+        "../src/assets/scripts/pie.js",
+        "../src/assets/scripts/export.min.js",
+        "../src/assets/scripts/light.js",
+        "../src/assets/scripts/none.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
