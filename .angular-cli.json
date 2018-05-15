@@ -22,14 +22,14 @@
         "styles.css",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         
-        "../node_modules/styles/export.css"
+        "../src/assets/styles/export.css"
       ],
-      "scripts": ["../node_modules/scripts/amcharts.js",
-        "../node_modules/scripts/serial.js",
-        "../node_modules/scripts/pie.js",
-        "../node_modules/scripts/export.min.js",
-        "../node_modules/scripts/light.js",
-        "../node_modules/scripts/none.js"
+      "scripts": ["../src/assets/scripts/amcharts.js",
+        "../src/assets/scripts/serial.js",
+        "../src/assets/scripts/pie.js",
+        "../src/assets/scripts/export.min.js",
+        "../src/assets/scripts/light.js",
+        "../src/assets/scripts/none.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
