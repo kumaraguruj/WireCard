@@ -43,9 +43,9 @@ export class YearlyReportsComponent implements OnInit {
         "depth3D": 15,
         "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
         "angle": 30,
-        "export": {
-          "enabled": true
-        }
+        // "export": {
+        //   "enabled": true
+        // }
       } );
   }
   ngOnInit() {
