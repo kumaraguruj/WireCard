@@ -204,6 +204,9 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   border-radius: 5px;
   color:#000;
   border-color: #d3d0d3;   
-  border-top-right-radius: opx;
+  border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
+}
+.col-xs-1 {
+  width: 7.9% !important;
 }

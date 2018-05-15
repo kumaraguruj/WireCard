@@ -111,7 +111,7 @@
       color:#000;
       border: 1px solid #1A3E5E;
       border-bottom-color: transparent;
-      }
+    }
   
   .nav-tabs > li > a:hover{
     background-color: #d3d0d3 !important;
@@ -121,7 +121,9 @@
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
   } 
-  
+  .nav-tabs > li > a[class="actiVV"]{
+    color:black;
+  }
   .tab-pane {
       border:solid 1px #1A3E5E;
       border-top: 0; 
