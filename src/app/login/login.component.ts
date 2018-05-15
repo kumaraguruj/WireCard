@@ -13,6 +13,7 @@ export class LoginComponent implements OnInit {
 
   username:string="admin1";
   password:string="admin1";
+  errormessage:string;
 
   constructor( private _router:Router) { }
 
@@ -30,7 +31,11 @@ export class LoginComponent implements OnInit {
 }
 else
 {
-alert('invalid username/password');
+  if(this.username.length>0 && this.password.length>0)
+  this.errormessage="Invalid Username/Password.";
+  else
+  this.errormessage="Enter valid Username/Password.";
+  
 
 }
 
