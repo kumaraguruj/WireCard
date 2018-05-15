@@ -38,6 +38,8 @@ import { ProfileInfoComponent } from './profile-info/profile-info.component';
 import { AccountInfoComponent } from './account-info/account-info.component';
 import { InfoGraghComponent } from './info-gragh/info-gragh.component';
 import { InformationService} from '../app/Common/information.service';
+import { MonthlyAvergageBalanceTopComponent } from './monthly-avergage-balance-top/monthly-avergage-balance-top.component';
+import { ExpensesByCategroyTopComponent } from './expenses-by-categroy-top/expenses-by-categroy-top.component';
 
 
 
@@ -187,7 +189,11 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
     AccountInfoComponent,
     InfoGraghComponent ,
       
-    ProfileInfoComponent ,
+    ProfileInfoComponent,
+      
+    MonthlyAvergageBalanceTopComponent,
+      
+    ExpensesByCategroyTopComponent ,
   
   ],
   imports: [

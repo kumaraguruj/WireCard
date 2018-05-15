@@ -1,21 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { AmChartsService,AmChart } from "@amcharts/amcharts3-angular";
-
- 
-
 @Component({
-  selector: 'app-yearly-reports',
-  templateUrl: './yearly-reports.component.html',
-  styleUrls: ['./yearly-reports.component.css']
+  selector: 'app-expenses-by-categroy-top',
+  templateUrl: './expenses-by-categroy-top.component.html',
+  styleUrls: ['./expenses-by-categroy-top.component.css']
 })
-export class YearlyReportsComponent implements OnInit {
-
+export class ExpensesByCategroyTopComponent implements OnInit {
   private chart: AmChart;
-
   constructor(private  AmCharts:AmChartsService) { }
   ngAfterViewInit() {
     
-    this.chart = this.AmCharts.makeChart( "chartdiv", {
+    this.chart = this.AmCharts.makeChart( "chartdivPie", {
         "type": "pie",
         "theme": "none",
         "dataProvider": [{
@@ -38,18 +33,21 @@ export class YearlyReportsComponent implements OnInit {
             "expenditure": 132
         }],
         "valueField": "expenditure",
-        "titleField": "category",
+        "titleField": "",
         "outlineAlpha": 0.4,
         "depth3D": 15,
-        "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
-        "angle": 30,
-        // "export": {
-        //   "enabled": true
-        // }
+        "graphs": [{
+          
+          
+          "fillColorsField": "color",
+          "fillAlphas": 1,
+          "lineAlpha": 0.1,
+          "type": "pie",
+          "valueField": "expenditure"
+      }],
       } );
   }
   ngOnInit() {
-
   }
   ngOnDestroy() {
     if (this.chart) 

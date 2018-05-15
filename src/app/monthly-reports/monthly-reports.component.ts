@@ -46,7 +46,7 @@ export class MonthlyReportsComponent implements OnInit {
        ],
       "valueAxes": [{
           "position": "left",
-          "title": "Visitors"
+          "title": "Monthly Average Balance"
       }],
       "graphs": [{
           "balloonText": "[[category]]: <b>[[value]]</b>",
@@ -68,9 +68,9 @@ export class MonthlyReportsComponent implements OnInit {
           "gridPosition": "start",
           "labelRotation": 90
       },
-      "export": {
-        "enabled": true
-       }
+    //   "export": {
+    //     "enabled": true
+    //    }
   
   });
   }
