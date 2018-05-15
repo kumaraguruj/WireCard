@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TransactionsComponent implements OnInit {
 
-  constructor() { }
+  showHide1:boolean;
 
-  ngOnInit() {
+  showHide: boolean;
+  constructor() {this.showHide=false,this.showHide1=false; }
+
+    ngOnInit() {
   }
 
 }

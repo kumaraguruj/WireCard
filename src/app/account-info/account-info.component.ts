@@ -10,10 +10,10 @@ import {InformationService } from '../Common/information.service';
 export class AccountInfoComponent implements OnInit {
 
 
-  divFlag1:boolean=InformationService.whichdiv==='admin1'?true:false;
-  divFlag2:boolean=InformationService.whichdiv==='admin2'?true:false;
-  divFlag3:boolean=InformationService.whichdiv==='admin3'?true:false;
-  divFlag4:boolean=InformationService.whichdiv==='admin4'?true:false;
+  divFlag1:boolean=InformationService.whichdiv==='Alice'?true:false;
+  divFlag2:boolean=InformationService.whichdiv==='Bob'?true:false;
+  divFlag3:boolean=InformationService.whichdiv==='Charles'?true:false;
+  divFlag4:boolean=InformationService.whichdiv==='Dalton'?true:false;
   constructor() { 
 
 

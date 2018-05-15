@@ -11,7 +11,7 @@ import { InformationService} from '../Common/information.service';
 })
 export class LoginComponent implements OnInit {
 
-  username:string="admin1";
+  username:string="Alice";
   password:string="admin1";
   errormessage:string;
 
@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
   VerifyUser():void
   {
     // if(this.username==='admin' && this.password==='admin')
-    if((this.username==='admin1' && this.password==='admin1') ||(this.username==='admin2' && this.password==='admin2') ||(this.username==='admin3' && this.password==='admin3') ||(this.username==='admin4' && this.password==='admin4'))
+    if((this.username==='Alice' && this.password==='admin1') ||(this.username==='Bob' && this.password==='admin2') ||(this.username==='Charles' && this.password==='admin3') ||(this.username==='Dalton' && this.password==='admin4'))
 {
         InformationService.whichdiv=this.username;
 
