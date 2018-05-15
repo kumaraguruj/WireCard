@@ -200,8 +200,10 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 
 .tab-content .active { display: block; }
 .actiVV{    
-  background-color:#eeeeee !important;
+  background-color: #eeeeee !important;
   border-radius: 5px;
   color:#000;
   border-color: #d3d0d3;   
+  border-top-right-radius: opx;
+  border-bottom-right-radius: 0px;
 }
