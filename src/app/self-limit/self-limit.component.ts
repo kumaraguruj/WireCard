@@ -15,4 +15,10 @@ export class SelfLimitComponent implements OnInit {
   changeShowStatus(){
     this.showHide = !this.showHide;
   }
+
+  btn_Submit_Click()
+  {
+    alert('Record saved successfully.')
+  }
+  
 }

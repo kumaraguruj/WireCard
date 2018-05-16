@@ -1,7 +1,11 @@
 import { Transaction } from './../Common/transactions';
 import { DataService} from './../Common/data.service';
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { InformationService} from '../Common/information.service'; 
+=======
+import { InformationService} from '../Common/information.service'; 
+>>>>>>> 1ee799e4e8c0541adc56a2105d087f45620d3939
 import { DatePipe } from '@angular/common';
 import {DateformatPipe} from '../date-pipe/date-pipe.component'
 
@@ -24,6 +28,10 @@ export class TransactionsComponent implements OnInit {
    // let dateFormatPipeFilter = new dateFormatPipe();
    // this.newDate = dateFormatPipeFilter.transform(this.currentDate);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1ee799e4e8c0541adc56a2105d087f45620d3939
   Trans: Transaction[];
   fDate : any;
   fromDate : any;
@@ -58,4 +66,8 @@ export class TransactionsComponent implements OnInit {
 
     this.Trans = this.dataService.getAllData(this.userId )
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1ee799e4e8c0541adc56a2105d087f45620d3939
