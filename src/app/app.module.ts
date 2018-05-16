@@ -40,13 +40,10 @@ import { InfoGraghComponent } from './info-gragh/info-gragh.component';
 import { InformationService} from '../app/Common/information.service';
 import { MonthlyAvergageBalanceTopComponent } from './monthly-avergage-balance-top/monthly-avergage-balance-top.component';
 import { ExpensesByCategroyTopComponent } from './expenses-by-categroy-top/expenses-by-categroy-top.component';
-<<<<<<< HEAD
 import { MonthlyExpensesPrepaidCardComponent } from './monthly-expenses-prepaid-card/monthly-expenses-prepaid-card.component';
 import { MonthlyExpensesPrepaidCardTopComponent } from './monthly-expenses-prepaid-card-top/monthly-expenses-prepaid-card-top.component';
-=======
 import { BlockCardComponent } from './block-card/block-card.component';
 
->>>>>>> ad6cd1361f13ab86c10692f09a7241a7cb8db783
 
 
 
@@ -209,16 +206,13 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
       
     ExpensesByCategroyTopComponent,
       
-<<<<<<< HEAD
     MonthlyExpensesPrepaidCardComponent,
       
     MonthlyExpensesPrepaidCardTopComponent ,
   
-=======
     BlockCardComponent,
       
    
->>>>>>> ad6cd1361f13ab86c10692f09a7241a7cb8db783
   ],
   imports: [
     BrowserModule,FormsModule,RouterModule.forRoot(appRoutes),
