@@ -8,9 +8,10 @@ import {InformationService } from '../Common/information.service';
 })
 export class MonthlyExpensesPrepaidCardTopComponent implements OnInit {
   private chart: AmChart;
+  LinksFlag:boolean=false;
   constructor(private  AmCharts:AmChartsService) 
   { 
-    //this.LinksFlag=InformationService.UserType==='CreditUser'?false:true; 
+    this.LinksFlag=InformationService.UserType==='CreditUser'?false:true; 
   }
 
   ngAfterViewInit() {

@@ -11,7 +11,7 @@ export class MonthlyAvergageBalanceTopComponent implements OnInit {
   LinksFlag:boolean=false;
   constructor(private  AmCharts:AmChartsService)
    { 
-    //this.LinksFlag=InformationService.UserType==='CreditUser'?false:true; 
+    this.LinksFlag=InformationService.UserType==='CreditUser'?false:true; 
    }
 
   ngAfterViewInit() {

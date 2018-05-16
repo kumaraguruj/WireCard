@@ -18,7 +18,7 @@ export class MonthlyReportsComponent implements OnInit {
   constructor(private  AmCharts:AmChartsService) 
   {
     
-    //this.LinksFlag=InformationService.UserType==='CreditUser'?false:true;
+    this.LinksFlag=InformationService.UserType==='CreditUser'?false:true;
   }
   ngAfterViewInit() {
      this.chart = this.AmCharts.makeChart("chartdiv", {
