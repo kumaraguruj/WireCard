@@ -54,11 +54,11 @@
                                                
                                                 <a role="tab"  data-toggle="tab" routerLinkActive="actiVV"   [routerLink]="['/Home/Summary']"  >HOME</a>
                                                 </li>      
-                                            <li >
+                                            <li  *ngIf="LinksFlag" >
                                                 <a role="tab" routerLinkActive="actiVV" [routerLink]="['/SelfService/SelfLimit']" data-toggle="tab" >SELF SERVICE</a>
                                                 </li>
-                                            <li >
-                                                <a role="tab" routerLinkActive="actiVV" data-toggle="tab" [routerLink]="['/CardTransfers/WalletTransfers']" >CARD TRANSFER</a>
+                                            <li *ngIf="LinksFlag">
+                                                <a role="tab" routerLinkActive="actiVV" data-toggle="tab" [routerLink]="['/CardTransfers/WalletTransfers']" >MOVE MONEY</a>
                                                 </li>
                                             <li >
                                                 <a role="tab" routerLinkActive="actiVV" data-toggle="tab" [routerLink]="['/Reports/yearlyReports']">REPORTS</a>
