@@ -11,8 +11,8 @@ import { InformationService} from '../Common/information.service';
 })
 export class LoginComponent implements OnInit {
 
-  username:string="Alice";
-  password:string="admin1";
+  username:string="Bob";
+  password:string="admin2";
   errormessage:string;
 
   constructor( private _router:Router) { }
@@ -23,10 +23,12 @@ export class LoginComponent implements OnInit {
   VerifyUser():void
   {
     // if(this.username==='admin' && this.password==='admin')
-    if((this.username==='Alice' && this.password==='admin1') ||(this.username==='Bob' && this.password==='admin2') ||(this.username==='Charles' && this.password==='admin3') ||(this.username==='Dalton' && this.password==='admin4'))
-{
+    // if((this.username==='Alice' && this.password==='admin1') ||(this.username==='Bob' && this.password==='admin2') ||(this.username==='Charles' && this.password==='admin3') ||(this.username==='Dalton' && this.password==='admin4'))
+    if((this.username==='Alice' && this.password==='admin1') ||(this.username==='Bob' && this.password==='admin2') )
+    {
         InformationService.whichdiv=this.username;
-
+        InformationService.UserType=this.username==='Alice'?'CreditUser':'PrepaidUser';
+//alert(InformationService.UserType);
           this._router.navigate(['/Home/Summary']);
 }
 else

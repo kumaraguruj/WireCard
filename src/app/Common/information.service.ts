@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
 export class InformationService {
 
 static whichdiv:string;
+static UserType:string;
 
   constructor() { }
 

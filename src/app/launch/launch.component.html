@@ -64,18 +64,24 @@
 
                                 <div class="col-sm-12" style="height: 28px;">   
                                             <ul class="nav nav-tabs" role="tablist">         
-                                            <li>
+                                            <li routerLinkActive="actiVV" #homeroute="routerLinkActive">
                                                
-                                                <a role="tab"  data-toggle="tab" routerLinkActive="actiVV"   [routerLink]="['/Home/Summary']"  >HOME</a>
-                                                </li>      
-                                            <li >
-                                                <a role="tab" routerLinkActive="actiVV" [routerLink]="['/SelfService/SelfLimit']" data-toggle="tab" >SELF SERVICE</a>
-                                                </li>
-                                            <li >
-                                                <a role="tab" routerLinkActive="actiVV" data-toggle="tab" [routerLink]="['/CardTransfers/WalletTransfers']" >CARD TRANSFER</a>
-                                                </li>
-                                            <li >
-                                                <a role="tab" routerLinkActive="actiVV" data-toggle="tab" [routerLink]="['/Reports/yearlyReports']">REPORTS</a>
+                                                <a role="tab"  data-toggle="tab" [ngClass]="{'actiVV':homeroute.isActive}"   [routerLink]="['/Home/Summary']"  >HOME</a>
+                                                <a role="tab" data-toggle="tab" [routerLink]="['/Home/']" style="display:none;" ></a>
+                                               
+                                             
+                                            </li>      
+                                            <li routerLinkActive="actiVV" #selfroute="routerLinkActive">
+                                                <a role="tab"[ngClass]="{'actiVV':selfroute.isActive}" [routerLink]="['/SelfService/Statement']" data-toggle="tab" >SELF SERVICE</a>
+                                                <a role="tab" data-toggle="tab" [routerLink]="['/SelfService/']" style="display:none;" ></a>
+                                            </li>
+                                            <li *ngIf="LinksFlag" routerLinkActive="actiVV" #cardroute="routerLinkActive">
+                                                <a role="tab" [ngClass]="{'actiVV':cardroute.isActive}" data-toggle="tab" [routerLink]="['/CardTransfers/WalletTransfers']" >MOVE MONEY</a>
+                                                <a role="tab" data-toggle="tab" [routerLink]="['/CardTransfers/']" style="display:none;" ></a>
+                                            </li>
+                                            <li routerLinkActive="actiVV" #reportsroute="routerLinkActive">
+                                                <a role="tab" [ngClass]="{'actiVV':reportsroute.isActive}" data-toggle="tab" [routerLink]="['/Reports/yearlyReports']">REPORTS</a>
+                                                <a role="tab" data-toggle="tab" [routerLink]="['/Reports/']" style="display:none;" ></a>
                                             </li> 
                                             </ul>
                                 <div>
