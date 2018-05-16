@@ -18,19 +18,32 @@
                                 </div>           
                             </div>
 
-                        </div>  
+                        </div> 
+                        <div *ngIf="LinksFlag">
                         <div class="col-sm-4" >
                             <div class="container-fluid" style="background-color: #ffffff;border: solid 1px black; border-radius: 5px; max-width: 450px; padding: 0px">
                                 <div class="row-fluid" style=" border-top-left-radius: 10px; border-top-right-radius: 10px;">
                                         <div class="span3" style="padding-left: 20px;" >
-                                                <span>Monthly Average Balance</span>
+                                                <span>Credit card Average Balance</span>
                                                 <!-- <img src="assets/images/infoGraphic1.png" style="padding: 15px; height: 120px;" >   -->
                                                 <app-monthly-avergage-balance-top id="chartdivBar"></app-monthly-avergage-balance-top> 
                                             </div> 
                                 </div>
                             </div>
-                        </div>  
+                        </div>
                         <div class="col-sm-4" >
+                                <div class="container-fluid" style="background-color: #ffffff;border: solid 1px black; border-radius: 5px; max-width: 450px; padding: 0px">
+                                    <div class="row-fluid" style=" border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                                            <div class="span3" style="padding-left: 20px;" >
+                                                    <span>Monthly Expenses Prepaid Card</span>
+                                                    <!-- <img src="assets/images/infoGraphic1.png" style="padding: 15px; height: 120px;" >   -->
+                                                    <app-monthly-avergage-balance-top id="chartdivBar"></app-monthly-avergage-balance-top> 
+                                                </div> 
+                                    </div>
+                                </div>
+                            </div> 
+                    </div> 
+                            <div class="col-sm-4" >
                             <div class="container-fluid" style="background-color: #ffffff;border: solid 1px black; border-radius: 5px; max-width: 450px; padding: 0px">
                                 <div class="row-fluid" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
                                         <div class="span3" style="padding-left: 20px;" >
@@ -43,7 +56,8 @@
                                             </div> 
                                 </div>
                             </div>
-                        </div>  
+                            
+                        </div> 
                     </div> 
 
                     <div class="row" style="height: 60%; background-color: #574c4a; margin-bottom: 0px; padding-left: 8px;">

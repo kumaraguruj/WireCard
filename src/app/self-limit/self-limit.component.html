@@ -1,226 +1,162 @@
 <div class="container">
-
-<div class=form-group></div>
-
-        <div class="col-xs-6">
-                <h3 style="font-size:20px; color:#4f4f4f">
-                        Expense Rule
-                </h3>
-                <br>
-
-                <div class="row form-group" id="detailsid">
-                        <label class="control-label col-xs-4">
-                                Sudeep</label>
-                </div>
-                <div class="row form-group" id="detailsid">
-                        <label class="control-label col-xs-3">
-                                A/c number: </label>
-                        <div class="col-xs-5">
-                                1003000000000124092
-                        </div>
-                </div>
-                <div class="row form-group" id="detailsid">
-                        <label class="control-label col-xs-3">
-                                Card Status : </label>
-                        <div class="col-xs-5">
-                                Active
-                        </div>
-                </div>
                 
-                <div class="row form-group" id="detailsid">
-                        <div class="container">
-
-                                <div class="panel-group">
-                                        <div class="panel panel-default">
-                                                <div class="panel-heading">
-                                                        <h4 class="panel-title">
-                                                                <div class="col-xs-11" style="font-size:16px; color: #4f4f4f">
-                                                                        The Expense Rules for your card
-                                                                </div>
-                                                                <a data-toggle="collapse" class="glyphicon glyphicon-th-list" style="cursor: pointer;" (click)="showHide = !showHide"></a>
-                                                        </h4>
-
-                                                </div>
-
-                                                <div class="panel-body col-xs-16" *ngIf="showHide">
-                                                        <div class="row form-group">
-                                                                <label class="control-label col-xs-3">
-                                                                        International Use Allowed:</label>
-                                                                <div class="col-xs-5">
-                                                                        <label class="control-label">
-                                                                                No</label>
-                                                                </div>
-                                                        </div>
-                                                        <hr>
-                                                        <div class="row form-group">
-                                                                <label class="control-label col-xs-3">
-                                                                        Cash Access Allowed:</label>
-                                                                <div class="col-xs-5">
-                                                                        <label class="control-label">
-                                                                                Yes</label>
-                                                                </div>
-                                                        </div>
-                                                        <hr>
-                                                        <div class="row form-group">
-                                                                <label class="control-label col-xs-3">
-                                                                        PIN Purchase Allowed:</label>
-                                                                <div class="col-xs-5">
-                                                                        <label class="control-label">
-                                                                                Yes</label>
-                                                                </div>
-                                                        </div>
-                                                        <hr>
-                                                        <div class="row form-group">
-                                                                <label class="control-label col-xs-3">
-                                                                        Single Trans Limit:</label>
-                                                                <div class="col-xs-1">
-                                                                        <label class="form-control">
-                                                                                $1000
-                                                                        </label>
-                                                                </div>
-                                                        </div>
-                                                        <hr>
-                                                        <div class="row form-group">
-
-                                                                <div class="row colx-5">
-
-                                                                        <div class="col-xs-3">
-                                                                                <label class="col-xs-10">
-                                                                                        Daily Trans Amount Limit
-                                                                                </label>
-                                                                        </div>
-                                                                        <div class="col-xs-3">
-                                                                                <label class="col-xs-10">
-                                                                                        Weekly Trans Limit
-                                                                                </label>
-                                                                        </div>
-                                                                        <div class="col-xs-3">
-                                                                                <label class="col-xs-10">
-                                                                                        Monthly Trans Limit
-                                                                                </label>
-                                                                        </div>
-                                                                        <div class="col-xs-3">
-                                                                                <label class="col-xs-10">
-                                                                                        Yrly Trans Limit
-                                                                                </label>
-                                                                        </div>
-                                                                </div>
-                                                        </div>
-                                                        <hr>
-                                                        <div class="row form-group">
-
-                                                                <div class="row colx-5">
-
-                                                                        <div class="col-xs-3">
-                                                                                <label class="col-xs-10">
-                                                                                        Daily Trans Count Amount
-
-                                                                                </label>
-                                                                        </div>
-                                                                        <div class="col-xs-3">
-                                                                                <label class="col-xs-10">
-                                                                                        Weekly Trans Count amount
-
-                                                                                </label>
-                                                                        </div>
-                                                                        <div class="col-xs-3">
-                                                                                <label class="col-xs-10">
-                                                                                        MonthlyTransCountAmount
-                                                                                </label>
-                                                                        </div>
-                                                                        <div class="col-xs-3">
-                                                                                <label class="col-xs-10">
-                                                                                        Yrly Trans Count Amount
-                                                                                </label>
-                                                                        </div>
-                                                                </div>
-                                                        </div>
-
-                                                        <div class="row form-group">
-
-                                                                <div class="col-xs-1">
-                                                                        <label class="form-control">
-                                                                                $
-                                                                        </label>
-                                                                </div>
-                                                                <div class="col-xs-2">
-                                                                        <label class="form-control">
-                                                                                100
-                                                                        </label>
-                                                                </div>
-
-                                                                <div class="col-xs-1">
-                                                                        <label class="form-control">
-                                                                                $
-                                                                        </label>
-                                                                </div>
-                                                                <div class="col-xs-2">
-                                                                        <label class="form-control">
-                                                                                700
-                                                                        </label>
-                                                                </div>
-                                                                <div class="col-xs-1">
-                                                                        <label class="form-control">
-                                                                                $
-                                                                        </label>
-                                                                </div>
-                                                                <div class="col-xs-2">
-                                                                        <label class="form-control">
-                                                                                $2800
-                                                                        </label>
-                                                                </div>
-                                                                <div class="col-xs-1">
-                                                                        <label class="form-control">
-                                                                                $
-                                                                        </label>
-                                                                </div>
-                                                                <div class="col-xs-2">
-                                                                        <label class="form-control">
-                                                                                $33,600
-                                                                        </label>
-                                                                </div>
-
-                                                        </div>
-                                                        <hr>
-                                                        <div class="row form-group">
-
-                                                                <div class="row colx-5">
-                                                                        <div class="col-xs-2">
-                                                                                <label class="col-xs-10">
-                                                                                        Mercahnt Categories
-                                                                                </label>
-                                                                        </div>
-                                                                        <div class="col-xs-2">
-                                                                                <label class="col-xs-10">
-                                                                                        Daily Trans Count Amount
-
-                                                                                </label>
-                                                                        </div>
-                                                                        <div class="col-xs-2">
-                                                                                <label class="col-xs-10">
-                                                                                        Weekly Trans Count amount
-
-                                                                                </label>
-                                                                        </div>
-                                                                        <div class="col-xs-2">
-                                                                                <label class="col-xs-10">
-                                                                                        MonthlyTransCountAmount
-                                                                                </label>
-                                                                        </div>
-                                                                        <div class="col-xs-2">
-                                                                                <label class="col-xs-10">
-                                                                                        Yrly Trans Count Amount
-                                                                                </label>
-                                                                        </div>
-
-                                                                </div>
-                                                        </div>
-                                                        <hr>
-                                                </div>
-
-                                        </div>
-                                </div>
-                        </div>
+                    
+        <h3 style="font-size: 20px;color: #4f4f4f;">Card Limit</h3>
+    
+   <br>
+<div class="panel-body">
+                <div class="form-group row" id="divid">
+                   <div class="col-sm-2">
+                      <label for="sourceCard">Card:</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <select name="sourceCard" id="sourceCard" class="form-control">
+                        <option value="4448-88XX-XXXX-5500">4448-88XX-XXXX-1242</option>
+                        <option value="4448-88XX-XXXX-4352">4448-88XX-XXXX-3452</option>
+                        <!-- <option value="4448-88XX-XXXX-8743">4448-88XX-XXXX-35453</option> -->
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                    <button class="btn btn-primary" Value="View" (click)="showHide = !showHide">View</button>       
                 </div>
+                 </div>
+                 <br>
+                 <div *ngIf="showHide">
+                <div class="form-group row" id="divid">
+                                <div class="col-sm-2">
+                                    <label for="sourceCard">Name:</label>
+                                </div>
+                                <div class="col-sm-3">
+                                  Sudeep
+                                </div>
+                              
+            
+                 </div>
+                 <div class="form-group row" id="divid">
+                                <div class="col-sm-2">
+                                    <label for="sourceCard">A/C Number:</label>
+                                </div>
+                                <div class="col-sm-3">
+                                  1003000000000124092
+                                </div>
+                              
+            
+                 </div>
+                
+                 <div class="form-group row" id="divid">
+                                <div class="col-sm-2">
+                                    <label for="sourceCard">Card Status:</label>
+                                </div>
+                                <div class="col-sm-3">
+                                  Active
+                                </div>
+                              
+            
+                 </div>
+                </div>
+</div>
+</div>
+<div class="container">
+<div class="form-row group">
+    <div class="panel-group">
+        <div class="panel panel-default">
+           <div class="panel-heading" style="height: 30px;">
+                <div class=col-sm-4>
+                  <a data-toggle="collapse" class="glyphicon glyphicon-th-list" style="cursor: pointer;" (click)="showHidePanel = !showHidePanel"></a>
+                   Set Expenses Rules
+                </div>
+           </div>
+           <div class="panel-body col-sm-16" *ngIf="showHidePanel" >
+                        <div class="form-group row" id="divid">
+                                        <div class="col-sm-3">
+                                            <label for="sourceCard">International Use Allowed:</label>
+                                        </div>
+                                        <div class="col-sm-2">
+                                                <input class="form-check-input" name="InternationalUse" type="radio" id="radioInternationalYes"  value="Yes" checked='checked' >
+                                                <label class="form-check-label" for="radioInternationalYes" style="font-size:12px; color:#4f4f4f">Yes</label>
+                                        </div>
+                                        <div class="col-sm-2">
+                                                <input class="form-check-input" name="InternationalUse" type="radio" id="radioInternationalNo"  value="No">
+                                                <label class="form-check-label" for="radioInternationalNo" style="font-size:12px; color:#4f4f4f">No</label>
+                                        </div>
+                    
+                         </div>
+                         <div class="form-group row" id="divid">
+                                <div class="col-sm-3">
+                                    <label for="sourceCard">Cash Access Allowed:</label>
+                                </div>
+                                <div class="col-sm-2">
+                                        <input class="form-check-input" name="CashAccess" type="radio" id="radioCashAccessYes"  value="Yes" checked='checked' >
+                                        <label class="form-check-label" for="radioCashAccessYes" style="font-size:12px; color:#4f4f4f">Yes</label>
+                                </div>
+                                <div class="col-sm-2">
+                                        <input class="form-check-input" name="CashAccess" type="radio" id="radioCashAccessNo"  value="No">
+                                        <label class="form-check-label" for="radioCashAccessNo" style="font-size:12px; color:#4f4f4f">No</label>
+                                </div>
+            
+                        </div>
+                        <div class="form-group row" id="divid">
+                                <div class="col-sm-3">
+                                    <label for="sourceCard">PIN Purchase Allowed:</label>
+                                </div>
+                                <div class="col-sm-2">
+                                        <input class="form-check-input" name="PinPurchase" type="radio" id="radioPinPurchaseYes"  value="Yes" checked='checked' >
+                                        <label class="form-check-label" for="radioPinPurchaseYes" style="font-size:12px; color:#4f4f4f">Yes</label>
+                                </div>
+                                <div class="col-sm-2">
+                                        <input class="form-check-input" name="PinPurchase" type="radio" id="radioPinPurchaseNo"  value="No">
+                                        <label class="form-check-label" for="radioPinPurchaseNo" style="font-size:12px; color:#4f4f4f">No</label>
+                                </div>
+            
+                        </div>
+                        <div class="form-group row" id="divid">
+                                <div class="col-sm-3">
+                                    <label for="sourceCard">Single Trans Limit:</label>
+                                </div>
+                                <div class="col-sm-2">
+                                        <input class="form-check-input" name="SingleTrans" type="radio" id="radioSingleTransYes"  value="Yes" checked='checked' >
+                                        <label class="form-check-label" for="radioSingleTransYes" style="font-size:12px; color:#4f4f4f">Yes</label>
+                                </div>
+                                <div class="col-sm-2">
+                                        <input class="form-check-input" name="SingleTrans" type="radio" id="radioSingleTransNo"  value="No">
+                                        <label class="form-check-label" for="radioSingleTransNo" style="font-size:12px; color:#4f4f4f">No</label>
+                                </div>
+            
+                        </div> 
+                        <div class="form-group row" id="divid">
+                                        <div class="col-sm-3">
+                                            <label class="form-label" >Daily Transaction Limit:</label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                             <label class="form-label" >Weekly Transaction Limit:</label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                                        <label class="form-label" >Monthly Transaction Limit:</label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                                        <label class="form-label" >Yearly Transaction Limit:</label>
+                                        </div>
+                         </div>
+                         
+                               
+                                <div class="form-group row" id="divid">
+                                        <div class="col-sm-1">
+                                                       
+                                            <label class="form-label" for="inpuTransCount">TransCount</label>
+                                            <input type="text" id="inpuTransCount" class="form-control" />  
+                                        </div>
+                                        <div class="col-sm-2">
+                                                       
+                                                        <label class="form-label" for="inpuTransAmount">Trans Amount</label>
+                                                        <input type="text" id="inpuTransAmount" class="form-control" />
+                                         </div>
+                                        
+                                        
+                    
+                                </div>  
+                                  
+           </div>
         </div>
+     </div>
+</div>
 </div>

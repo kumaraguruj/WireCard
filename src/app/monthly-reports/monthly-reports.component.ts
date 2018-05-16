@@ -1,6 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { AmChartsService,AmChart } from "@amcharts/amcharts3-angular";
+import {InformationService } from '../Common/information.service';
 
 
 // import AmCharts from '../../../typings/globals/AmCharts';
@@ -13,9 +14,11 @@ import { AmChartsService,AmChart } from "@amcharts/amcharts3-angular";
 })
 export class MonthlyReportsComponent implements OnInit {
   private chart: AmChart;
-  constructor(private  AmCharts:AmChartsService) {
+  LinksFlag:boolean=false;
+  constructor(private  AmCharts:AmChartsService) 
+  {
     
-    
+    //this.LinksFlag=InformationService.UserType==='CreditUser'?false:true;
   }
   ngAfterViewInit() {
      this.chart = this.AmCharts.makeChart("chartdiv", {

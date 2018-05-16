@@ -11,10 +11,16 @@
             <img src="assets/images/Yearly.png" style="height:auto;width: 70%;"  alt="Expenses By Category" title="Expenses By Category">
             <div style="font-size:9px; margin-top:3px">Expenses By Category</div>
         </a></li>
+        <div *ngIf="LinksFlag">
     <li style="text-align: center"><a routerLinkActive="actiVV"  [routerLink]="['/Reports/monthlyReports']"  data-toggle="tab">
             <img src="assets/images/Monthly.png" style="height:auto;width: 70%;"  alt="Monthly Avg Balance" title="Monthly Avg Balance">
             <div style="font-size:9px; margin-top:3px">Monthly Avg Balance</div>
         </a></li>
+        <li style="text-align: center"><a routerLinkActive="actiVV"  [routerLink]="['/Reports/monthlyExpensesReports']"  data-toggle="tab">
+            <img src="assets/images/Monthly.png" style="height:auto;width: 70%;"  alt="Monthly Expenses Prepaid Card" title="Monthly Expenses Prepaid Card">
+            <div style="font-size:9px; margin-top:3px">Monthly Avg Balance</div>
+        </a></li>
+    </div>
        
   </ul>
 

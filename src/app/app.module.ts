@@ -40,6 +40,8 @@ import { InfoGraghComponent } from './info-gragh/info-gragh.component';
 import { InformationService} from '../app/Common/information.service';
 import { MonthlyAvergageBalanceTopComponent } from './monthly-avergage-balance-top/monthly-avergage-balance-top.component';
 import { ExpensesByCategroyTopComponent } from './expenses-by-categroy-top/expenses-by-categroy-top.component';
+import { MonthlyExpensesPrepaidCardComponent } from './monthly-expenses-prepaid-card/monthly-expenses-prepaid-card.component';
+import { MonthlyExpensesPrepaidCardTopComponent } from './monthly-expenses-prepaid-card-top/monthly-expenses-prepaid-card-top.component';
 
 
 
@@ -62,6 +64,9 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
   [
     {
       path: 'yearlyReports', component: YearlyReportsComponent
+    },
+    {
+      path: 'monthlyExpensesReports', component: YearlyReportsComponent
     },
     {
       path: 'monthlyReports', component: MonthlyReportsComponent
@@ -193,7 +198,11 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
       
     MonthlyAvergageBalanceTopComponent,
       
-    ExpensesByCategroyTopComponent ,
+    ExpensesByCategroyTopComponent,
+      
+    MonthlyExpensesPrepaidCardComponent,
+      
+    MonthlyExpensesPrepaidCardTopComponent ,
   
   ],
   imports: [
