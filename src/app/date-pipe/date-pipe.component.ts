@@ -12,5 +12,11 @@ export class DateformatPipe implements PipeTransform {
       value = datePipe.transform(value, 'dd-MM-yyyy');
       return value;
   }
-
-}
+  }
+  export class MonthformatPipe implements PipeTransform {    
+    transform(value: string) {
+       var datePipe = new DatePipe("en-US");
+        value = datePipe.transform(value, 'MMM');
+        return value;
+    }
+  }
