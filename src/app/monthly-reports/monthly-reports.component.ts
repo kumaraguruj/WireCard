@@ -49,7 +49,7 @@ export class MonthlyReportsComponent implements OnInit {
        ],
       "valueAxes": [{
           "position": "left",
-          "title": "Monthly Average Balance"
+          "title": "Credit Card  Average Balance"
       }],
       "graphs": [{
           "balloonText": "[[category]]: <b>[[value]]</b>",

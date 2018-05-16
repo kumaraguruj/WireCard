@@ -68,7 +68,7 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
       path: 'yearlyReports', component: YearlyReportsComponent
     },
     {
-      path: 'monthlyExpensesReports', component: YearlyReportsComponent
+      path: 'monthlyExpensesReports', component: MonthlyExpensesPrepaidCardComponent
     },
     {
       path: 'monthlyReports', component: MonthlyReportsComponent
