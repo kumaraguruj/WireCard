@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {InformationService } from '../Common/information.service';
+import { Router} from '@angular/router';
+
 
 
 
@@ -18,7 +20,7 @@ export class AccountInfoComponent implements OnInit {
   // divFlag4:boolean=InformationService.whichdiv==='Dalton'?true:false;
 
 
-  constructor() { 
+  constructor(private _route:Router) { 
    
   
  }
@@ -26,7 +28,10 @@ export class AccountInfoComponent implements OnInit {
   ngOnInit() {
   
   }
-
+  signout()
+  {
+    this._route.navigate(['/login']);
+  }
   
   
 
