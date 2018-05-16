@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {InformationService } from '../Common/information.service';
 
 @Component({
   selector: 'app-self-service',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelfServiceComponent implements OnInit {
 
-  constructor() { }
+  LinksFlag:boolean=false;
+  constructor() {
+
+    this.LinksFlag=InformationService.UserType==='CreditUser'?false:true;
+   }
 
   ngOnInit() {
   }
