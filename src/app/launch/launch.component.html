@@ -1,3 +1,8 @@
+<head>
+     
+    </head>
+    
+
 <div class="container-fluid">
         <div class="row">
                 <div style="background-color: #000d16" class="col-sm-12">    
@@ -27,27 +32,27 @@
                         <nav class="navbar navbar-inverse">
                                 <div class="container-fluid">
                                   <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                    <button type="button" class="navbar-toggle"  data-toggle="collapse" data-target="#myNavbar">
                                       <span class="icon-bar"></span>
                                       <span class="icon-bar"></span>
                                       <span class="icon-bar"></span>                        
                                     </button>
                                   
                                   </div>
-                                  <div class="collapse navbar-collapse" id="myNavbar">
+                                  <div class="collapse navbar-collapse" id="myNavbar" >
                                         <ul class="nav nav-tabs" role="tablist">         
-                                                <li>
+                                                <li style="width: 100%;">
                                                    
-                                                    <a role="tab"  data-toggle="tab" routerLinkActive="actiVV"   [routerLink]="['/Home/Summary']"  >HOME</a>
+                                                    <a role="tab"  data-toggle="tab"    [routerLink]="['/Home/Summary']"  >HOME</a>
                                                     </li>      
-                                                <li >
-                                                    <a role="tab" routerLinkActive="actiVV" [routerLink]="['/SelfService/SelfLimit']" data-toggle="tab" >SELF SERVICE</a>
+                                                <li style="width: 100%;">
+                                                    <a role="tab"  [routerLink]="['/SelfService/SelfLimit']" data-toggle="tab" >SELF SERVICE</a>
                                                     </li>
-                                                <li >
-                                                    <a role="tab" routerLinkActive="actiVV" data-toggle="tab" [routerLink]="['/CardTransfers/WalletTransfers']" >CARD TRANSFER</a>
+                                                <li *ngIf="LinksFlag" style="width: 100%;">
+                                                    <a role="tab"  data-toggle="tab" [routerLink]="['/CardTransfers/WalletTransfers']" >MOVE MONEY</a>
                                                     </li>
-                                                <li >
-                                                    <a role="tab" routerLinkActive="actiVV" data-toggle="tab" [routerLink]="['/Reports/yearlyReports']">REPORTS</a>
+                                                <li style="width: 100%;">
+                                                    <a role="tab"  data-toggle="tab" [routerLink]="['/Reports/yearlyReports']">REPORTS</a>
                                                 </li> 
                                                 </ul>
                                   </div>

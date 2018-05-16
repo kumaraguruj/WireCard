@@ -100,7 +100,7 @@
   
   .nav-tabs > li a { 
       /* border: 1px solid #1A3E5E; */
-      background-color:#574c4a;
+      /* background-color:#574c4a; */
      color:#fff; 
       }
   
@@ -169,4 +169,10 @@
     }
   }
   
-  
+  .actiVV123{    
+    border-radius: 5px;
+    color:#000;
+    border-color: #d3d0d3;   
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
