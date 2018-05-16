@@ -5,7 +5,7 @@
     <br>
        
     
-    <h3 style="font-size: 16px;columns: #4f4f4f;">Alice</h3>
+    <label style="font-size: 16px;columns: #4f4f4f;">Alice</label>
     
     <br>
     
@@ -22,7 +22,7 @@
     
     <div class="col-sm-3">
     
-    <input id="date" type="date" [(ngModel)]="fDate">
+    <input id="date" type="date" [(ngModel)]="fDate" class="form-control">
     
     </div>
 
@@ -35,7 +35,7 @@
     
     <div class="col-sm-3">
     
-    <input id="date" type="date" [(ngModel)]="tDate">
+    <input id="date" type="date" [(ngModel)]="tDate" class="form-control">
     
     </div>
     
@@ -78,13 +78,14 @@
     
     <div class="form-group row">
     
-    <button type="button" (click)="search()">Submit</button>
+    <button type="button" class="btn btn-primary" (click)="search()">Submit</button>
     
     </div>
-    <div   *ngIf="showHide">
-    <table   class="table table-striped table-bordered" id="tableid" >
-        
-            <tr id="header" style="background-color: #8b8b8b; font-size: 16px;">
+    <div *ngIf="showHide">
+        <table class="table table-striped table-bordered" id="tableid">
+        <thead>
+            <tr id="header" style="background-color: #8b8b8b; font-size: 16px; color: white;">
+                
                 <th>Date
                 </th>
                 <th>Trans Reference Number
@@ -104,7 +105,7 @@
 
                 </th>
             </tr>
-       
+        </thead>
         <tbody *ngFor ="let trans of Trans">
             <tr>
                 <td>             
@@ -127,6 +128,7 @@
                 </td>
 
               </tr>
+            
         </tbody>
       </table>
     </div>
