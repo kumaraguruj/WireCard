@@ -13,6 +13,8 @@ import {DateformatPipe} from '../date-pipe/date-pipe.component'
 })
 export class TransactionsComponent implements OnInit {
 
+  LinksFlag:boolean=false;
+
   showHide1:boolean;
 
   showHide: boolean;
@@ -35,6 +37,8 @@ export class TransactionsComponent implements OnInit {
   )
  {this.showHide=false,this.showHide1=false
   //this.loadAllData();
+
+  this.LinksFlag=InformationService.UserType==='CreditUser'?false:true;
 }; 
 
     ngOnInit() {
