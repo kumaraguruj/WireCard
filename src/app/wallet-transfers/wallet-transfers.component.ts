@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-wallet-transfers',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WalletTransfersComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router:Router) { }
 
   ngOnInit() {
+  }
+  clickMethod() {
+    if(confirm("Amount transferred")) {
+      window.location.reload();
+    }
+  }
+  CancelMethod(){
+    this._router.navigate(['Home/Summary']);
   }
 
   divFlag:boolean=false;

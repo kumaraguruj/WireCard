@@ -85,7 +85,7 @@ Sudeep
 
                   <div class="form-group row" id="divid">
                     <div class="col-sm-3" id="cssid">
-                        <label for="sourceCard">Amount To be Transfered:</label>
+                        <label for="sourceCard">Amount To be Transferred:</label>
                     </div>
                     <div class="col-sm-3">
                         <input class="form-control"  value="1000" type="text" id="AmtTranfed" name="AmtTranfed">
@@ -151,7 +151,15 @@ Sudeep
         
                             </div>
                           </div>
-          
+          <div class="form-group row" id="divid">
+              <div class="col-sm-4" id="cssid">
+                  <label>Exchange Rate:</label>
+              </div>
+              <div class="col-sm-4" id="cssid">
+                <input type="text" value="1000"  name="TranAmt"  id="TranAmt" class="form-control" readonly>
+                  
+              </div>
+          </div>
           
                           <div class="form-group row" id="divid">
                               <div class="col-sm-3" id="cssid">
@@ -176,8 +184,8 @@ Sudeep
                     </div>
                     
                 
-                <button class="btn btn-primary" Value="Confirm">Confirm</button>
-                <button class="btn btn-primary" Value="Cannel">Cancel</button>
+                <button class="btn btn-primary" Value="Confirm" (click)="clickMethod()">Confirm</button>
+                <button class="btn btn-primary" Value="Cannel" (click)="CancelMethod()">Cancel</button>
                 <button class="btn btn-primary" Value="Reset">Reset</button>
               </div>
               <br>
