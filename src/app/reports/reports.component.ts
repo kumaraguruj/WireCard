@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {InformationService } from '../Common/information.service';
 
 @Component({
   selector: 'app-reports',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reports.component.css']
 })
 export class ReportsComponent implements OnInit {
+  LinksFlag:boolean=false;
+  constructor() {
+    this.LinksFlag=InformationService.UserType==='CreditUser'?false:true;
 
-  constructor() { }
+   }
 
   ngOnInit() {
   }

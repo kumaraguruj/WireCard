@@ -8,24 +8,24 @@
 <ul class="nav nav-tabs">
     <!-- <li class="active"><a href="#home" data-toggle="tab"><span class="glyphicon glyphicon-heart"></span></a></li> -->
     <li style="text-align: center"><a   [routerLink]="['/Reports/yearlyReports']" routerLinkActive="actiVV"  data-toggle="tab">
-            <img src="assets/images/Yearly.png" style="height:auto;width: 70%;"  alt="Expenses By Category" title="Expenses By Category">
-            <div style="font-size:9px; margin-top:3px">Expenses By Category</div>
+            <img src="assets/images/expenditureByCategory.png"   alt="Expenses By Category" title="Expenses By Category">
+            <div style="font-size:9px; margin-top:3px" class="linkColor" >Expenses By Category</div>
         </a></li>
         
     <li *ngIf="!LinksFlag" style="text-align: center"><a routerLinkActive="actiVV"  [routerLink]="['/Reports/monthlyReports']"  data-toggle="tab">
-            <img src="assets/images/Monthly.png" style="height:auto;width: 70%;"  alt="Monthly Avg Balance" title="Monthly Avg Balance">
-            <div style="font-size:9px; margin-top:3px">Monthly Avg Balance</div>
+            <img src="assets/images/monthlyExpenditure.png"   alt="Credit Card Avg Balance" title="Monthly Avg Balance">
+            <div style="font-size:9px; margin-top:3px" class="linkColor" >Credit Card Avg Balance</div>
         </a></li>
         <li *ngIf="LinksFlag" style="text-align: center"><a routerLinkActive="actiVV"  [routerLink]="['/Reports/monthlyExpensesReports']"  data-toggle="tab">
-            <img src="assets/images/Monthly.png" style="height:auto;width: 70%;"  alt="Monthly Expenses Prepaid Card" title="Monthly Expenses Prepaid Card">
-            <div style="font-size:9px; margin-top:3px">Monthly Avg Balance</div>
+            <img src="assets/images/monthlyExpenditure.png"   alt="Monthly Expenses Prepaid Card" title="Monthly Expenses Prepaid Card">
+            <div style="font-size:9px; margin-top:3px" class="linkColor" >Monthly Expenses Prepaid Card</div>
         </a></li>
  
        
   </ul>
 
 </div> 
-<div class="col-sm-11" style="Background-color:#eeeeee;">
+<div class="col-sm-11" style="Background-color:#eeeeee; min-height: 400px;">
         <div>
            <router-outlet></router-outlet>   
         </div>           

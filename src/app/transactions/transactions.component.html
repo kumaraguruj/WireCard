@@ -1,118 +1,277 @@
 <div class="container">
-  <h3 style="font-size: 20px; color:#4f4f4f;">Transactions</h3>
-  <br>
 
-<h3 style="font-size: 16px;columns: #4f4f4f;">Alice</h3>
-<br>
-<br>
-
-<div class="form-group row">
-  <div class="col-sm-3">
+    <h3 style="font-size: 20px; color:#4f4f4f;">Transactions</h3>
+    
+    <br>
+       
+    
+    <h3 style="font-size: 16px;columns: #4f4f4f;">Alice</h3>
+    
+    <br>
+    
+    <br>
+       
+    
+    <div class="form-group row">
+    
+    <div class="col-sm-3">
+    
     <label>From Date*:</label>
-  </div>
-  <div class="col-sm-3">
-      <input id="date" type="date">
-  </div>
-
-  <div class="col-sm-3">
-    <label>To Date*:</label>
-  </div>
-  <div class="col-sm-3">
-      <input id="date" type="date">
-  </div>
-</div>
-
-
-<div class="form-group row">
-    <div class="col-sm-3">
-      <label>Transaction Type:</label>
+    
     </div>
+    
     <div class="col-sm-3">
-        <input type="text">
+    
+    <input id="date" type="date" [(ngModel)]="fDate">
+    
     </div>
-  
-    <div class="col-sm-3">
-      <label>Card:</label>
-    </div>
-    <div class="col-sm-3">
-        <input type="text">
-    </div>
-  </div>
-  <div class="form-group row">
-    <button type="button" (click)="showHide = !showHide">Submit</button>
-  </div>
-<br>
-<br>
-<div *ngIf="showHide">
-<div class="form-row group" style="font-size: 13px;columns: #4f4f4f;">
-  <div class="col-sm-4">
-    Transaction Date
-  </div>
-  <div class="col-sm-4">
-    Description
-  </div>
-  <div class="col-sm-4">
-    Amount
-  </div>
-</div>
-  
-<br>
 
-<div class="container">
-<div class="form-row group">
-<div class="panel-group">
-    <div class="panel panel-default">
-        <div class="panel-heading" style="height: 30px;">
-          <div class=col-sm-4>
-              <a data-toggle="collapse" class="glyphicon glyphicon-th-list" style="cursor: pointer;" (click)="showHide1 = !showHide1"></a>
-            05/02/2018 01:24:02 AM
-          </div>
-          <div class="col-sm-4">
-            Transfer From: Singapore Dollar
-          </div>
-          <div class="col-sm-4">
-            USD 147
-          </div>
         
+    <div class="col-sm-3">
+    
+    <label>To Date*:</label>
+    
+    </div>
+    
+    <div class="col-sm-3">
+    
+    <input id="date" type="date" [(ngModel)]="tDate">
+    
+    </div>
+    
+    </div>
+        
+    <div class="form-group row">
+    
+    <div class="col-sm-3">
+    
+    <label>Transaction Type:</label>
+    
+    </div>
+ 
+    <div class="col-sm-3">
+        <select name="TransactionType" id="TransactionType" class="form-control" [(ngModel)]="type">
+          <option value="Both">Both</option>
+          <option value="Debit">Debit</option>
+          <option value="Credit">Credit</option>
           
-</div>
-<div class="panel-body col-sm-16" *ngIf="showHide1">
+          </select>
+       </div>
+    
+    <div class="col-sm-3">
+    
+    <label>Card:</label>
+    
+    </div>
+    
+    <div class="col-sm-3">
+        <select name="sourceCard" id="sourceCard" class="form-control" [(ngModel)]="cardNo" >
+            <option value="All">All</option>
+          <option value="4448-88XX-XXXX-5500">4448-88XX-XXXX-5500</option>
+          <option value="4448-88XX-XXXX-5518">4448-88XX-XXXX-5518</option>
+          <option value="4448-88XX-XXXX-8743">4448-88XX-XXXX-8743</option>
+          </select>
+       </div>
+    
+    </div>
+
+    
+    <div class="form-group row">
+    
+    <button type="button" (click)="search()">Submit</button>
+    
+    </div>
+    <div   *ngIf="showHide">
+    <table   class="table table-striped table-bordered" id="tableid" >
+        
+            <tr id="header" style="background-color: #8b8b8b; font-size: 16px;">
+                <th>Date
+                </th>
+                <th>Trans Reference Number
+
+                  </th>
+                <th>Description
+
+                </th>
+                
+                <th>Card No
+
+                </th>
+                <th>Debit
+
+                </th>
+                <th>Credit
+
+                </th>
+            </tr>
+       
+        <tbody *ngFor ="let trans of Trans">
+            <tr>
+                <td>             
+                    {{trans.Date}}
+                </td>
+                <td>             
+                    {{trans.TXnID}}
+                </td>
+                <td>             
+                    {{trans.Description}}
+                </td>
+                <td>             
+                    {{trans.Cardno}}
+                </td>
+                <td>             
+                    {{trans.DAmount}}
+                </td>
+                <td>             
+                    {{trans.Camount}}
+                </td>
+
+              </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- <table *ngFor ="let trans of Trans" border="1" class="table table-striped table-bordered" id="tableid" >
+       
+      </table>
+    
+    <br>
+    
+    <br>
+    
+    <div *ngIf="showHide">
+    
+    <div class="form-row group" style="font-size: 13px;columns: #4f4f4f;">
+    
+    <div class="col-sm-4">
+    
+    Transaction Date
+    
+    </div>
+    
+    <div class="col-sm-4">
+    
+    Description
+    
+    </div>
+    
+    <div class="col-sm-4">
+    
+    Amount
+    
+    </div>
+    
+    </div>
+    
+    
+    <br>
+    
+    
+    
+    <div class="container">
+    
+    <div class="form-row group">
+    
+    <div class="panel-group">
+    
+    <div class="panel panel-default">
+    
+    <div class="panel-heading" style="height: 30px;">
+      
+    <div class=col-sm-4 >
+ 
+    <a data-toggle="collapse" class="glyphicon glyphicon-th-list" style="cursor: pointer;" (click)="showHide1 = !showHide1"  ></a>
+    
+    
+    </div>
+    
+    <div class="col-sm-4">
+    
+    Transfer From: Singapore Dollar
+    
+    </div>
+    
+    <div class="col-sm-4">
+    
+    USD 147
+    
+    </div>
+    
+    
+    
+   
+  </div>
+    <div class="panel-body col-sm-16" *ngIf="showHide1">
+    
     <div class="row form-group">
-      <div class="col-sm-4">
-            <label>
-
-                    Transaction Reference Number:</label>
-                    </div>
-      <div class="col-sm-4">
-        25420586
-      </div>
-</div>
-
-<div class="row form-group">
-  <div class="col-sm-3">
+    
+    <div class="col-sm-4">
+    
+    <label>
+    
+    
+    
+    Transaction Reference Number:</label>
+    
+    </div>
+    
+    <div class="col-sm-4">
+    
+    25420586
+    
+    </div>
+    
+    </div>
+    
+    
+    
+    <div class="row form-group">
+    
+    <div class="col-sm-3">
+    
     <label>Card Number:</label>
-  </div>
-  <div class="col-sm-3">
+    
+    </div>
+    
+    <div class="col-sm-3">
+    
     4448-88XX-XXXX-5500
-  </div>
-  <div class="col-sm-3">
+    
+    </div>
+    
+    <div class="col-sm-3">
+    
     <label>Proxy Number:</label>
-  </div>
-  <div class="col-sm-3">
+    
+    </div>
+    
+    <div class="col-sm-3">
+    
     44204
-  </div>
-</div>
-
-<div class="row form-group">
-  <div class="col-sm-4">
+    
+    </div>
+    
+    </div>
+    
+    
+    
+    <div class="row form-group">
+    
+    <div class="col-sm-4">
+    
     <label>Merchant Name & Location:</label>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    </div>
+    
+    </div> -->
+  
     

@@ -100,7 +100,7 @@
   
   .nav-tabs > li a { 
       /* border: 1px solid #1A3E5E; */
-      background-color:#574c4a;
+      /* background-color:#574c4a; */
      color:#fff; 
       }
   
@@ -158,6 +158,21 @@
     padding-right: 100px;
   }
 
-
+  @media screen and (max-width: 600px) {
+    .desktopheader{
+      display:none;
+    }
+  }
+  @media screen and (min-width: 400px) {
+    .mobileheader{
+      display:none;
+    }
+  }
   
-  
+  .actiVV123{    
+    border-radius: 5px;
+    color:#000;
+    border-color: #d3d0d3;   
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
