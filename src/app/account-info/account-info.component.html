@@ -1,7 +1,10 @@
 
 <div class="span3">
   <div class="row">
-   <div class="col-sm-4"><img src="assets/images/myAccountIcon.png" style="padding: 15px;" ></div>
+   <div class="col-sm-4">
+     <img src="assets/images/myAccountIcon.png" style="padding: 5px 5px 4px 10px;" >
+     <span (click)="signout()" class='logoutstyle'><a style="text-decoration:none;color:#0a0058;">Logout</a></span>
+  </div>
    <div class="col-sm-8">
       <div style="padding-top: 16px;" *ngIf="divFlag1">
          <span style="Font: Myriad Pro; color:#000000;Font-size:12px;"><b>Alice</b></span> <br>

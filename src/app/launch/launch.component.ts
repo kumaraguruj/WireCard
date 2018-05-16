@@ -26,6 +26,9 @@ export class LaunchComponent implements OnInit {
     this.tab = pagename;
   }
 
-
+  test()
+  {
+    alert("ok");
+  }
  
 }

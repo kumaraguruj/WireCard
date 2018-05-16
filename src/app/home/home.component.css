@@ -210,3 +210,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 .col-xs-1 {
   width: 7.9% !important;
 }
+
+.linkColor
+{
+  color: black;
+}

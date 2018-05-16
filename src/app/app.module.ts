@@ -40,7 +40,10 @@ import { InfoGraghComponent } from './info-gragh/info-gragh.component';
 import { InformationService} from '../app/Common/information.service';
 import { MonthlyAvergageBalanceTopComponent } from './monthly-avergage-balance-top/monthly-avergage-balance-top.component';
 import { ExpensesByCategroyTopComponent } from './expenses-by-categroy-top/expenses-by-categroy-top.component';
+import { MonthlyExpensesPrepaidCardComponent } from './monthly-expenses-prepaid-card/monthly-expenses-prepaid-card.component';
+import { MonthlyExpensesPrepaidCardTopComponent } from './monthly-expenses-prepaid-card-top/monthly-expenses-prepaid-card-top.component';
 import { BlockCardComponent } from './block-card/block-card.component';
+import { DataService } from './Common/data.service';
 
 
 
@@ -64,6 +67,9 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
   [
     {
       path: 'yearlyReports', component: YearlyReportsComponent
+    },
+    {
+      path: 'monthlyExpensesReports', component: MonthlyExpensesPrepaidCardComponent
     },
     {
       path: 'monthlyReports', component: MonthlyReportsComponent
@@ -201,15 +207,17 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
       
     ExpensesByCategroyTopComponent,
       
-    BlockCardComponent,
+    MonthlyExpensesPrepaidCardComponent,
       
-   
+    MonthlyExpensesPrepaidCardTopComponent ,
+  
+    BlockCardComponent,
   ],
   imports: [
     BrowserModule,FormsModule,RouterModule.forRoot(appRoutes),
     AmChartsModule
   ],
-  providers: [InformationService],
+  providers: [InformationService,DataService],
   bootstrap: [AppComponent]
 })
 

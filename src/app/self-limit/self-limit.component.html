@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="container">
 
         <div class=form-group></div>
@@ -219,9 +220,405 @@
                                                         <hr>
                                                 </div>
 
-                                        </div>
-                                </div>
-                        </div>
+=======
+<div class="container divContainer">
+>>>>>>> 1ee799e4e8c0541adc56a2105d087f45620d3939
+                
+                    
+        <h3 style="font-size: 20px;color: #4f4f4f;">Card Limit</h3>
+    
+   <br>
+<div class="panel-body">
+                <div class="form-group row" id="divid">
+                   <div class="col-sm-2">
+                      <label for="sourceCard">Card:</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <select name="sourceCard" id="sourceCard" class="form-control">
+                        <option value="4448-88XX-XXXX-5500">4448-88XX-XXXX-1242</option>
+                        <option value="4448-88XX-XXXX-4352">4448-88XX-XXXX-3452</option>
+                        <!-- <option value="4448-88XX-XXXX-8743">4448-88XX-XXXX-35453</option> -->
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                    <button class="btn btn-primary" Value="View" (click)="showHide = !showHide">View</button>       
                 </div>
+                 </div>
+                 <br>
+                 <div *ngIf="showHide">
+                <div class="form-group row" id="divid">
+                                <div class="col-sm-2">
+                                    <label for="sourceCard">Name:</label>
+                                </div>
+                                <div class="col-sm-3">
+                                  Sudeep
+                                </div>
+                              
+            
+                 </div>
+                 <div class="form-group row" id="divid">
+                                <div class="col-sm-2">
+                                    <label for="sourceCard">A/C Number:</label>
+                                </div>
+                                <div class="col-sm-3">
+                                  1003000000000124092
+                                </div>
+                              
+            
+                 </div>
+                
+                 <div class="form-group row" id="divid">
+                                <div class="col-sm-2">
+                                    <label for="sourceCard">Card Status:</label>
+                                </div>
+                                <div class="col-sm-3">
+                                  Active
+                                </div>
+                              
+            
+                 </div>
+                </div>
+</div>
+</div>
+<div class="container">
+<div class="form-row group">
+    <div class="panel-group">
+        <div class="panel panel-default">
+           <div class="panel-heading" style="height: 30px;">
+                <div class=col-sm-4>
+                  <a data-toggle="collapse" class="panel-title glyphicon glyphicon-th-list" style="cursor: pointer;" (click)="showHidePanel = !showHidePanel"></a>
+                   Set Expenses Rules
+                </div>
+           </div>
+           <div class="panel-body col-sm-16" *ngIf="showHidePanel" >
+                        <div class="form-group row" id="divid">
+                                        <div class="col-sm-3">
+                                            <label for="sourceCard">International Use Allowed:</label>
+                                        </div>
+                                        <div class="col-sm-1">
+                                                <input class="form-check-input" name="InternationalUse" type="radio" id="radioInternationalYes"  value="Yes" checked='checked' >
+                                                <label class="form-check-label" for="radioInternationalYes" style="font-size:12px; color:#4f4f4f">Yes</label>
+                                        </div>
+                                        <div class="col-sm-1">
+                                                <input class="form-check-input" name="InternationalUse" type="radio" id="radioInternationalNo"  value="No">
+                                                <label class="form-check-label" for="radioInternationalNo" style="font-size:12px; color:#4f4f4f">No</label>
+                                        </div>
+                    
+                         </div>
+                         <div class="form-group row" id="divid">
+                                <div class="col-sm-3">
+                                    <label for="sourceCard">Cash Access Allowed:</label>
+                                </div>
+                                <div class="col-sm-1">
+                                        <input class="form-check-input" name="CashAccess" type="radio" id="radioCashAccessYes"  value="Yes" checked='checked' >
+                                        <label class="form-check-label" for="radioCashAccessYes" style="font-size:12px; color:#4f4f4f">Yes</label>
+                                </div>
+                                <div class="col-sm-1">
+                                        <input class="form-check-input" name="CashAccess" type="radio" id="radioCashAccessNo"  value="No">
+                                        <label class="form-check-label" for="radioCashAccessNo" style="font-size:12px; color:#4f4f4f">No</label>
+                                </div>
+            
+                        </div>
+                        <div class="form-group row" id="divid">
+                                <div class="col-sm-3">
+                                    <label for="sourceCard">PIN Purchase Allowed:</label>
+                                </div>
+                                <div class="col-sm-1">
+                                        <input class="form-check-input" name="PinPurchase" type="radio" id="radioPinPurchaseYes"  value="Yes" checked='checked' >
+                                        <label class="form-check-label" for="radioPinPurchaseYes" style="font-size:12px; color:#4f4f4f">Yes</label>
+                                </div>
+                                <div class="col-sm-1">
+                                        <input class="form-check-input" name="PinPurchase" type="radio" id="radioPinPurchaseNo"  value="No">
+                                        <label class="form-check-label" for="radioPinPurchaseNo" style="font-size:12px; color:#4f4f4f">No</label>
+                                </div>
+            
+                        </div>
+                        <div class="form-group row" id="divid">
+                                <div class="col-sm-3">
+                                    <label for="sourceCard">Single Trans Limit:</label>
+                                </div>
+                                <div class="col-sm-1">
+                                        <input class="form-check-input" name="SingleTrans" type="radio" id="radioSingleTransYes"  value="Yes" checked='checked' >
+                                        <label class="form-check-label" for="radioSingleTransYes" style="font-size:12px; color:#4f4f4f">Yes</label>
+                                </div>
+                                <div class="col-sm-1">
+                                        <input class="form-check-input" name="SingleTrans" type="radio" id="radioSingleTransNo"  value="No">
+                                        <label class="form-check-label" for="radioSingleTransNo" style="font-size:12px; color:#4f4f4f">No</label>
+                                </div>
+            
+                        </div> 
+                        <hr>
+                        <div class="form-group row" id="divid">
+                                        <div class="col-sm-3">
+                                           Daily Transaction Limit
+                                        </div>
+                                        <div class="col-sm-3">
+                                            Weekly Transaction Limit
+                                        </div>
+                                        <div class="col-sm-3">
+                                                       Monthly Transaction Limit
+                                        </div>
+                                        <div class="col-sm-3">
+                                                       Yearly Transaction Limit
+                                        </div>
+                         </div>
+                         
+                                <div  class="form-group row" id="divid"  >
+                                    <!--Daily-->
+                                   <div class="form-row">
+                                    <div style="width: 24%; background-color: #d3d0d3; padding: 2px;margin: 2px; display:inline-block">
+                                     
+                                            <div style="width:30%;float:left;padding-top:20px ">
+                                                    Count
+                                                    <input type="number" class="form-control" /> 
+                                         </div>
+                                         <div style="width:70%;float: left;padding-top: 20px">
+                                             Transaction Amount
+                                             <div style="width:50%;float: left;">
+                                             <select name="sourceCard" id="dropDownCurrency" class="form-control">
+                                                    <option value="SGD">SGD</option>
+                                                    <option value="USD">USD</option>
+                                                    <option value="BHD">USD</option>
+                                                    <!-- <option value="4448-88XX-XXXX-8743">4448-88XX-XXXX-35453</option> -->
+                                                    </select>
+                                                </div>
+                                                <div style="width:50%;float: left;">
+                                                        <input type="text" class="form-control" /> 
+                                                </div>
+                                            </div>
+                                    </div> 
+                                    <!--Weekly-->
+                                    <div style="width: 24%; background-color: #d3d0d3; padding: 2px;margin: 2px; display:inline-block">
+                                     
+                                            <div style="width:30%;float:left;padding-top:20px ">
+                                                    Count
+                                                    <input type="number" class="form-control" /> 
+                                         </div>
+                                         <div style="width:70%;float: left;padding-top: 20px">
+                                             
+                                             Transaction Amount
+                                             <div style="width:50%;float: left;">
+                                             <select name="sourceCard" id="dropDownCurrency" class="form-control">
+                                                    <option value="SGD">SGD</option>
+                                                    <option value="USD">USD</option>
+                                                    <option value="BHD">USD</option>
+                                                    <!-- <option value="4448-88XX-XXXX-8743">4448-88XX-XXXX-35453</option> -->
+                                                    </select>
+                                                </div>
+                                                <div style="width:50%;float: left;">
+                                                        <input type="text" class="form-control" /> 
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <!--Monthly-->
+                                        <div style="width: 24%; background-color: #d3d0d3; padding: 2px;margin: 2px; display:inline-block">
+                                     
+                                                <div style="width:30%;float:left;padding-top:20px ">
+                                                        Count
+                                                        <input type="number" class="form-control" /> 
+                                             </div>
+                                             <div style="width:70%;float: left;padding-top: 20px">
+                                                 Transaction Amount
+                                                 <div style="width:50%;float: left;">
+                                                 <select name="sourceCard" id="dropDownCurrency" class="form-control">
+                                                        <option value="SGD">SGD</option>
+                                                        <option value="USD">USD</option>
+                                                        <option value="BHD">USD</option>
+                                                        <!-- <option value="4448-88XX-XXXX-8743">4448-88XX-XXXX-35453</option> -->
+                                                        </select>
+                                                    </div>
+                                                    <div style="width:50%;float: left;">
+                                                            <input type="text" class="form-control" /> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <!--Year-->
+                                            <div style="width: 24%; background-color: #d3d0d3; padding: 2px;margin: 2px; display:inline-block">
+                                     
+                                                    <div style="width:30%;float:left;padding-top:20px ">
+                                                            Count
+                                                            <input type="number" class="form-control" /> 
+                                                 </div>
+                                                 <div style="width:70%;float: left;padding-top: 20px">
+                                                     Transaction Amount
+                                                     <div style="width:50%;float: left;">
+                                                     <select name="sourceCard" id="dropDownCurrency" class="form-control">
+                                                            <option value="SGD">SGD</option>
+                                                            <option value="USD">USD</option>
+                                                            <option value="BHD">USD</option>
+                                                            <!-- <option value="4448-88XX-XXXX-8743">4448-88XX-XXXX-35453</option> -->
+                                                            </select>
+                                                        </div>
+                                                        <div style="width:50%;float: left;">
+                                                                <input type="text" class="form-control" /> 
+                                                        </div>
+                                                    </div>
+                                           
+                                            
+                                               
+                                </div>
+                                
+
+                         <!--Label-->
+<hr>
+                         <div class="form-row" >
+                                <div style="width: 19%;padding: 2px;margin: 2px; display:inline-block" >
+                                <!--Daily-->
+                               
+                                
+                                        
+                                       
+                                    </div>  
+                                <!--Weekly-->
+                                <div style="width: 19%;  padding: 2px;margin: 2px; display:inline-block">
+                                 
+                                       Daily Limit
+                                    </div> 
+                                    <!--Monthly-->
+                                    <div style="width: 19%;  padding: 2px;margin: 2px; display:inline-block">
+                                 
+                                            Weekly Limit
+                                        </div>
+
+                                        <div style="width: 19%;  padding: 2px;margin: 2px; display:inline-block">
+                                 
+                                                Monthly Limit
+                                            </div>
+                                                <div style="width: 19%;  padding: 2px;margin: 2px; display:inline-block">
+                                 
+                                                       Yearly Limit
+                                                    </div>
+                                                
+                                           
+                            </div> 
+                            <!-- Merchanaths -->
+                            <div class="form-row" >
+                                    <!--Daily-->
+                                   
+                                    <div style="width: 19%; background-color: #d3d0d3; padding: 2px;margin: 2px; display:inline-block">
+                                            
+                                            <div style="width:100%;float:left;padding-top:20px ">
+                                                    Merchant Categories
+                                                    <select name="sourceCard" id="dropDownCurrency" class="form-control">
+                                                            <option value="SGD">SGD</option>
+                                                            <option value="USD">USD</option>
+                                                            <option value="BHD">USD</option>
+                                                            
+                                                            </select>
+                                                    
+                                         </div>
+                                        
+                                        </div>  
+                                    <!--Weekly-->
+                                    <div style="width: 19%; background-color: #d3d0d3; padding: 2px;margin: 2px; display:inline-block">
+                                     
+                                            <div style="width:30%;float:left;padding-top:20px ">
+                                                    Count
+                                                    <input type="number" class="form-control" /> 
+                                         </div>
+                                         <div style="width:70%;float: left;padding-top: 20px">
+                                               
+                                             Transaction Amount
+                                             <div style="width:50%;float: left;">
+                                             <select name="sourceCard" id="dropDownCurrency" class="form-control">
+                                                    <option value="SGD">SGD</option>
+                                                    <option value="USD">USD</option>
+                                                    <option value="BHD">USD</option>
+                                                    <!-- <option value="4448-88XX-XXXX-8743">4448-88XX-XXXX-35453</option> -->
+                                                    </select>
+                                                </div>
+                                                <div style="width:50%;float: left;">
+                                                        <input type="text" class="form-control" /> 
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <!--Monthly-->
+                                        <div style="width: 19%; background-color: #d3d0d3; padding: 2px;margin: 2px; display:inline-block">
+                                     
+                                                <div style="width:30%;float:left;padding-top:20px ">
+                                                        Count
+                                                        <input type="number" class="form-control" /> 
+                                             </div>
+                                             <div style="width:70%;float: left;padding-top: 20px">
+                                                 Transaction Amount
+                                                 <div style="width:50%;float: left;">
+                                                 <select name="sourceCard" id="dropDownCurrency" class="form-control">
+                                                        <option value="SGD">SGD</option>
+                                                        <option value="USD">USD</option>
+                                                        <option value="BHD">USD</option>
+                                                        <!-- <option value="4448-88XX-XXXX-8743">4448-88XX-XXXX-35453</option> -->
+                                                        </select>
+                                                    </div>
+                                                    <div style="width:50%;float: left;">
+                                                            <input type="text" class="form-control" /> 
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="width: 19%; background-color: #d3d0d3; padding: 2px;margin: 2px; display:inline-block">
+                                     
+                                                    <div style="width:30%;float:left;padding-top:20px ">
+                                                            Count
+                                                            <input type="number" class="form-control" /> 
+                                                 </div>
+                                                 <div style="width:70%;float: left;padding-top: 20px">
+                                                     Transaction Amount
+                                                     <div style="width:50%;float: left;">
+                                                     <select name="sourceCard" id="dropDownCurrency" class="form-control">
+                                                            <option value="SGD">SGD</option>
+                                                            <option value="USD">USD</option>
+                                                            <option value="BHD">USD</option>
+                                                            <!-- <option value="4448-88XX-XXXX-8743">4448-88XX-XXXX-35453</option> -->
+                                                            </select>
+                                                        </div>
+                                                        <div style="width:50%;float: left;">
+                                                                <input type="text" class="form-control" /> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    <div style="width: 19%; background-color:#d3d0d3; padding: 2px;margin: 2px; display:inline-block">
+                                     
+                                                            <div style="width:30%;float:left;padding-top:20px ">
+                                                                    Count
+                                                                    <input type="number" class="form-control" /> 
+                                                         </div>
+                                                         <div style="width:70%;float: left;padding-top: 20px">
+                                                             Transaction Amount
+                                                             <div style="width:50%;float: left;">
+                                                             <select name="sourceCard" id="dropDownCurrency" class="form-control">
+                                                                    <option value="SGD">SGD</option>
+                                                                    <option value="USD">USD</option>
+                                                                    <option value="BHD">USD</option>
+                                                                    <!-- <option value="4448-88XX-XXXX-8743">4448-88XX-XXXX-35453</option> -->
+                                                                    </select>
+                                                                </div>
+                                                                <div style="width:50%;float: left;">
+                                                                        <input type="text" class="form-control" /> 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    
+                                               
+                                </div>      
+                            </div>
+                                     
+                                         
+                                        
+                    
+                                            
+                                    
+                                  
+                                  
+          
         </div>
+        <div class="row form-group">
+                <div class="col-sm-4">
+                        <button type="submit" class="btn btn-primary" (click)='btn_Submit_Click()'>
+                                Submit</button>
+                    <button type="submit" class="btn btn-primary" (click)='btn_Reset_Click()'>
+                        Reset</button>
+                </div>
+            </div>
+     </div>
+</div>
 </div>
