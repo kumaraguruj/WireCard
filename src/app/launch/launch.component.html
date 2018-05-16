@@ -58,7 +58,7 @@
                                              
                                             </li>      
                                             <li routerLinkActive="actiVV" #selfroute="routerLinkActive">
-                                                <a role="tab"[ngClass]="{'actiVV':selfroute.isActive}" [routerLink]="['/SelfService/SelfLimit']" data-toggle="tab" >SELF SERVICE</a>
+                                                <a role="tab"[ngClass]="{'actiVV':selfroute.isActive}" [routerLink]="['/SelfService/Statement']" data-toggle="tab" >SELF SERVICE</a>
                                                 <a role="tab" data-toggle="tab" [routerLink]="['/SelfService/']" style="display:none;" ></a>
                                             </li>
                                             <li *ngIf="LinksFlag" routerLinkActive="actiVV" #cardroute="routerLinkActive">

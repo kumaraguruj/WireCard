@@ -11,8 +11,8 @@ import { InformationService} from '../Common/information.service';
 })
 export class LoginComponent implements OnInit {
 
-  username:string="Alice";
-  password:string="admin1";
+  username:string="Bob";
+  password:string="admin2";
   errormessage:string;
 
   constructor( private _router:Router) { }
