@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InformationService } from '../Common/information.service';
 
 @Component({
   selector: 'app-statement',
@@ -10,7 +11,10 @@ import { Component, OnInit } from '@angular/core';
 
 export class StatementComponent implements OnInit {
 
-  constructor() { }
+  LinksFlag:boolean;
+  constructor() { 
+    this.LinksFlag=InformationService.UserType==='CreditUser'?false:true;
+  }
 
   ngOnInit() {
   }

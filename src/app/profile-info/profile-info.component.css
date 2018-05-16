@@ -1,3 +1,17 @@
 #detailsid{
     font-size: 13px; color: #4f4f4f;
 }
+
+.form-group {
+    margin-bottom: 0%;
+}
+
+.col-sm-3 {
+    width: 15%;
+    text-align: right;
+}
+
+#textInfo{
+    text-align:left;
+}
+

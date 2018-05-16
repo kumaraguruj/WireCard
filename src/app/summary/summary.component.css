@@ -7,3 +7,16 @@ input { display: inline; }
 #detailsid{
 font-size: 13px; Color:#4f4f4f
 }
+
+.form-group {
+    margin-bottom: 0%;
+}
+
+.col-sm-3 {
+    width: 20%;
+    text-align:right;
+}
+
+#readText{
+    text-align:left;
+}

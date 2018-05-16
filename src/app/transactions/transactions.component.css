@@ -1,0 +1,15 @@
+.form-group {
+    margin-bottom: 1%;
+}
+
+#date{
+    text-align:left;
+}
+
+.col-sm-3 {
+    width: 16%;
+}
+
+.form-group{
+    text-align: right;
+}

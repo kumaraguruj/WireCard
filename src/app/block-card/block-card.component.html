@@ -4,11 +4,11 @@
   <br>
 
   <div class="form-group row" style="font-size:13px; color: #4f4f4f;">
-    <div class="col-sm-4">
+    <div class="col-sm-4" style="width:20%; text-align:right;">
       <label>Select Card you wish to block:</label>
     </div>
-<div class="col-sm-5">
-    <select (change)="onChange($event)">
+<div class="col-sm-3">
+    <select (change)="onChange($event)" class="form-control">
         <option value="" disabled select>Select</option>
         <!-- <option selected="selected">Select</option> -->
         <option value ="card1">4448-8865-7322-9765</option>
@@ -20,7 +20,7 @@
   </div>
 
   <div class="form-group row">
-    <div class="col-sm-4" style="font-size: 13px;color: #4f4f4f;">
+    <div class="col-sm-4" style="font-size: 13px;color: #4f4f4f; width:20%;text-align:right;">
       <label>Card Status:</label>
     </div>
     <div class="col-sm-4">
@@ -31,11 +31,11 @@
 
 
   <div class="form-group row" style="font-size:13px; color: #4f4f4f;">
-      <div class="col-sm-4">
+      <div class="col-sm-4" style="width:20%; text-align:right;">
         <label>Select Reason for blocking:</label>
       </div>
-  <div class="col-sm-5">
-      <select (Change)="onChange($event)" >
+  <div class="col-sm-3">
+      <select (Change)="onChange($event)" class="form-control">
         <option value="" disabled select>Select</option>
           <option value>Lost or stolen</option>
           <option value>Broken Card</option>
@@ -46,16 +46,16 @@
   </div>
     </div>
     <div class="form-group row" style="font-size:13px; color: #4f4f4f">
-      <div class="col-sm-4">
+      <div class="col-sm-4" style=" width:20%;text-align:right;">
         <label>Remarks, if any:</label>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-3">
         <textarea class="form-control"></textarea>
       </div>
     </div>
 
     <div class="row form-group">
-        <div class="col-sm-4 col-sm-offset-4">
+        <div class="col-sm-4 col-sm-offset-4" style="margin-left:20%;">
     <div class="btn-group">
         <button type="button" class="btn btn-primary" [disabled]="!buttonDisabled" (click)="clickMethod()">Submit</button>
         </div>

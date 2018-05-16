@@ -1,3 +1,14 @@
 #divid{
     font-size: 16px; color: #4f4f4f; 
 }
+
+.form-group {
+    margin-bottom: 0%;
+}
+
+#detailsid{
+    font-size:13px; color:#4f4f4f;
+}
+#cssid{
+    text-align:right;
+}

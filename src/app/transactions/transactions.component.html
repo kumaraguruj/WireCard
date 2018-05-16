@@ -2,44 +2,46 @@
   <h3 style="font-size: 20px; color:#4f4f4f;">Transactions</h3>
   <br>
 
-<h3 style="font-size: 16px;columns: #4f4f4f;">Alice</h3>
+<label style="font-size: 16px;columns: #4f4f4f;" *ngIf="LinkFlag">Alice</label>
+<label style="font-size: 16px;columns: #4f4f4f;" *ngIf="!LinkFlag">Bob</label>
 <br>
 <br>
 
 <div class="form-group row">
   <div class="col-sm-3">
-    <label>From Date*:</label>
+    <label style="font-size:13px;color:#4f4f4f;">From Date*:</label>
   </div>
   <div class="col-sm-3">
-      <input id="date" type="date">
+      <input id="date" type="date" class="form-control">
   </div>
 
   <div class="col-sm-3">
-    <label>To Date*:</label>
+      <label style="font-size:13px;color:#4f4f4f;">To Date*:</label>
   </div>
   <div class="col-sm-3">
-      <input id="date" type="date">
+      <input id="date" type="date" class="form-control">
   </div>
 </div>
 
 
 <div class="form-group row">
     <div class="col-sm-3">
-      <label>Transaction Type:</label>
+        <label style="font-size:13px;color:#4f4f4f;">Transaction Type:</label>
     </div>
     <div class="col-sm-3">
-        <input type="text">
+        <input type="text" class="form-control">
     </div>
   
     <div class="col-sm-3">
-      <label>Card:</label>
+        <label style="font-size:13px;color:#4f4f4f;">Card:</label>
     </div>
     <div class="col-sm-3">
-        <input type="text">
+        <input type="text" class="form-control">
     </div>
   </div>
+  
   <div class="form-group row">
-    <button type="button" (click)="showHide = !showHide">Submit</button>
+    <button type="button" id="btnid" class="btn btn-primary" (click)="showHide = !showHide">Submit</button>
   </div>
 <br>
 <br>

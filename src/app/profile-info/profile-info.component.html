@@ -7,18 +7,72 @@
     <br>
 
 
+    <div *ngIf="LinksFlag">
+            <div class="form-group row" id="detailsid">
+                <div class="col-sm-3">
+                    <label for="Firstname">First Name:</label>
+                </div>
+                <div class="col-sm-3" id="textInfo">
+                    Bob
+                </div>
+                <div class="col-sm-3">
+                    <label for="Lastname">Last Name:</label>
+        
+                </div>
+                <div class="col-sm-3" id="textInfo">
+                    Harry
+                </div>
+            </div>
+        
+        
+            <div class="form-group row" id="detailsid">
+                <div class="col-sm-3">
+        
+                    <label for="Username">User Name:</label>
+                </div>
+                <div class="col-sm-3" id="textInfo">
+                    BobWireCard
+                </div>
+                <div class="col-sm-3">
+                    <label for="Password">Password:</label>
+        
+                </div>
+                <div class="col-sm-3" id="textInfo">
+                    ********
+                </div>
+            </div>
+        
+            <div class="form-group row" id="detailsid">
+                <div class="col-sm-3">
+        
+                    <label for="Email">Email:</label>
+                </div>
+                <div class="col-sm-3" id="textInfo">
+                    Bob@wirecard.com
+                </div>
+                <div class="col-sm-3">
+        
+                    <label for="DateofBirth">Date of Birth:</label>
+                </div>
+                <div class="col-sm-3" id="textInfo">
+                    02/03/1998
+                </div>
+            </div>
+            </div>
+
+    <div *ngIf="!LinksFlag">
     <div class="form-group row" id="detailsid">
         <div class="col-sm-3">
             <label for="Firstname">First Name:</label>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3" id="textInfo">
             Alice
         </div>
         <div class="col-sm-3">
             <label for="Lastname">Last Name:</label>
 
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3" id="textInfo">
             Charles
         </div>
     </div>
@@ -29,14 +83,14 @@
 
             <label for="Username">User Name:</label>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3" id="textInfo">
             AliceWireCard
         </div>
         <div class="col-sm-3">
             <label for="Password">Password:</label>
 
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3" id="textInfo">
             ********
         </div>
     </div>
@@ -46,16 +100,18 @@
 
             <label for="Email">Email:</label>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3" id="textInfo">
             Alice@wirecard.com
         </div>
         <div class="col-sm-3">
 
             <label for="DateofBirth">Date of Birth:</label>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3" id="textInfo">
             02/03/1999
         </div>
+    </div>
+    </div>
     </div>
 
     <!-- <div class="form-group row" id="detailsid">
