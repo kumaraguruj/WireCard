@@ -40,6 +40,8 @@ import { InfoGraghComponent } from './info-gragh/info-gragh.component';
 import { InformationService} from '../app/Common/information.service';
 import { MonthlyAvergageBalanceTopComponent } from './monthly-avergage-balance-top/monthly-avergage-balance-top.component';
 import { ExpensesByCategroyTopComponent } from './expenses-by-categroy-top/expenses-by-categroy-top.component';
+import { BlockCardComponent } from './block-card/block-card.component';
+
 
 
 
@@ -128,7 +130,11 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
     },
     {
       path: 'GeneratePin', component: GeneratePinComponent
-    }
+    },
+    {
+      path: 'BlockCard', component: BlockCardComponent
+    },
+    
 ]
 
 
@@ -193,8 +199,11 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
       
     MonthlyAvergageBalanceTopComponent,
       
-    ExpensesByCategroyTopComponent ,
-  
+    ExpensesByCategroyTopComponent,
+      
+    BlockCardComponent,
+      
+   
   ],
   imports: [
     BrowserModule,FormsModule,RouterModule.forRoot(appRoutes),
