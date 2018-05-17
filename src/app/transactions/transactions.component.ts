@@ -51,7 +51,11 @@ export class TransactionsComponent implements OnInit {
   this.toDate = dateFormatPipeFilter.transform(this.tDate);
   console.log("Current" + this.fDate);
   console.log("New" + this.fromDate);
-    this.Trans = this.dataService.getData(this.type,this.cardNo,this.userId,this.fromDate,this.toDate )
+  alert(this.fDate)
+  if (this.fDate != undefined && this.tDate != undefined)
+{
+  this.Trans = this.dataService.getData(this.type,this.cardNo,this.userId,this.fromDate,this.toDate )
+}
     if(this.Trans.length>0)
     this.showHide = true;
     else
