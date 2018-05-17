@@ -85,6 +85,10 @@ getData(type:string,cardno:string,UserID:string,fDate:Date,Date:Date) : Transact
   {  
     return   transactions.filter(c=>c.TransType==type && c.Cardno!=cardno  && c.UserID==UserID &&(c.Date>fDate && c.Date<Date));
   } 
+  else 
+  {  
+    return   transactions.filter(c=>c.TransType==type && c.Cardno==cardno  && c.UserID==UserID &&(c.Date>fDate && c.Date<Date));
+  } 
  
 }
 getAllData(UserID:string) : Transaction[] {
