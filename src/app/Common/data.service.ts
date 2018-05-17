@@ -74,7 +74,7 @@ getData(type:string,cardno:string,UserID:string,fDate:Date,Date:Date) : Transact
     if(cardno=="All" && type=="Both")
   {
  //   alert((c=>c.Date>fDate && c.Date<Date));
-    return   transactions.filter(c=>c.TransType!=type && c.Cardno!=cardno && c.UserID==UserID);// && (c.Date>=fDate && c.Date<=Date));
+    return   transactions.filter(c=>c.TransType!=type && c.Cardno!=cardno && c.UserID==UserID && (c.Date>=fDate && c.Date<=Date));
   }
   
   else if (type == "Both" )  

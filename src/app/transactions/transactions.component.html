@@ -113,8 +113,8 @@
                 </th>
             </tr>
         </thead>
-        <tbody *ngFor ="let trans of Trans">
-            <tr>
+        <tbody>
+            <tr *ngFor ="let trans of Trans;let isOdd=odd; let isEven=even"  [class.odd]="isOdd"  [class.even]="isEven">
                 <td>             
                     {{trans.Date}}
                 </td>
