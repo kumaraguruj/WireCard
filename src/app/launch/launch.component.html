@@ -9,9 +9,9 @@
                     <img src="assets/images/logo.png" style="padding:10px 10px 10px 10px;" >
                 </div>  
         </div> 
-        <div class="row" style="background-color: #574c4a;padding: 6px;">
+        <div class="row" style="background-color: #373737;padding: 6px;">
     <!--For Mobile start -->
-    <div class="row mobileheader" style="height: 60%; background-color: #574c4a; margin-bottom: 0px; padding-left: 8px;">
+    <div class="row mobileheader" style="height: 60%; background-color: #373737; margin-bottom: 0px; padding-left: 8px;">
     
             <div class="col-sm-12" >   
                         <!-- <ul class="nav nav-tabs" role="tablist">         
@@ -63,7 +63,7 @@
 </div> 
 </div>
 </div> 
-                    <div class="row" style="background-color: #574c4a;padding: 6px;width: 99%;">
+                    <div class="row" style="background-color: #373737;padding: 6px;width: 99%;">
                         <div class="col-sm-4" >  
                             <div class="container-fluid" style=" background-color: #ffffff;border: solid 1px black; border-radius: 5px; max-width: 450px; padding: 0px">
                                 <div class="row-fluid" style="  border-top-left-radius: 10px; border-top-right-radius: 10px;">
@@ -151,27 +151,27 @@
                         </div> 
                     </div> 
 
-                    <div class="row desktopheader" style="height: 60%;width: 95%; background-color: #574c4a; margin-bottom: 0px; padding-left: 8px;">
+                    <div class="row desktopheader" style="height: 60%;width: 95%; background-color: #373737; margin-bottom: 0px; padding-bottom: 0px; padding-left: 17px;">
 
                                 <div class="col-sm-12" style="height: 28px;">   
                                             <ul class="nav nav-tabs" role="tablist">         
                                             <li routerLinkActive="actiVV" #homeroute="routerLinkActive">
                                                
-                                                <a role="tab"  data-toggle="tab" [ngClass]="{'actiVV':homeroute.isActive}"   [routerLink]="['/Home/Summary']"  >HOME</a>
+                                                <a role="tab"  data-toggle="tab" [ngClass]="{'actiVV':homeroute.isActive}"   [routerLink]="['/Home/Summary']" style="background-color:#574c4a;" >HOME</a>
                                                 <a role="tab" data-toggle="tab" [routerLink]="['/Home/']" style="display:none;" ></a>
                                                
                                              
                                             </li>      
                                             <li routerLinkActive="actiVV" #selfroute="routerLinkActive">
-                                                <a role="tab"[ngClass]="{'actiVV':selfroute.isActive}" [routerLink]="['/SelfService/Statement']" data-toggle="tab" >SELF SERVICE</a>
+                                                <a role="tab"[ngClass]="{'actiVV':selfroute.isActive}" [routerLink]="['/SelfService/Statement']" data-toggle="tab" style="background-color:#574c4a;">SELF SERVICE</a>
                                                 <a role="tab" data-toggle="tab" [routerLink]="['/SelfService/']" style="display:none;" ></a>
                                             </li>
                                             <li *ngIf="LinksFlag" routerLinkActive="actiVV" #cardroute="routerLinkActive">
-                                                <a role="tab" [ngClass]="{'actiVV':cardroute.isActive}" data-toggle="tab" [routerLink]="['/CardTransfers/WalletTransfers']" >MOVE MONEY</a>
+                                                <a role="tab" [ngClass]="{'actiVV':cardroute.isActive}" data-toggle="tab" [routerLink]="['/CardTransfers/WalletTransfers']" style="background-color:#574c4a;">MOVE MONEY</a>
                                                 <a role="tab" data-toggle="tab" [routerLink]="['/CardTransfers/']" style="display:none;" ></a>
                                             </li>
                                             <li routerLinkActive="actiVV" #reportsroute="routerLinkActive">
-                                                <a role="tab" [ngClass]="{'actiVV':reportsroute.isActive}" data-toggle="tab" [routerLink]="['/Reports/yearlyReports']">REPORTS</a>
+                                                <a role="tab" [ngClass]="{'actiVV':reportsroute.isActive}" data-toggle="tab" [routerLink]="['/Reports/yearlyReports']" style="background-color:#574c4a;">REPORTS</a>
                                                 <a role="tab" data-toggle="tab" [routerLink]="['/Reports/']" style="display:none;" ></a>
                                             </li> 
                                             </ul>

@@ -44,6 +44,7 @@ import { MonthlyExpensesPrepaidCardComponent } from './monthly-expenses-prepaid-
 import { MonthlyExpensesPrepaidCardTopComponent } from './monthly-expenses-prepaid-card-top/monthly-expenses-prepaid-card-top.component';
 import { BlockCardComponent } from './block-card/block-card.component';
 import { DataService } from './Common/data.service';
+import {NgxPaginationModule} from 'ngx-pagination'; 
 
 
 
@@ -215,7 +216,8 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
   ],
   imports: [
     BrowserModule,FormsModule,RouterModule.forRoot(appRoutes),
-    AmChartsModule
+    AmChartsModule,NgxPaginationModule
+    
   ],
   providers: [InformationService,DataService],
   bootstrap: [AppComponent]
