@@ -121,17 +121,14 @@ body {
   height: 50%;
   width: 60%;
   /* background-color: #ffffff; */
-  border: 1px solid #000000;
-  border-radius: 5px;
-   /* box-shadow: 5px 5px 5px 5px #000000  */
-  -webkit-box-shadow: 5px 5px 5px #000000;
-        box-shadow: 5px 5px 5px 5px #000000;
+  border-radius: 100px / 5px; 
+  box-shadow:0 0 18px rgba(0,0,0,0.6);
   display:block;
  
 }
 
 .divLeft {
-  width: 30%;
+  width: 35%;
   height: 100%;
   /*border: 1px solid #000000;*/
   background-color:#000d16;
@@ -145,14 +142,14 @@ float:left;
 }
 
 .divRight {
-  width: 70%;
+  width: 65%;
   height: 100%;
 /* background-image: url("../../assets/images/loginBg.png"); */
  background-repeat: no-repeat;
   background-size: contain;
   background-color: #ffffff;
 float: right;
-opacity: 0.6;
+opacity: 0.8;
 /* filter: alpha(opacity=80);  */
 
 
@@ -186,7 +183,10 @@ text-align:center; */
 
 }
 
-hr { width:70%; height:1px; padding-right: 5px; background-color: #000000}
+hr { width:70%; height:1px; padding-right: 5px; background-color: #bfbfbf;margin-top: 0px;}
+textarea:focus, input:focus{
+  outline: none;
+}
 
 
 
