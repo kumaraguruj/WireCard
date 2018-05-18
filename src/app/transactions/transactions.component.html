@@ -15,20 +15,20 @@
     
     <div class="form-group row">
     
-    <div class="col-sm-3">
+    <div class="col-sm-2">
     
     <label>From Date*:</label>
     
     </div>
     
-    <div class="col-sm-3">
+    <div class="col-sm-3" >
     
-    <input id="date" type="date" [(ngModel)]="fDate" class="form-control">
+    <input id="date"  type="date" [(ngModel)]="fDate" class="form-control">
     
     </div>
 
         
-    <div class="col-sm-3">
+    <div class="col-sm-2">
     
     <label>To Date*:</label>
     
@@ -36,7 +36,7 @@
     
     <div class="col-sm-3">
     
-    <input id="date" type="date" [(ngModel)]="tDate" class="form-control">
+    <input id="date" type="date"  [(ngModel)]="tDate" class="form-control">
     
     </div>
     
@@ -44,14 +44,14 @@
         
     <div class="form-group row">
     
-    <div class="col-sm-3">
+    <div class="col-sm-2">
     
     <label>Transaction Type:</label>
     
     </div>
  
     <div class="col-sm-3">
-        <select name="TransactionType" id="TransactionType" class="form-control" [(ngModel)]="type">
+        <select  name="TransactionType" id="TransactionType" class="form-control" [(ngModel)]="type">
           <option value="Both">Both</option>
           <option value="Debit">Debit</option>
           <option value="Credit">Credit</option>
@@ -59,14 +59,14 @@
           </select>
        </div>
     
-    <div class="col-sm-3">
+    <div class="col-sm-2">
     
     <label>Card:</label>
     
     </div>
     <div  *ngIf="!LinksFlag">
     <div class="col-sm-3" >
-        <select name="sourceCard" id="sourceCard" class="form-control" [(ngModel)]="cardNo" style="width:125%;" >
+        <select name="sourceCard" id="sourceCard" class="form-control" [(ngModel)]="cardNo"  >
             <option value="All">All</option>
           <option value="4448-88XX-XXXX-5500">4448-88XX-XXXX-5500</option>
           <option value="4448-88XX-XXXX-5518">4448-88XX-XXXX-5518</option>          
@@ -75,7 +75,7 @@
     </div>
     <div  *ngIf="LinksFlag">
             <div class="col-sm-3" >
-                <select name="sourceCard" id="sourceCard" class="form-control" [(ngModel)]="cardNo" style="width:125%;" >
+                <select name="sourceCard" id="sourceCard" class="form-control" [(ngModel)]="cardNo"  >
                    <option value="All">All</option>                 
                   <option value="4448-88XX-XXXX-8743">4448-88XX-XXXX-8743</option>
                   </select>
