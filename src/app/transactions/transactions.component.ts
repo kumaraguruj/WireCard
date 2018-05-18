@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { InformationService} from '../Common/information.service'; 
 import { DatePipe } from '@angular/common';
 import {DateformatPipe} from '../date-pipe/date-pipe.component'
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 @Component({
@@ -66,4 +67,19 @@ export class TransactionsComponent implements OnInit {
 
     this.Trans = this.dataService.getAllData(this.userId )
   }
+}
+export class Pagination {
+  constructor(
+    private dataService:DataService
+  ) {
+    this.loadAllData();
+  }
+  userId:string = InformationService.UserType ;
+  Trans: Transaction[];
+   loadAllData():void{
+
+    this.Trans = this.dataService.getAllData(this.userId )
+  }
+    p: number = 1;
+    collection: any[] = this.Trans;
 }
