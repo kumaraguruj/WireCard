@@ -212,3 +212,13 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 {
   color: black;
 }
+@media screen and (max-width: 600px) {
+  .desktopheader{
+    display:none;
+  }
+}
+@media screen and (min-width: 400px) {
+  .mobileheader{
+    display:none;
+  }
+}

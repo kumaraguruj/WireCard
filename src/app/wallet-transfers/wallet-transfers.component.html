@@ -119,9 +119,15 @@ Alice
                 </div>
                 
               </div>
-              </div>
+              <div class="form-group row" id="divid">
+                    <div class="col-sm-12" id="cssid">
+                            <button style="float: right;" class="btn btn-primary" [disabled]="divFlag" (click)="Calculate()" Value="Calculate">Calculate</button>
+                        </div>                
+                    </div>
+
+            </div>
              
-              <button class="btn btn-primary" [disabled]="divFlag" (click)="Calculate()" Value="Calculate">Calculate</button>
+             
               <br>
               <br>
               <div *ngIf="divFlag">
@@ -178,15 +184,20 @@ Alice
         
                             </div>
                             </div>
-          
-                           
-
+                            <div class="form-group row" id="divid">
+                                    <div class="col-sm-3" ></div>
+                                    <div class="col-sm-3" ></div>
+                                    <div class="col-sm-3" ></div>
+                                    <div class="col-sm-3" >
+                                            <button  class="btn btn-primary" Value="Confirm" (click)="clickMethod()">Confirm</button> &nbsp;
+                                            <button class="btn btn-primary" Value="Cannel" (click)="CancelMethod()">Cancel</button>&nbsp;
+                                            <button class="btn btn-primary" Value="Reset">Reset</button>
+                                        </div>
+                                    </div>
                     </div>
                     
                 
-                <button class="btn btn-primary" Value="Confirm" (click)="clickMethod()">Confirm</button>
-                <button class="btn btn-primary" Value="Cannel" (click)="CancelMethod()">Cancel</button>
-                <button class="btn btn-primary" Value="Reset">Reset</button>
+              
               </div>
               <br>
               </div>
