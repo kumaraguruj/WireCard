@@ -30,7 +30,7 @@
 </table>
 
    -->
-  
+<!--   
    <div class="login-page">
       <div class="form">
        <div class="alert alert-danger" *ngIf="errormessage">
@@ -42,4 +42,83 @@
           <p class="message">Not registered? <a href="#">Create an account</a></p>
        
       </div>
+    </div> -->
+
+      <div class="parentContainer">
+        <div class="childContainer">
+        
+            <div class="divLeft">
+<img src="../../assets/images/logo.png" style="float: left;width:90%;height: auto; padding-top: 70% ; padding-left:8%;"/>
+            
+           
+            </div>
+            
+            <div class="divRight" style="padding-left: 5% " >
+
+              
+                <div style="height:79%;" >
+                 <!--UserName-->
+                 <div class="form-group row" ></div>
+                 <div class="form-group row" style="padding-top:6%" >
+                    
+                    <label class="form-label">Login</label>/Sign up
+                   </div>
+                   <div class="form-group row" ></div>
+                   <div class="form-group row" ></div>
+                   <div class="form-group row" ></div>
+                   <div class="form-group row" ></div>
+                  <div class="form-group row" >
+                    
+                    <div class="col-sm-3" style="text-align: right">
+                      User Name
+                      </div>
+                      <div class="col-sm-5">
+                        <input type="username" class="textBoxStyle form-control"
+                            [(ngModel)]="username"  placeholder="username"/>
+                      </div>
+                     
+                  </div>
+                 <!-- -->   
+                  <!--Password-->
+                  <hr>
+                  <div class="form-group row"  >
+                    
+                      <div class="col-sm-3" style="text-align: right">
+                          Password
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="password" id="logInPassword" name="password" class="textBoxStyle form-control toggle-password" data-toggle="password"   [(ngModel)]="password"  placeholder="password" />
+                           
+                          </div>
+                      
+                    </div>
+                    <hr>
+                  <!-- --> 
+                    <div class=" form-group row alert alert-danger" style="text-align: right" *ngIf="errormessage">
+                      {{errormessage}}
+                     </div>
+                </div>
+
+                <!---->
+                <div style="height: 19%;" >
+                  <div class="form-group row" id="divid">
+                    <div class="col-sm-3">
+                      <img src="../../assets/images/login.png"  class="logIn"  (click)="VerifyUser()"/>
+                        
+                    </div>
+                    <div class="col-sm-5">
+                        <a (click)='rgisterAccount()'> Don't have an <span style="font-weight: bold"> Account?</span></a>
+                    </div>
+                    <div class="col-sm-4">
+                      <a  (click)='forgotPassword()'>Forget <span style="font-weight: bold"> Password?</span></a>
+                    </div>
+
+                </div>
+
+                </div>
+                <!---->
+              
+
+            </div>
+        </div>
     </div>

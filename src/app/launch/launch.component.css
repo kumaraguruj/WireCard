@@ -151,13 +151,13 @@
     float:left;
     padding-right: 100px;
   }
-  .amcharts-export-menu-top-right {
+  /* .amcharts-export-menu-top-right {
     top: 10px;
     float: right;
     height: 100%;
     padding-right: 100px;
-  }
-
+  } */
+  
   @media screen and (max-width: 600px) {
     .desktopheader{
       display:none;

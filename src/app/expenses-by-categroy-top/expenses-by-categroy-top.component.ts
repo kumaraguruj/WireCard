@@ -7,6 +7,7 @@ import { AmChartsService,AmChart } from "@amcharts/amcharts3-angular";
 })
 export class ExpensesByCategroyTopComponent implements OnInit {
   private chart: AmChart;
+  private legend:AmChart;
   constructor(private  AmCharts:AmChartsService) { }
   ngAfterViewInit() {
     
@@ -46,6 +47,7 @@ export class ExpensesByCategroyTopComponent implements OnInit {
           "valueField": "expenditure"
       }],
       } );
+
   }
   ngOnInit() {
   }
