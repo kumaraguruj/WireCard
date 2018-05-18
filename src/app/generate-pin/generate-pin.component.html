@@ -1,6 +1,14 @@
-<form class="form-horizontal">
+<div class="container">
+      
+        <div class="col-xs-12">
+            
+                <h3>Generate Pin</h3>
+                
+               
 
-    <div class="container form-group">
+     
+        </div>
+    <div class=" form-group">
         <br>
         <label class="control-label" style="font-size:13px;">Do you remember your old pin?</label>
         <div class="row form-group">
@@ -34,7 +42,7 @@
 
             <div class="col-xs-6" *ngIf="isSelected('Yes')" style="width: 100%;">
                 <div class="panel panel-default" id="divId">
-                    <div class="panel-heading" style="font-size: 20px; color: #4f4f4f">Generate Pin</div>
+                    <!-- <div class="panel-heading" style="font-size: 20px; color: #4f4f4f">Generate Pin</div> -->
                     <div class="panel-body form-group" id="collapseOne">
                         <div class="form-group row">
                             <label for="inputOldPin" class="control-label col-xs-4">
@@ -160,7 +168,7 @@
     </div>
     <!-- /.modal -->
 
-</form>
+</div>
 <script> 
     function OldPinGenerated() {
         BootstrapDialog.show({
