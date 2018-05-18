@@ -17,9 +17,21 @@ export class LoginComponent implements OnInit {
 
   constructor( private _router:Router) { }
 
+  
   ngOnInit() {
   }
 
+
+  rgisterAccount()
+  {
+
+    alert('Functionality not implementd yet.')
+  }
+  forgotPassword()
+  {
+
+    alert('Functionality not implementd yet.')
+  }
   VerifyUser():void
   {
     // if(this.username==='admin' && this.password==='admin')

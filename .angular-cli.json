@@ -22,14 +22,17 @@
         "styles.css",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         
-        "../src/assets/styles/export.css"
+        "../src/assets/styles/export.css",
+        "../src/assets/styles/textBoxStyle.css"
       ],
       "scripts": ["../src/assets/scripts/amcharts.js",
         "../src/assets/scripts/serial.js",
         "../src/assets/scripts/pie.js",
         "../src/assets/scripts/export.min.js",
         "../src/assets/scripts/light.js",
-        "../src/assets/scripts/none.js"
+        "../src/assets/scripts/none.js",
+        "../src/assets/scripts/togglePassword.js",
+       "../src/assets/scripts/jquery-3.3.1.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

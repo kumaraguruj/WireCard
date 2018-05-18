@@ -19,23 +19,23 @@ export class YearlyReportsComponent implements OnInit {
         "type": "pie",
         "theme": "none",
         "dataProvider": [{
-            "category": "Grossory & Shopping",
-            "expenditure": 500.90
+            "category": "Shopping",
+            "expenditure": 9500
         }, {
             "category": "Resturants",
-            "expenditure": 301.90
+            "expenditure": 9000
         }, {
             "category": "Fuel",
-            "expenditure": 200.10
+            "expenditure": 2500
         }, {
             "category": "E-Commerce",
-            "expenditure": 165.10
+            "expenditure": 7000
         }, {
-            "category": "Transfer to Others' Account",
-            "expenditure": 1200
+            "category": "Transfer Money",
+            "expenditure": 9800
         }, {
             "category": "Miscellanous",
-            "expenditure": 132
+            "expenditure": 4500
         }],
         "valueField": "expenditure",
         "titleField": "category",
