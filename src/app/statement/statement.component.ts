@@ -49,7 +49,10 @@ export class StatementComponent implements OnInit {
 
       this.Trans = this.dataService.getAllData(this.userId )
     }
+download(){
 
+  alert("Functionality not implemented yet.");
+}
   btnChanged()
   {
     var x = document.getElementById('dv_Main');
