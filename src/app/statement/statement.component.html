@@ -1,282 +1,139 @@
-<div class="container">
-    <br>
-    <div class="form-group row" id="divid">
+<div class="container form-group ">
+      <div class="form-group" id="divid">
         <div class="col-xs-6">
             
                 <label>Statement</label>
-                
-               
-
-        </div>
-
-        <div class="form-group row">
-            <div class="col-xs-6">
-                <div class="form-group">
-                    <select class="btn btn-default dropdown-toggle col-xs-6" [(ngModel)]="fDate">
-                        Action
-                        <span class="caret"></span>
-                        <option value="" selected="selected">April 2018</option>
-                        <option>May 2018</option>
-                    </select>
-                    <button type="submit" class="btn btn-primary" (click)='searchbymonth()'>
-                        Submit</button>
-                </div>
-
-            </div>
         </div>
     </div>
-
 </div>
 
 <div class="container" id="detailsid">
-    <hr>
-    <div class="form-group row">
-        <div class="col-xs-9 col-md-7">
-            <h4>Fleet Card Account Statement</h4>
-        </div>
-         <!-- <div class="col-sm-4 col-sm" style="font-size: 16px ;color: #4f4f4f;">
-            <label>Statement for the Month of {{Trans.Month}}:</label>
-        </div>  -->
-        <br>
-    </div>
+    <hr>      
 
-    <div class="row form-group">
-        <div class="col-sm-4" id="cssid">
-
-            <label>
-                Account Number:</label>
-        </div>
-        <div class="col-sm-4" id="textInfo">
-
-            65465465455665
-
-        </div>
-    </div>
-
-    <div class="row form-group">
-        <div class="col-sm-4" id="cssid">
-
-            <label>
-                Name:</label>
-        </div>
-        <div class="col-sm-4">
-
-           <div *ngIf="!LinksFlag"> Alice Charles</div>
-           <div *ngIf="LinksFlag"> Bob Joe</div>
-        </div>
-    </div>
-
-    <div class="row form-group">
-        <div class="col-sm-4" id="cssid">
-            <label>
-                Card Number:</label>
-        </div>
-        <div class="col-sm-4">
-
-            00004343543543543
-        </div>
-    </div>
-
-    <div class="row form-group">
-        <div class="col-sm-4" id="cssid">
+       <div class="row form-group">           
+        <div class="col-sm-3">
 
             <label>
                 Address Line 1:</label>
         </div>
 
-        <div class="col-sm-4">
+        <div class="col-sm-3"  >
 
             #54 park street, LosAngles
         </div>
+        <div class="col-sm-3" >
+            <label>
+                A/C Overdraft Limit:</label>
+        </div>        
+                <div class="col-sm-3">
+            $200000
+        </div>
     </div>
 
     <div class="row form-group">
-        <div class="col-sm-4" id="cssid">
+        <div class="col-sm-3" >
             <label>
-                Address Line 2</label>
+                Address Line 2:</label>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
 
             #55, venue vista
         </div>
-    </div>
-
-    <div class="row form-group">
-        <div class="col-sm-4" id="cssid">
-            <label>
-                City & State:</label>
-        </div>
-
-        <div class="col-sm-4">
-
-            LosAngles, LosAngles
-        </div>
-    </div>
-
-    <div class="form-group row">
-        <div class="col-sm-4" id="cssid">
-            <label>
-                Country & Postal code:</label>
-        </div>
-
-        <div class="col-sm-4">
-
-            USA, 4654654
-
-        </div>
-    </div>
-
-</div>
-
-
-<br>
-<br>
-
-<div class="container" id="summaryPannel">
-
-    <div style="font-size:16px;color: #4f4f4f;" id="summaryPannel">Summary</div>
-    <br>
-
-    <div class="form-group row">
-        <div class="col-sm-4" id="cssid">
-            <label>
-                A/C Overdraft Limit:</label>
-        </div>
-        
-                <div class="col-sm-4">
-            $200000
-        </div>
-        </div>
-
-        <div class="form-group row">
-        <div class="col-sm-4" id="cssid">
+        <div class="col-sm-3">
 
             <label>
                 Available Overdraft Limit:</label>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
 
             $180000
         </div>
-        </div>
-
-
-
-        <div class="form-group row">
-                <div class="col-sm-4" id="cssid">
-            <label>
-                Current Balance:</label>
-        </div>
-
-        <div class="col-sm-2">
-            $280000
-        </div>
-
     </div>
+
+    <div class="row form-group">
+        <div class="col-sm-3" >
+            <label>City & State:</label>
+        </div>
+
+        <div class="col-sm-3">
+            LosAngles, LosAngles
+        </div>
+            <div class="col-sm-3" >
+        <label> Current Balance:</label>
+    </div>
+
+    <div class="col-sm-3">
+        $280000
+    </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-sm-3" >
+            <label>Country & Postal code:</label>
+        </div>
+
+        <div class="col-sm-3">
+            USA, 4654654
+        </div>
+    </div>
+    <div class="form-group row">
+            <a style="cursor: pointer;">
+                    <div class="col-sm-10">    
+                        <img src="assets/images/download.png" style="padding: 10px 10px 0px 10px; float: right; width: 4%;"  alt="Download Statement" title="Download Statement">     
+                    </div> 
+                    <div class="col-sm-3" style="padding:0px 10px 10px 10px; float: right;width: 22.5%; " alt="Download Statement" title="Download Statement">    
+                        Download
+                     </div>  
+                </a> 
+            <div class="col-sm-3" style="font-size:16px;color: #3f3535;">
+                <label>Transaction For the Period</label>
+            </div>
+            <div class="col-sm-4">                  
+            <select class="btn btn-default dropdown-toggle col-xs-6" [(ngModel)]="fDate">
+                Action
+                <span class="caret"></span>
+                <option value="" selected="selected">April 2018</option>
+                <option>May 2018</option>
+            </select>
+            &nbsp;
+            <button type="submit" class="btn btn-primary" (click)='searchbymonth()'>
+              Submit</button>
+     
+    </div>
+           
+    
+        </div>
 </div>
 
-<br>
-<br>
-<div class="form-group row">
-   <a>
-    <div class="col-sm-10">    
-        <img src="assets/images/download.png" style="padding: 10px 10px 0px 10px; float: right; width: 4%;"  alt="Download Statement" title="Download Statement">        
-    </div> 
-    <div class="col-sm-3" style="padding:0px 10px 10px 10px; float: right;width: 22.5%; " alt="Download Statement" title="Download Statement">    
-        Download
-     </div>  
-</a>  
-</div>
+
+       
+
+     
+
+ <br>            
+  
+
     
 <div class="container">
        
     <div class="form-group row">
 
-        <div class="panel-heading" style="font-size:16px;color: #4f4f4f;">Transaction For the Period</div>
-        <div class="col-xs-11">
-
-           <!--  <table class="table table-striped table-bordered" id="tableid">
-                <thead>
-                    <tr id="header" style="background-color: #8b8b8b; font-size: 16px; color: white;">
-                        <th>Transaction date & Time
-
-                        </th>
-                        <th>Trans Description
-
-                        </th>
-                        <th>Trans Reference Number
-
-                        </th>
-                        <th>Merchant Name & Location
-
-                        </th>
-                        <th>Transaction Currency & Amount
-
-                        </th>
-                        <th>Posted Currency & Amount
-
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>03/25/2018</td>
-                        <td>Others</td>
-                        <td>AE54654644</td>
-                        <td>Flipkart ,Banglore</td>
-                        <td>$.20,000</td>
-                        <td>$.15,000</td>
-                    </tr>
-                    <tr>
-                        <td>03/28/2018</td>
-                        <td>Others</td>
-                        <td>AE54654644</td>
-                        <td>Flipkart ,Banglore</td>
-                        <td>$.20,000</td>
-                        <td>$.15,000</td>
-                    </tr>
-                    <tr>
-                        <td>04/01/2018</td>
-                        <td>Others</td>
-                        <td>AE54654644</td>
-                        <td>Flipkart ,Banglore</td>
-                        <td>$.20,000</td>
-                        <td>$.15,000</td>
-                    </tr>
-                    <tr>
-                        <td>04/05/2018</td>
-                        <td>Others</td>
-                        <td>AE54654644</td>
-                        <td>Flipkart ,Banglore</td>
-                        <td>$.20,000</td>
-                        <td>$.15,000</td>
-                    </tr>
-
-                    <tr>
-                        <td>04/15/2018</td>
-                        <td>Resturants</td>
-                        <td>AE544654644</td>
-                        <td>KFC ,NewYork USA</td>
-                        <td>$.20,000</td>
-                        <td>$.15,000</td>
-                    </tr>
-                </tbody>
-            </table> -->
-            <table   class="table table-striped table-bordered" id="tableid" >
         
-                    <tr id="header" style="background-color: #8b8b8b; font-size: 16px;">
+        <div class="col-xs-11">     
+            <table   class="table table-striped table-bordered" id="tableid " >        
+                    <tr id="header" style="background-color: #8b8b8b; font-size: 13px;">
                         <th>Date
                         </th>
-                        <th>Transaction Reference Number
+                        <th>Reference Number
         
                           </th>
                         <th>Description
         
                         </th>
                         
-                        <th>Card No
+                      <!--   <th>Card No
         
-                        </th>
+                        </th> -->
                         <th>Debit
         
                         </th>
@@ -286,7 +143,7 @@
                     </tr>
                
                 <tbody >
-                        <tr *ngFor ="let trans of Trans;let isOdd=odd; let isEven=even"  [class.odd]="isOdd"  [class.even]="isEven">
+                        <tr *ngFor ="let trans of Trans  | paginate: { itemsPerPage: 10, currentPage: p } ;let isOdd=odd; let isEven=even "  [class.odd]="isOdd"  [class.even]="isEven">
                         <td>             
                             {{trans.Date}}
                         </td>
@@ -296,9 +153,9 @@
                         <td>             
                             {{trans.Description}}
                         </td>
-                        <td>             
+                       <!--  <td>             
                             {{trans.Cardno}}
-                        </td>
+                        </td> -->
                         <td>             
                             {{trans.DAmount}}
                         </td>
@@ -309,6 +166,7 @@
                       </tr>
                 </tbody>
               </table>
+              <pagination-controls (pageChange)="p = $event"></pagination-controls>
         </div>
 
     </div>

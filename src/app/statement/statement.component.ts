@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { InformationService} from '../Common/information.service'; 
 import { DatePipe } from '@angular/common';
 import {DateformatPipe,MonthformatPipe} from '../date-pipe/date-pipe.component'
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 @Component({
@@ -19,7 +20,7 @@ export class StatementComponent implements OnInit {
   type:string ='';
   cardNo:string='';
   userId:string = InformationService.UserType ;
-  Trans: Transaction[];
+   Trans: Transaction[];
   fDate : any;
   fromDate : any;
   tDate:any;
@@ -60,4 +61,21 @@ export class StatementComponent implements OnInit {
 
 
   }
+  
+}
+
+export class Pagination {
+  constructor(
+    private dataService:DataService
+  ) {
+    this.loadAllData();
+  }
+  userId:string = InformationService.UserType ;
+  Trans: Transaction[];
+   loadAllData():void{
+
+    this.Trans = this.dataService.getAllData(this.userId )
+  }
+    p: number = 1;
+    collection: any[] = this.Trans;
 }
