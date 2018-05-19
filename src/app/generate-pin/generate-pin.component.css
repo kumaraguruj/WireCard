@@ -1,3 +1,8 @@
 /* #divId{
     font-size:13px; Color:#4f4f4f;
 } */
+.control-label
+{
+    font-size: 13px; 
+    Color:#4f4f4f;
+}
