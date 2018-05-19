@@ -215,7 +215,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 {
   color: black;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .desktopheader{
     display:none;
   }
