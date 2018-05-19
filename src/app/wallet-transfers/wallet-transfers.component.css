@@ -1,12 +1,12 @@
-/* #divid{
+#divid{
     font-size: 13px;color:#4f4f4f;
 }
 
 .col-sm-3 {
-    width: 20%;
+    /* width: 20%; */
 }
 
 #cssid{
-    width:20%;
-    text-align: right;
-} */
+    /* width:20%;
+    text-align: right; */
+}

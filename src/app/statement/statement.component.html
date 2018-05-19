@@ -1,13 +1,14 @@
-<div class="container form-group ">
+<!-- <div class="container form-group ">
       <div class="form-group" id="divid">
         <div class="col-xs-6">
             
                 <label>Statement</label>
         </div>
     </div>
-</div>
+</div> -->
 
 <div class="container" id="detailsid">
+        <h3 style="font-size: 20px;color: #4f4f4f">Statement</h3>
     <hr>      
 
        <div class="row form-group">           
@@ -87,7 +88,7 @@
                             <a style="cursor: pointer; "> Download  </a>
                      </div>  
                
-            <div class="col-sm-3" style="font-size:16px;color: #3f3535;">
+            <div class="col-sm-3" style="font-size:14px;color: #3f3535;">
                 <label>Transaction For the Period</label>
             </div>
             <div class="col-sm-4">                  
@@ -145,7 +146,7 @@
                     </tr>
                
                 <tbody >
-                        <tr *ngFor ="let trans of Trans  | paginate: { itemsPerPage: 10, currentPage: p } ;let isOdd=odd; let isEven=even "  [class.odd]="isOdd"  [class.even]="isEven">
+                        <tr *ngFor ="let trans of Trans  | paginate: { itemsPerPage: 10, currentPage: p } ;let isOdd=odd; let isEven=even "  [class.odd]="isOdd"  [class.even]="isEven" style=" font-size: 13px;">
                         <td>             
                             {{trans.Date}}
                         </td>

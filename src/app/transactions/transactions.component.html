@@ -17,20 +17,20 @@
     
     <div class="col-sm-2">
     
-    <label>From Date*:</label>
+    <label style="font-size: 13px; Color:#4f4f4f;">From Date*:</label>
     
     </div>
     
     <div class="col-sm-3" >
     
-    <input id="date"  type="date" [(ngModel)]="fDate" class="form-control">
+    <input id="date" type="date" [(ngModel)]="fDate" class="form-control">
     
     </div>
 
         
     <div class="col-sm-2">
     
-    <label>To Date*:</label>
+    <label style="font-size: 13px; Color:#4f4f4f;">To Date*:</label>
     
     </div>
     
@@ -46,7 +46,7 @@
     
     <div class="col-sm-2">
     
-    <label>Transaction Type:</label>
+    <label style="font-size: 13px; Color:#4f4f4f;">Transaction Type:</label>
     
     </div>
  
@@ -61,7 +61,7 @@
     
     <div class="col-sm-2">
     
-    <label>Card:</label>
+    <label style="font-size: 13px; Color:#4f4f4f;"> Card:</label>
     
     </div>
     <div  *ngIf="!LinksFlag">
@@ -94,7 +94,7 @@
     <div *ngIf="showHide">
         <table class="table table-striped table-bordered" id="tableid">
         <thead>
-            <tr id="header" style="background-color: #8b8b8b; font-size: 16px; color: white;">
+            <tr id="header" style="background-color: #8b8b8b; font-size: 13px;">
                 
                 <th>Date
                 </th>
@@ -117,7 +117,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor ="let trans of Trans  | paginate: { itemsPerPage: 10, currentPage: p }  ;let isOdd=odd; let isEven=even"  [class.odd]="isOdd"  [class.even]="isEven">
+            <tr *ngFor ="let trans of Trans  | paginate: { itemsPerPage: 10, currentPage: p }  ;let isOdd=odd; let isEven=even"  [class.odd]="isOdd"  [class.even]="isEven" style=" font-size: 13px;">
                 <td>             
                     {{trans.Date}}
                 </td>

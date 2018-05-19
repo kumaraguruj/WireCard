@@ -1,4 +1,4 @@
-/* input { display: inline; }
+input { display: inline; }
 
 #custName{
     font-size: 16px; Color: #4f4f4f;
@@ -13,10 +13,10 @@ font-size: 13px; Color:#4f4f4f
 }
 
 .col-sm-3 {
-    width: 20%;
-    text-align:right;
+    /* width: 20%;
+    text-align:right; */
 }
 
 #readText{
     text-align:left;
-} */
+}

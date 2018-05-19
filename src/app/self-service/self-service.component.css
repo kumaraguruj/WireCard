@@ -217,7 +217,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
     display:none;
   }
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
   .mobileheader{
     display:none;
   }
