@@ -1,9 +1,9 @@
 .actiVV{    
     
   color: black;
-    background-color: #d3d0d3 !important;
+    background-color: #ffff !important;
     border-radius: 5px;     
-    border-color: #d3d0d3;   
+    /*border-color: #d3d0d3;*/   
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
 }
@@ -94,30 +94,32 @@
   }
   .nav-tabs
    {
-     border-color: #373737;
+     /*border-color: #373737;*/
      width:60%;
+      margin-left:6px;
    }
   
   .nav-tabs > li a { 
       /* border: 1px solid #1A3E5E; */
       /* background-color:#574c4a; */
      color:#fff; 
+     margin-right: 5px;
       }
   
   .nav-tabs > li.active > a,
   .nav-tabs > li.active > a:focus,
   .nav-tabs > li.active > a:hover{
-      background-color:#d3d0d3;
+      background-color:#ffff;
       color:#000;
       border: 1px solid #1A3E5E;
       border-bottom-color: transparent;
     }
   
   .nav-tabs > li > a:hover{
-    background-color: #d3d0d3 !important;
+    background-color: #ffff !important;
       border-radius: 5px;
       color:#000;
-      border-color: #d3d0d3;
+     /*border-color: #d3d0d3;*/
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
   } 
