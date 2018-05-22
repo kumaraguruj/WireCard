@@ -2,10 +2,10 @@
       
       
     <div class=" form-group">
-            <h3 style="font-size: 19px;color: #656565; font-family:myriad pro">Generate Pin</h3>
+            <h3 style="font-size: 19px;color: #656565; font-family:MyriadPro-Regular;">Generate Pin</h3>
     
         <hr>
-        <label class="control-label" style="font-size:16px; color:#656565; font-family:myriad pro">Do you remember your old pin ?</label>
+        <label class="control-label" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;">Do you remember your old pin ?</label>
         <div class="row form-group">
             <div class="col-xs-6">
 
@@ -13,7 +13,7 @@
                     <div class="form-check">
 
 
-                        <div class="form-group" style="font-size:16px; color:#656565; font-family:myriad pro">
+                        <div class="form-group" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
 
                             <input class="form-check-input" name="OldPin" type="radio" id="radio100"  value="Yes" checked='checked'  (click)="setradio('Yes')">
                             <label class="form-check-label" for="radio100">Yes</label>
@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="col-xs-3">
-                    <div class="form-check" style="font-size:16px; color:#656565; font-family:myriad pro">
+                    <div class="form-check" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
 
                         <input class="form-check-input" name="OldPin" type="radio" id="radio101" value="No" (click)="setradio('No')">
                         <label class="form-check-label" for="radio101">No</label>
@@ -33,36 +33,36 @@
 
             </div>
         </div>
-        <div class="row form-group" style="font-size:16px; color:#656565; font-family:myriad pro;">
+        <div class="row form-group" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
 
             <div class="col-xs-6" *ngIf="isSelected('Yes')" style="width: 100%;">
                 <div class="panel panel-default" id="divId">
                    
                     <div class="panel-body form-group" id="collapseOne">
                         <div class="form-group row">
-                            <label for="inputOldPin" class="control-label col-sm-3" style="text-align:right;">
+                            <label for="inputOldPin" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
                                 Old Pin:</label>
                             <div class="col-sm-3">
-                                <input type="password" class="form-control" id="inputOldPin" placeholder="Old Pin" style="Border-radius:5px; background-color: #ffffff;"/>
+                                <input type="password" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" style="Border-radius:5px; background-color: #ffffff;"/>
                             </div>
                         </div>
                         <div class="row form-group">
-                            <label for="inputNewPin" class="control-label col-sm-3" style="text-align:right;">
+                            <label for="inputNewPin" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
                                 New Pin:</label>
                             <div class="col-sm-3">
-                                <input type="password" class="form-control" id="inputNewPin" placeholder="New Pin" style="Border-radius:5px; background-color: #ffffff;" />
+                                <input type="password" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" style="Border-radius:5px; background-color: #ffffff;" />
                             </div>
                         </div>
                         <div class="row form-group">
-                            <label for="inputCnfNewPin" class="control-label col-sm-3"  style="text-align:right;">
+                            <label for="inputCnfNewPin" class="control-label col-sm-3"  style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
                                 Confirm New Pin:</label>
                             <div class="col-sm-3">
-                                <input type="password" class="form-control" id="inputCnfNewPin" placeholder="Confirm New Pin" style="Border-radius:5px; background-color: #ffffff;"/>
+                                <input type="password" class="form-control" style="Border-radius:5px; background-color: #ffffff;"/>
                             </div>
                         </div>
                         <div class="row form-group">
 
-                            <div class="col-sm-4 col-sm-offset-3">
+                            <div class="col-sm-4 col-sm-offset-3" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
                                 <button type="submit" class="btn btn-primary" (click)='OldPinGenerated()'>
                                     Submit</button>
                             </div>
@@ -77,56 +77,56 @@
                    
                     <div class="panel-body form-group" id="divId">
                         <div class="row form-group">
-                            <label for="inputPhone" class="control-label col-sm-3" style="text-align:right;">
+                            <label for="inputPhone" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
                                 Registered phone:</label>
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" id="inputPhone" placeholder="Phone" />
+                                <input type="text" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" class="form-control" id="inputPhone" />
                             </div>
                         </div>
                         <div class="row form-group">
-                            <label for="inputDob" class="control-label col-sm-3" style="text-align:right;"> Date Of Birth:
+                            <label for="inputDob" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;"> Date Of Birth:
                             </label>
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" id="inputDob" placeholder="DOB" />
+                                <input type="text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" />
                             </div>
                         </div>
                         <div class="row form-group">
-                            <label for="inputNewPin" class="control-label col-sm-3" style="text-align:right;">
+                            <label for="inputNewPin" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
                                 New Pin:</label>
                             <div class="col-sm-3">
-                                <input type="password" class="form-control" id="inputNewPin" placeholder="New Pin" />
+                                <input type="password" class="form-control" id="inputNewPin" />
                             </div>
                         </div>
                         <div class="row form-group">
-                            <label for="inputConfirmPin" class="control-label col-sm-3" style="text-align:right;">
+                            <label for="inputConfirmPin" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
                                Confirm Pin:</label>
                             <div class="col-sm-3">
-                                <input type="password" class="form-control" id="inputConfirmPin" placeholder="Confirm Pin" />
+                                <input type="password" class="form-control" id="inputConfirmPin" />
                             </div>
                         </div>
                         <div class="row form-group">
-                            <label for="inputQuestion" class="control-label col-sm-3" style="text-align:right;">
+                            <label for="inputQuestion" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
                                 Security Question:</label>
                             <div class="col-sm-3">
-                                <select class="btn btn-default dropdown-toggle" style="width:100%">
+                                <select class="btn btn-default dropdown-toggle" style="width:100%;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
                                     <span class="caret">Action</span>
                                     <option>What is Your Favourite Food ?</option>
                                     <option>What is your Pet's Name</option>
-                                    <option>Who is your child hood hero?</option>
-                                    <option>What is first school's name</option>
+                                    <option>Who is your childhood hero?</option>
+                                    <option>What is your first school name</option>
                                 </select>
 
                             </div>
                         </div>
                         <div class="row form-group">
-                            <label for="InputAnswer" class="control-label col-sm-3" style="text-align:right;">
+                            <label for="InputAnswer" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
                                 Security Answer:</label>
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" id="InputAnswer" placeholder="Security Answer" />
+                                <input type="text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" />
                             </div>
                         </div>
                         <div class="row form-group">
-                            <div class="col-sm-3 col-sm-offset-3">
+                            <div class="col-sm-3 col-sm-offset-3" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
                                 <button type="submit" class="btn btn-primary" (click)='OldPinGenerated()'>
                                     Submit</button>
                             </div>
