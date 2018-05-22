@@ -204,9 +204,14 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   background-color: #ffff !important;
   border-radius: 5px;
   color:#000;
-  border-color: #d3d0d3;   
+  /* border-color: #d3d0d3;    */
+  /* border-right:none; */
+  margin-bottom:8px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
+  -webkit-box-shadow: 2px 2px 18px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 2px 18px -1px rgba(0,0,0,0.75);
+        box-shadow: 2px 2px 18px -1px rgba(0,0,0,0.75);
 }
 .linkColor
 {
