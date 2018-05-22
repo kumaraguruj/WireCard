@@ -8,11 +8,13 @@ font-size: 16px;
 }
 
 #detailsid{
-    font-size: 13px; Color:#4f4f4f
+    font-size: 16px; Color:#656565;
+    font-family: Myriad Pro;
 }
 
 #divid{
-    font-size: 20px; Color:#4f4f4f
+    font-size: 19px; Color:#656565;
+    font-family: Myriad Pro;
 }
 
 .table table-striped{
@@ -42,4 +44,12 @@ font-size: 16px;
 .even
 {
     background-color:white;
+}
+input{
+    Background-color:#c6c6c6;
+    Border-radius:5px;
+    Background-color:#ffffff ;
+    Font-size:8px;
+    Color:#000000;
+    Background-color : #8b8b8b;
 }
