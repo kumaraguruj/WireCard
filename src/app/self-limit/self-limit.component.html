@@ -1,12 +1,13 @@
 <div class="container divContainer">
 
 
-        <h3 style="font-size: 20px;color: #4f4f4f;">Card Limit</h3>
+        <h3 class="title">Card Limit</h3>
 
-        <br>
-        <div class="panel-body">
-                <div class="form-group row" id="divid">
-                        <div class="col-sm-2">
+        
+      <hr>
+        <div class="panel-body" id="panelGorup1">
+                <div class="form-group row"  >
+                        <div class="col-sm-2 labelAllign">
                                 <label for="sourceCard">Card:</label>
                         </div>
                         <div class="col-sm-3">
@@ -17,10 +18,10 @@
                                 <button class="btn btn-primary" Value="View" (click)="showHide = !showHide">View</button>
                         </div>
                 </div>
-                <br>
+               
                 <div *ngIf="showHide">
-                        <div class="form-group row" id="divid">
-                                <div class="col-sm-2">
+                        <div class="form-group row"  >
+                                <div class="col-sm-2 labelAllign">
                                         <label for="sourceCard">Name:</label>
                                 </div>
                                 <div class="col-sm-3">
@@ -29,8 +30,8 @@
 
 
                         </div>
-                        <div class="form-group row" id="divid">
-                                <div class="col-sm-2">
+                        <div class="form-group row"  >
+                                <div class="col-sm-2 labelAllign">
                                         <label for="sourceCard">A/C Number:</label>
                                 </div>
                                 <div class="col-sm-3">
@@ -40,8 +41,8 @@
 
                         </div>
 
-                        <div class="form-group row" id="divid">
-                                <div class="col-sm-2">
+                        <div class="form-group row"  >
+                                <div class="col-sm-2 labelAllign">
                                         <label for="sourceCard">Card Status:</label>
                                 </div>
                                 <div class="col-sm-3">
@@ -63,65 +64,68 @@
                                                 Set Expenses Rules
                                         </div>
                                 </div>
-                                <div class="panel-body col-sm-16" *ngIf="showHidePanel" style="background-color: #e9e9e9;">
-                                        <div class="form-group row" id="divid">
-                                                <div class="col-sm-3" style="font-size:13px;color:#4f4f4f">
+                                <div class="panel-body col-sm-16"   *ngIf="showHidePanel" style="background-color: #e9e9e9;">
+                                       
+                                      
+                                        <div class="form-group row"  >
+                                                <div class="col-sm-3 labelAllign"  >
                                                         <label for="sourceCard">International Use Allowed:</label>
                                                 </div>
-                                                <div class="col-sm-1">
+                                                <div class="col-sm-1 ">
                                                         <input class="form-check-input" name="InternationalUse" type="radio" id="radioInternationalYes" value="Yes" checked='checked'>
-                                                        <label class="form-check-label" for="radioInternationalYes" style="font-size:12px; color:#4f4f4f">Yes</label>
+                                                        <label class="form-check-label" for="radioInternationalYes" >Yes</label>
                                                 </div>
                                                 <div class="col-sm-1">
                                                         <input class="form-check-input" name="InternationalUse" type="radio" id="radioInternationalNo" value="No">
-                                                        <label class="form-check-label" for="radioInternationalNo" style="font-size:12px; color:#4f4f4f">No</label>
+                                                        <label class="form-check-label" for="radioInternationalNo" >No</label>
                                                 </div>
 
                                         </div>
-                                        <div class="form-group row" id="divid">
-                                                <div class="col-sm-3" style="font-size:13px;color:#4f4f4f">
-                                                        <label for="sourceCard">Cash Access Allowed:</label>
+                                        <div class="form-group row"  >
+                                                <div class="col-sm-3 labelAllign" >
+                                                        <label for="sourceCard" class="labelAllign">Cash Access Allowed:</label>
                                                 </div>
                                                 <div class="col-sm-1">
                                                         <input class="form-check-input" name="CashAccess" type="radio" id="radioCashAccessYes" value="Yes" checked='checked'>
-                                                        <label class="form-check-label" for="radioCashAccessYes" style="font-size:12px; color:#4f4f4f">Yes</label>
+                                                        <label class="form-check-label" for="radioCashAccessYes" >Yes</label>
                                                 </div>
                                                 <div class="col-sm-1">
                                                         <input class="form-check-input" name="CashAccess" type="radio" id="radioCashAccessNo" value="No">
-                                                        <label class="form-check-label" for="radioCashAccessNo" style="font-size:12px; color:#4f4f4f">No</label>
+                                                        <label class="form-check-label" for="radioCashAccessNo">No</label>
                                                 </div>
 
                                         </div>
-                                        <div class="form-group row" id="divid">
-                                                <div class="col-sm-3" style="font-size:13px;color:#4f4f4f">
+                                        <div class="form-group row"  >
+                                                <div class="col-sm-3 labelAllign" >
                                                         <label for="sourceCard">PIN Purchase Allowed:</label>
                                                 </div>
                                                 <div class="col-sm-1">
                                                         <input class="form-check-input" name="PinPurchase" type="radio" id="radioPinPurchaseYes" value="Yes" checked='checked'>
-                                                        <label class="form-check-label" for="radioPinPurchaseYes" style="font-size:12px; color:#4f4f4f">Yes</label>
+                                                        <label class="form-check-label" for="radioPinPurchaseYes" >Yes</label>
                                                 </div>
                                                 <div class="col-sm-1">
                                                         <input class="form-check-input" name="PinPurchase" type="radio" id="radioPinPurchaseNo" value="No">
-                                                        <label class="form-check-label" for="radioPinPurchaseNo" style="font-size:12px; color:#4f4f4f">No</label>
+                                                        <label class="form-check-label" for="radioPinPurchaseNo" >No</label>
                                                 </div>
 
                                         </div>
-                                        <div class="form-group row" id="divid">
-                                                <div class="col-sm-3" style="font-size:13px;color:#4f4f4f">
+                                        <div class="form-group row"  >
+                                                <div class="col-sm-3 labelAllign" >
                                                         <label for="sourceCard">Single Trans Limit:</label>
                                                 </div>
                                                 <div class="col-sm-1">
                                                         <input class="form-check-input" name="SingleTrans" type="radio" id="radioSingleTransYes" value="Yes" checked='checked'>
-                                                        <label class="form-check-label" for="radioSingleTransYes" style="font-size:12px; color:#4f4f4f">Yes</label>
+                                                        <label class="form-check-label" for="radioSingleTransYes" >Yes</label>
                                                 </div>
                                                 <div class="col-sm-1">
                                                         <input class="form-check-input" name="SingleTrans" type="radio" id="radioSingleTransNo" value="No">
-                                                        <label class="form-check-label" for="radioSingleTransNo" style="font-size:12px; color:#4f4f4f">No</label>
+                                                        <label class="form-check-label" for="radioSingleTransNo" >No</label>
                                                 </div>
 
                                         </div>
-                                        <hr>
-                                        <div class="form-group row" id="divid">
+                                
+                                       
+                                        <div class="form-group row"  >
                                                 <div class="col-sm-3" style="background-color: #d7d7d7">
                                                         Daily Transaction Limit
                                                         <table class="table">
@@ -225,10 +229,10 @@
 
 
                                         <!--Label-->
-                                        <hr>
+                                     
                                         <div class="form-row group">
                                                 
-                                                        <div class="sm-col-2" style="width:140%; font-size:13px;color:#4f4f4f">
+                                                        <div class="sm-col-2" style="width:140%; ">
                                                                 <!-- <div style="width:100%;float:left;padding-top:20px "> -->
                                                                         Merchant Categories
                                                                         <select name="sourceCard" id="dropDownCurrency" class="form-control" style="width:22%">
@@ -244,7 +248,7 @@
                                         </div>
                                         <br>
 
-                                        <div class="form-group row" id="divid">
+                                        <div class="form-group row"  >
                                                 <!-- <div style="width: 19%;padding: 2px;margin: 2px; display:inline-block" >
                                        <div class="col-sm-1">
 
@@ -356,7 +360,8 @@
 
                                         </div>
                                         <!-- Merchanaths -->
-                                        <div class="row form-group">
+                                        <br>
+                                        <div class="row form-group" >
                                                         <div class="col-sm-4">
                                                                 <button type="submit" class="btn btn-primary" (click)='btn_Submit_Click()'>
                                                                         Submit</button>
