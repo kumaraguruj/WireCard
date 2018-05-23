@@ -2,17 +2,17 @@ input { display: inline; }
 
 #custName{
     font-size: 16px; Color: #656565;
-    font-family: Myriad Pro; 
+    font-family: MyriadPro-Regular; 
 }
 
 #divid{
     font-size: 19px; Color: #656565;
-    font-family: Myriad Pro; 
+    font-family: MyriadPro-Regular; 
 }
 
 #detailsid{
 font-size: 16px; Color:#656565;
-font-family: Myriad Pro; 
+font-family: MyriadPro-Regular; 
 text-align:right;
 }
 
