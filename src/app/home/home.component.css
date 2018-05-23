@@ -207,10 +207,11 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   /* border-right:none; */
   margin-bottom:8px;
   border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  -webkit-box-shadow: 2px 2px 18px -1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 2px 2px 18px -1px rgba(0,0,0,0.75);
-        box-shadow: 2px 2px 18px -1px rgba(0,0,0,0.75);
+  border-bottom-right-radius: 0px; 
+  -webkit-box-shadow: -12px 2px 18px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: -12px 2px 18px -2px rgba(0,0,0,0.75);
+        box-shadow: -12px 2px 18px -2px rgba(0,0,0,0.75);
+   z-index: 1;
 }
 .col-xs-1 {
   width: 7.9% !important;
@@ -223,9 +224,9 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 .contentBox{
   Background-color:#ffff; min-height: 330px;
 
-  -webkit-box-shadow: 12px 2px 18px -1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 12px 2px 18px -1px rgba(0,0,0,0.75);
-        box-shadow: 12px 2px 18px -1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 2px 2px 18px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 2px 18px -1px rgba(0,0,0,0.75);
+        box-shadow: 2px 2px 18px -1px rgba(0,0,0,0.75);
 }
 @media screen and (max-width: 800px) {
   .desktopheader{
