@@ -17,7 +17,7 @@ hr
 }
 .labelAllign
 {
-    text-align:right;
+    text-align:left;
 }
 .textAllign
 {
@@ -116,4 +116,8 @@ background-color: #ffffff;
 {
 
     margin-bottom: 0px;
+}
+button{
+
+    background-color: #004165;
 }
