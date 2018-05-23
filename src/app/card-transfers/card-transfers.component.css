@@ -174,7 +174,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 }
 
 .nav-tabs li a {
-  margin-right: 0;
+  margin-right: -95px;
   /* border: 0; */
   background-color:#ffff;;
 }
