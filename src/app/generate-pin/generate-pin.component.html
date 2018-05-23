@@ -5,7 +5,7 @@
             <h3 style="font-size: 19px;color: #656565; font-family:MyriadPro-Regular;">Generate Pin</h3>
     
         <hr>
-        <label class="control-label" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;">Do you remember your old pin ?</label>
+        <label class="control-label" style="padding:1%;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">Do you remember your old pin ?</label>
         <div class="row form-group">
             <div class="col-xs-6">
 
@@ -40,21 +40,21 @@
                    
                     <div class="panel-body form-group" id="collapseOne">
                         <div class="form-group row">
-                            <label for="inputOldPin" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
+                            <label for="inputOldPin" class="control-label col-sm-3" style="padding-left:7%;text-align:left;font-size:16px; color:#656565; font-family:MyriadPro-Regular; width:13%">
                                 Old Pin:</label>
                             <div class="col-sm-3">
                                 <input type="password" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" style="Border-radius:5px; background-color: #ffffff;"/>
                             </div>
                         </div>
                         <div class="row form-group">
-                            <label for="inputNewPin" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
+                            <label for="inputNewPin" class="control-label col-sm-3" style="padding-left:6.5%;text-align:left;font-size:16px; color:#656565; font-family:MyriadPro-Regular; width:13%">
                                 New Pin:</label>
                             <div class="col-sm-3">
                                 <input type="password" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" style="Border-radius:5px; background-color: #ffffff;" />
                             </div>
                         </div>
                         <div class="row form-group">
-                            <label for="inputCnfNewPin" class="control-label col-sm-3"  style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
+                            <label for="inputCnfNewPin" class="control-label col-sm-3"  style="padding-left:1.5%;text-align:left;font-size:16px; color:#656565; font-family:MyriadPro-Regular;  width:13%">
                                 Confirm New Pin:</label>
                             <div class="col-sm-3">
                                 <input type="password" class="form-control" style="Border-radius:5px; background-color: #ffffff;"/>
@@ -62,8 +62,8 @@
                         </div>
                         <div class="row form-group">
 
-                            <div class="col-sm-4 col-sm-offset-3" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
-                                <button type="submit" class="btn btn-primary" (click)='OldPinGenerated()'>
+                            <div class="col-sm-3" style="font-size:16px; color:#656565;  font-family:MyriadPro-Regular; width:38%">
+                                <button type="submit" style="float:right;" class="btn btn-primary" (click)='OldPinGenerated()'>
                                     Submit</button>
                             </div>
                         </div>
@@ -77,34 +77,25 @@
                    
                     <div class="panel-body form-group" id="divId">
                         <div class="row form-group">
-                            <label for="inputPhone" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
-                                Registered phone:</label>
-                            <div class="col-sm-3">
-                                <input type="text" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" class="form-control" id="inputPhone" />
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <label for="inputDob" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;"> Date Of Birth:
-                            </label>
-                            <div class="col-sm-3">
-                                <input type="text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" />
-                            </div>
-                        </div>
-                        <div class="row form-group">
-                            <label for="inputNewPin" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
+                            <label for="inputNewPin" class="control-label col-sm-3" style="width:14%;padding-left:7.5%;text-align:left;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
                                 New Pin:</label>
                             <div class="col-sm-3">
                                 <input type="password" class="form-control" id="inputNewPin" />
                             </div>
-                        </div>
+                            
+                                <label for="inputDob" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;"> Date Of Birth:
+                                </label>
+                                <div class="col-sm-3">
+                                    <input type="text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" />
+                                </div>
+                            </div>
+                       
                         <div class="row form-group">
-                            <label for="inputConfirmPin" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
+                            <label for="inputConfirmPin" class="control-label col-sm-3" style="width:14%;padding-left:5.5%;text-align:left;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
                                Confirm Pin:</label>
                             <div class="col-sm-3">
                                 <input type="password" class="form-control" id="inputConfirmPin" />
                             </div>
-                        </div>
-                        <div class="row form-group">
                             <label for="inputQuestion" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
                                 Security Question:</label>
                             <div class="col-sm-3">
@@ -117,16 +108,32 @@
                                 </select>
 
                             </div>
+                            
                         </div>
                         <div class="row form-group">
-                            <label for="InputAnswer" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
-                                Security Answer:</label>
+                            <label for="inputPhone" class="control-label col-sm-3" style="padding-left:2%;width:14%;text-align:left;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
+                                Registered phone:</label>
                             <div class="col-sm-3">
-                                <input type="text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" />
+                                <input type="text" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" class="form-control" id="inputPhone" />
                             </div>
+
+                            
+
+<label for="InputAnswer" class="control-label col-sm-3" style="text-align:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
+    Security Answer:</label>
+<div class="col-sm-3">
+    <input type="text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" />
+</div>
                         </div>
+                        
+                        
+                            
+                        
+                        
+                            
+                       
                         <div class="row form-group">
-                            <div class="col-sm-3 col-sm-offset-3" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
+                            <div class="col-sm-3 col-sm-offset-3" style="padding-left:6.6%;float:right;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
                                 <button type="submit" class="btn btn-primary" (click)='OldPinGenerated()'>
                                     Submit</button>
                             </div>

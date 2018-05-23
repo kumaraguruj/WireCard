@@ -6,6 +6,7 @@
     /*border-color: #d3d0d3;*/   
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    margin-right: 6px;
 }
 .tabs-left, .tabs-right {
     border-bottom: none;
