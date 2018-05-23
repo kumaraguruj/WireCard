@@ -1,7 +1,8 @@
 #detailsid{
     font-size: 16px; color: #656565;
     font-family: MyriadPro-Regular;
-    text-align:right;
+    text-align:left;
+    width:12%;
 }
 #divid{
     font-size: 19px; color: #656565;
@@ -19,8 +20,12 @@
 
 #textInfo{
     text-align:left;
+    
 }
 
 #line{
     Border-color:#a9a9a9;
+}
+#colspace{
+    width:12%;
 }
