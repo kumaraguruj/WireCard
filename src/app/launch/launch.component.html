@@ -5,7 +5,7 @@
 
 <div class="container-fluid">
         <div class="row">
-                <div style="background-color: #004165" class="col-sm-12">    
+                <div style="background-color: #004165;" class="col-sm-12">    
                     <img src="assets/images/logo.png" style="padding:20px 10px 20px 10px;" >
                 </div>  
         </div> 
@@ -63,9 +63,9 @@
 </div> 
 </div>
 </div> 
-                    <div class="row">
+                    <div class="row" style="background-color: #e2e2e2;">
                         <div class="col-sm-4" >  
-                            <div class="container-fluid" style=" background-color: #ffffff; border-radius: 5px; max-width: 450px; padding: 0px;margin:5px;">
+                            <div class="container-fluid" style=" background-color: #ffffff; border-radius: 5px; max-width: 450px; padding: 0px;margin:5px; ">
                                 <div class="row-fluid" style="  border-top-left-radius: 10px; border-top-right-radius: 10px;">
                                 <div class="span3">
                                         <!-- <img src="assets/images/myAccountIcon.png" style="padding: 15px;" >   -->
@@ -78,10 +78,10 @@
                         </div> 
                         
                         <div class="col-sm-4" *ngIf="!LinksFlag" >
-                            <div class="container-fluid" style="background-color: #ffffff; border-radius: 5px; max-width: 450px; padding: 0px;margin:5px;">
+                            <div class="container-fluid" style="background-color: #ffffff; border-radius: 5px; max-width: 450px; padding: 0px;margin:5px; ">
                                 <div class="row-fluid" style=" border-top-left-radius: 10px; border-top-right-radius: 10px;">
                                         <div class="span3" style="padding-left: 20px;" >
-                                                <span>Credit card Average Balance</span>
+                                                <span style="font-family: MyriadPro-Regular;color:#000000;Font-size:12px;">Credit card Average Balance</span>
                                                 <!-- <img src="assets/images/infoGraphic1.png" style="padding: 15px; height: 120px;" >   -->
                                                 <app-monthly-avergage-balance-top id="chartdivBar"></app-monthly-avergage-balance-top> 
                                             </div> 
@@ -89,10 +89,10 @@
                             </div>
                         </div>
                         <div class="col-sm-4" *ngIf="LinksFlag" >
-                                <div class="container-fluid" style="background-color: #ffffff; border-radius: 5px; max-width: 450px; padding: 0px;margin:5px;">
+                                <div class="container-fluid" style="background-color: #ffffff; border-radius: 5px; max-width: 450px; padding: 0px;margin:5px; ">
                                     <div class="row-fluid" style=" border-top-left-radius: 10px; border-top-right-radius: 10px;">
                                             <div class="span3" style="padding-left: 20px;" >
-                                                    <span>Monthly Expenses Prepaid Card</span>
+                                                    <span style="font-family: MyriadPro-Regular;color:#000000;Font-size:12px;">Monthly Expenses Prepaid Card</span>
                                                     <!-- <img src="assets/images/infoGraphic1.png" style="padding: 15px; height: 120px;" >   -->
                                                     <app-monthly-expenses-prepaid-card-top id="chartdivClusteredBar"></app-monthly-expenses-prepaid-card-top> 
                                                 </div> 
@@ -101,11 +101,11 @@
                             </div> 
                     
                             <div class="col-sm-4"  >
-                            <div class="container-fluid" style="background-color: #ffffff;border-radius: 5px; max-width: 450px; padding: 0px;margin:5px;">
+                            <div class="container-fluid" style="background-color: #ffffff; border-radius: 5px; max-width: 450px; padding: 0px;margin:5px; ">
                                 <div class="row-fluid" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
                                         <div class="span3" style="padding-left:20px;" >
                                             <div class="col-sm-7" >
-                                                <span >Expenses by categrory</span>
+                                                <span style="font-family: MyriadPro-Regular;color:#000000;Font-size:12px;">Expenses by categrory</span>
                                                 <!-- <img src="assets/images/infoGraphic2.png" style="padding: 15px; height: 120px;" >   -->
                                                 <app-expenses-by-categroy-top id="chartdivPie"></app-expenses-by-categroy-top>
                                    
@@ -114,31 +114,31 @@
                                             
                                         </div>
                                        
-                                        <div class="row form-group" style="font-size: 10px;font-weight:bold;padding-top:6%;margin-bottom:0px">
+                                        <div class="row form-group" style="font-size: 10px;padding-top:6%;margin-bottom:0px">
                                                 <table>
                                                     <tr>
-                                                        <td style="text-align:right">Miscellanous:</td>
-                                                        <td style="text-align:right; padding-left: 5%">  6500.00</td>
+                                                        <td style="text-align:right"><span style="font-family: MyriadPro-Regular;color:#000000;Font-size:9px;">Miscellanous:</span></td>
+                                                        <td style="text-align:right; padding-left: 5%"><span style="font-family: MyriadPro-Regular;color:#000000;Font-size:9px;">  6500.00</span></td>
                                                     </tr>
                                                     <tr>
-                                                        <td style="text-align:right">E-Commerce:</td>
-                                                            <td style="text-align:right; padding-left: 5%"> 7000.00</td>
+                                                        <td style="text-align:right"><span style="font-family: MyriadPro-Regular;color:#000000;Font-size:9px;">E-Commerce:</span></td>
+                                                            <td style="text-align:right; padding-left: 5%"><span style="font-family: MyriadPro-Regular;color:#000000;Font-size:9px;"> 7000.00</span></td>
                                                     </tr>
                                                     <tr>
-                                                        <td style="text-align:right">Fuel:</td>
-                                                            <td style="text-align:right; padding-left: 5%"> 2500.00</td>
+                                                        <td style="text-align:right"><span style="font-family: MyriadPro-Regular;color:#000000;Font-size:9px;">Fuel:</span></td>
+                                                            <td style="text-align:right; padding-left: 5%"> <span style="font-family: MyriadPro-Regular;color:#000000;Font-size:9px;">2500.00</span></td>
                                                     </tr>
                                                     <tr>
-                                                        <td style="text-align:right">Resturants:</td>
-                                                            <td style="text-align:right;padding-left: 5%"> 4500.00</td>
+                                                        <td style="text-align:right"><span style="font-family: MyriadPro-Regular;color:#000000;Font-size:9px;">Resturants:</span></td>
+                                                            <td style="text-align:right;padding-left: 5%"><span style="font-family: MyriadPro-Regular;color:#000000;Font-size:9px;"> 4500.00</span></td>
                                                     </tr>
                                                     <tr>
-                                                            <td style="text-align:right">Shopping:</td>
-                                                                <td style="text-align:right;padding-left: 5%"> 9500.00</td>
+                                                            <td style="text-align:right"><span style="font-family: MyriadPro-Regular;color:#000000;Font-size:9px;">Shopping:</span></td>
+                                                                <td style="text-align:right;padding-left: 5%"> <span style="font-family: MyriadPro-Regular;color:#000000;Font-size:9px;">9500.00</span></td>
                                                         </tr>
                                                         <tr>
-                                                                <td style="text-align:right">Transfer:</td>
-                                                                    <td style="text-align:right;padding-left: 5%"> 9800.00</td>
+                                                                <td style="text-align:right"><span style="font-family: MyriadPro-Regular;color:#000000;Font-size:9px;">Transfer:</span></td>
+                                                                    <td style="text-align:right;padding-left: 5%"><span style="font-family: MyriadPro-Regular;color:#000000;Font-size:9px;"> 9800.00</span></td>
                                                             </tr>
                                                     
                                                 </table>
@@ -151,27 +151,27 @@
                         </div> 
                     </div> 
 
-                    <div class="row desktopheader" style="height: 60%;width: 95%; margin-bottom: 0px; padding-bottom: 0px; padding-left: 17px; ">
+                    <div class="row desktopheader" style="height: 60%;width: 95%; background-color: #e2e2e2; margin-bottom: 0px; padding-bottom: 0px; padding-left: 17px;">
 
-                                <div class="col-sm-12" style="height: 28px;   margin-top: 3px;    margin-bottom: 7px;">   
+                                <div class="col-sm-12" style="height: 22px;margin-bottom: 16px;">   
                                             <ul class="nav nav-tabs" role="tablist">         
                                             <li routerLinkActive="actiVV" #homeroute="routerLinkActive">
                                                
-                                                <a role="tab"  data-toggle="tab" [ngClass]="{'actiVV':homeroute.isActive}"   [routerLink]="['/Home/Summary']" style="background-color:#004165;" >HOME</a>
+                                                <a role="tab"  data-toggle="tab" [ngClass]="{'actiVV':homeroute.isActive}"   [routerLink]="['/Home/Summary']" style="background-color:#004165;font-family: MyriadPro-Regular;Font-size:17px;" >HOME</a>
                                                 <a role="tab" data-toggle="tab" [routerLink]="['/Home/']" style="display:none;" ></a>
                                                
                                              
                                             </li>      
                                             <li routerLinkActive="actiVV" #selfroute="routerLinkActive">
-                                                <a role="tab"[ngClass]="{'actiVV':selfroute.isActive}" [routerLink]="['/SelfService/Statement']" data-toggle="tab" style="background-color:#004165;">SELF SERVICE</a>
+                                                <a role="tab"[ngClass]="{'actiVV':selfroute.isActive}" [routerLink]="['/SelfService/Statement']" data-toggle="tab" style="background-color:#004165;font-family: MyriadPro-Regular;Font-size:17px;">SELF SERVICE</a>
                                                 <a role="tab" data-toggle="tab" [routerLink]="['/SelfService/']" style="display:none;" ></a>
                                             </li>
                                             <li *ngIf="LinksFlag" routerLinkActive="actiVV" #cardroute="routerLinkActive">
-                                                <a role="tab" [ngClass]="{'actiVV':cardroute.isActive}" data-toggle="tab" [routerLink]="['/CardTransfers/WalletTransfers']" style="background-color:#004165;">MOVE MONEY</a>
+                                                <a role="tab" [ngClass]="{'actiVV':cardroute.isActive}" data-toggle="tab" [routerLink]="['/CardTransfers/WalletTransfers']" style="background-color:#004165;font-family: MyriadPro-Regular;Font-size:17px;">MOVE MONEY</a>
                                                 <a role="tab" data-toggle="tab" [routerLink]="['/CardTransfers/']" style="display:none;" ></a>
                                             </li>
                                             <li routerLinkActive="actiVV" #reportsroute="routerLinkActive">
-                                                <a role="tab" [ngClass]="{'actiVV':reportsroute.isActive}" data-toggle="tab" [routerLink]="['/Reports/yearlyReports']" style="background-color:#004165;">REPORTS</a>
+                                                <a role="tab" [ngClass]="{'actiVV':reportsroute.isActive}" data-toggle="tab" [routerLink]="['/Reports/yearlyReports']" style="background-color:#004165;font-family: MyriadPro-Regular;Font-size:17px;">REPORTS</a>
                                                 <a role="tab" data-toggle="tab" [routerLink]="['/Reports/']" style="display:none;" ></a>
                                             </li> 
                                             </ul>
