@@ -88,22 +88,23 @@
                             <a style="cursor: pointer; "> Download  </a>
                      </div>  
                
-            <div class="col-sm-3"  style="text-align: right"  >
+            <div class="col-sm-3"   >
                 <h3 id="divid">Transaction For the Period</h3>
             </div>
-            <div class="col-sm-4" id="detailsid">                  
-            <select class="btn btn-default dropdown-toggle col-xs-6" [(ngModel)]="fDate" >
+            <div class="col-sm-2" >                  
+            <select class="  form-control " [(ngModel)]="fDate" >
                 Action
                 <span class="caret"></span>
                 <option value="" selected="selected">April 2018</option>
                 <option>May 2018</option>
             </select>
-            &nbsp;
-            <button type="submit" class="btn btn-primary" (click)='searchbymonth()' style="background-color: #004165;font-family: MyriadPro-Regular;">
-              Submit</button>
+            
      
     </div>
-           
+           <div class="col-sm-3" >    
+            <button type="submit" class="btn btn-primary" (click)='searchbymonth()' style="background-color: #004165;font-family: MyriadPro-Regular;">
+              Submit</button>
+              </div>
     
         </div>
 </div>
