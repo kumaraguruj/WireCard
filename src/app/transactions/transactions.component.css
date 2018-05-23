@@ -6,7 +6,7 @@ input{
     Color:#000000;
    /* Background-color : #8b8b8b;*/
 }
-#line{
+hr{
     Border-color:#a9a9a9;
 }
 #detailsid{
@@ -26,4 +26,4 @@ input{
 
 #tableHeader{background-color: #8b8b8b; font-size: 16px;color:#ffffff;font-family: MyriadPro-Regular;}
 
-#tableid tr:nth-child(even){background-color: #e9e9e9; font-size: 13px;color: #4f4f4f;font-family: MyriadPro-Regular; }
+#tableid tr:nth-child(even){background-color: #e9e9e9; font-size: 13px;color: #4f4f4f }

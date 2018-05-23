@@ -48,8 +48,8 @@ input{
     Font-size:8px;
     Color:#000000;   
 }
-#line{
-    Border-color:#a9a9a9;
+hr{
+    Border-color:#a9a9a9;   
 }
 #tableid tr:nth-child(odd){background-color: #d7d7d7; font-size: 13px;color: #4f4f4f;font-family: MyriadPro-Regular;}
 
