@@ -216,6 +216,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 .linkColor
 {
   color: black;
+  font-family: MyriadPro-Regular;
 }
 @media screen and (max-width: 800px) {
   .desktopheader{
