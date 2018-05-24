@@ -14,7 +14,9 @@ export class WalletTransfersComponent implements OnInit {
   }
   clickMethod() {
     if(confirm("Amount transferred")) {
-      window.location.reload();
+
+      this.Calculate();
+     
     }
   }
   CancelMethod(){
