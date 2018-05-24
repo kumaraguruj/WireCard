@@ -186,9 +186,14 @@ text-align:center; */
 
 }
 
-hr { width:70%; height:1px; padding-right: 5px; background-color: #bfbfbf;margin-top: 0px;}
+hr { width:75%; height:1px; padding-right: 5px; background-color: #bfbfbf;margin-top: 0px;}
 textarea:focus, input:focus{
   outline: none;
+}
+input
+{
+  border:0;width:75%;
+
 }
 
 

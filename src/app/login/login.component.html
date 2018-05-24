@@ -56,7 +56,7 @@
             <div class="divRight" style="padding-left: 5% " >
 
               
-                <div style="height:79%;" >
+                <div style="height:75%;" >
                  <!--UserName-->
                  <div class="form-group row" ></div>
                  <div class="form-group row" style="padding-top:6%" >
@@ -68,11 +68,11 @@
                    <div class="form-group row" ></div>
                    <div class="form-group row" ></div>
                    
-                  <div class="form-group row" style="margin-bottom: 10px;" >
+                  <div class="form-group row"  >
                     
                     
                       <div class="col-sm-5">
-                        <input type="username" style="border:0"
+                        <input type="username" 
                             [(ngModel)]="username"  placeholder="Username"/>
                       </div>
                      
@@ -83,18 +83,20 @@
                   <div class="form-group row" style="margin-bottom: 10px;"   >
                     
                      
-                        <div class="col-sm-5">
+                        <div class="col-sm-4">
                             <!-- <input type="password" id="logInPassword" name="password" class="toggle-password" data-toggle="password" style="border:none"   [(ngModel)]="password"  placeholder="Password" /> -->
-                            <input type="password"  class="toggle-password" style="border:none"   [(ngModel)]="password"  placeholder="Password" />
+                            <input type="password"  class="toggle-password"  [(ngModel)]="password"  placeholder="Password" />
                            
                           </div>
                       
                     </div>
                     <hr>
                   <!-- --> 
-                    <div class=" form-group row alert alert-danger" style="text-align: right" *ngIf="errormessage">
+                    <div class=" form-group  alert alert-danger" style="padding-left: 1%; text-align: center;width: 98%;font-size: 12px; " *ngIf="errormessage">
+                   
                       {{errormessage}}
-                     </div>
+                      </div>
+                     
                 </div>
 
                 <!---->
@@ -108,7 +110,7 @@
                         <a (click)='rgisterAccount()'> Don't have an <span style="font-weight: bold"> Account?</span></a>
                     </div>
                     <div class="col-sm-4">
-                      <a  (click)='forgotPassword()'>Forgot <span style="font-weight: bold"> Password?</span></a>
+                      <a  (click)='forgotPassword()'>Forgot <span style="font-weight: bold">Password?</span></a>
                     </div>
 
                 </div>
