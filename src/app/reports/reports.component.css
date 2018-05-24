@@ -230,7 +230,7 @@ z-index: 1;
   }
 }
 .contentBox{
-  Background-color:#ffff; min-height: 330px;
+  Background-color:#ffff; min-height: 300px;
 
   -webkit-box-shadow: 2px 2px 18px -1px rgba(0,0,0,0.75);
         -moz-box-shadow: 2px 2px 18px -1px rgba(0,0,0,0.75);
