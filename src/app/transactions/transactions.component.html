@@ -41,7 +41,7 @@
     
     <div class="col-sm-2" style="text-align: left">
     
-    <label><span class="label">Transaction Type:</span></label>
+    <label><span class="label">Transaction Type*:</span></label>
     
     </div>
  
@@ -56,15 +56,15 @@
     
     <div class="col-sm-2" style="text-align: left">
     
-    <label><span class="label"> Card:</span></label>
+    <label><span class="label"> Card*:</span></label>
     
     </div>
     <div  *ngIf="!LinksFlag">
     <div class="col-sm-2" >
         <select name="sourceCard" id="sourceCard" class="form-control" [(ngModel)]="cardNo"  >
             <option value="All">All</option>
-          <option value="4448-88XX-XXXX-5500">4448-88XX-XXXX-5500</option>
-          <option value="4448-88XX-XXXX-5518">4448-88XX-XXXX-5518</option>          
+          <option value="4448-XXXX-XXXX-5500">4448-XXXX-XXXX-5500</option>
+          <option value="4448-XXXX-XXXX-5518">4448-XXXX-XXXX-5518</option>          
           </select>
        </div>    
     </div>
@@ -72,7 +72,7 @@
             <div class="col-sm-2" >
                 <select name="sourceCard" id="sourceCard" class="form-control" [(ngModel)]="cardNo"  >
                    <option value="All">All</option>                 
-                  <option value="4448-88XX-XXXX-8743">4448-88XX-XXXX-8743</option>
+                  <option value="4448-XXXX-XXXX-8743">4448-XXXX-XXXX-8743</option>
                   </select>
                </div>    
             </div>
@@ -94,10 +94,8 @@
                 <th>Date
                 </th>
                 <th>Transaction Reference Number
-
-                  </th>
+                 </th>
                 <th>Description
-
                 </th>
                 
                 <th>Card No
