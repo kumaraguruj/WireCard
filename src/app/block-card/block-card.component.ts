@@ -29,7 +29,7 @@ export class BlockCardComponent implements OnInit {
   buttonDisabled: boolean;
 
   onChange(event){
-    this.buttonDisabled = true
+    this.buttonDisabled = true;
     
   }
 
