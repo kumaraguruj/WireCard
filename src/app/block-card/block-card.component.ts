@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import {InformationService} from '../Common/information.service';
 
 @Component({
   selector: 'app-block-card',
@@ -8,7 +9,12 @@ import { Router } from '@angular/router';
 })
 export class BlockCardComponent implements OnInit {
 
-  constructor(private _router:Router) { }
+  LinksFlag:boolean=false;
+
+  constructor(private _router:Router) { 
+    this.LinksFlag=InformationService.UserType==='CreditUser'?false:true;
+
+  }
 
   clickMethod(name: string) {
     if(confirm("Your card will be blocked")) {
@@ -23,7 +29,7 @@ export class BlockCardComponent implements OnInit {
   buttonDisabled: boolean;
 
   onChange(event){
-    this.buttonDisabled = true
+    this.buttonDisabled = true;
     
   }
 
@@ -31,6 +37,9 @@ export class BlockCardComponent implements OnInit {
     //this._router.navigate(['/SelfService']);
     window.location.reload();
 }
+
+
+  
 
   ngOnInit() {
   }

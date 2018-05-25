@@ -2,29 +2,18 @@
   <h3 id="divid">Card Summary </h3>
   <hr id="line">
  
-<!--   
-<div class="form-group row">
-  <div class="col-sm-3">
-      <label id ="custName" *ngIf="!LinksFlag">Alice</label>
-      <label id ="custName" *ngIf="LinksFlag">Bob</label>
-</div>
-
-</div>
-<br> -->
 <div *ngIf="LinksFlag">
 <div class="form-group row" >
   <div class="col-sm-2" id="detailsid">
     <label>Card Number:</label>
     </div>
     <div class="col-sm-3" id="readText">
-        4448-88XX-XXXX-5500
+        4448-XXXX-XXXX-8743
     </div>
-    <div class="col-sm-2" id="detailsid">
-        <label>Last Statement Date:</label>
-        </div>
-        <div class="col-sm-3" id="readText">
-            05/20/2018
-        </div>
+    <div class="col-sm-3"  id="divid">
+        <u>Last Deposited Amount</u>
+    </div>
+    <!---->
   </div>
 
 <div class="form-group row">
@@ -34,12 +23,12 @@
   <div class="col-sm-3" id="readText">
       1003000000000124092
   </div>
-    <div class="col-sm-2" id="detailsid"> 
-      <label>Next Statement Date:</label>
+  <div class="col-sm-2" id="detailsid"> 
+    <label>Wallet Balance - USD:</label>
     </div>
     <div class="col-sm-3" id="readText">
-        06/20/2018
-    </div>
+            &nbsp;&nbsp;628.80
+  </div>
 </div>
 <div class="form-group row">
     <div class="col-sm-2" id="detailsid">
@@ -48,52 +37,37 @@
     <div class="col-sm-3" id="readText">
         Active
     </div>
-    <div class="col-sm-3"  id="divid">
-        <u>Last Deposited Amount</u>
-    </div>
-  </div>
-<div class="form-group row">
-    <div class="col-sm-2 " id="detailsid">
-      <label>Secondary Card #:</label>
-    </div>
-    <div class="col-sm-3" id="readText">
-        4448-88XX-XXXX-5518
-    </div>
-    <div class="col-sm-2" id="detailsid"> 
-        <label>Wallet Balance - USD:</label>
-        </div>
-        <div class="col-sm-3" id="readText">
-        628.80
-      </div>
-</div>  
-<div class="form-group row">
-    <div class="col-sm-2" id="detailsid">
-      <label>Routing Number:</label>
-    </div>
-    <div class="col-sm-3" id="readText">
-      -------
-    </div>
     <div class="col-sm-2" id="detailsid">
         <label>Wallet Balance - SGD:</label>
       </div>
       <div class="col-sm-3" id="readText">
-        10302.78
-      </div>
-</div>  
-<div class="form-group row">
-    <div class="col-sm-2" id="detailsid">
-      <label>Card Status:</label>
-    </div>
-    <div class="col-sm-3" id="readText">
-        Active
-    </div>
-    <div class="col-sm-2" id="detailsid">
-        <label>Wallet Balance - Euro:</label>
-        </div>
-        <div class="col-sm-3" id="readText">
-        56.87
+            &nbsp;&nbsp;10302.78
       </div>
   </div>
+<div class="form-group row">
+    <div class="col-sm-2" id="detailsid">
+        <label>Last Statement Date:</label>
+        </div>
+        <div class="col-sm-3" id="readText">
+                04/30/2018
+        </div>
+        <div class="col-sm-2" id="detailsid">
+            <label>Wallet Balance - Euro:</label>
+            </div>
+            <div class="col-sm-3" id="readText">
+                    &nbsp;&nbsp;56.87
+          </div>
+</div>  
+<div class="form-group row">
+    <div class="col-sm-2" id="detailsid"> 
+        <label>Next Statement Date:</label>
+      </div>
+      <div class="col-sm-3" id="readText">
+            05/31/2018
+      </div>
+      
+</div>  
+
 <hr>
 </div>
 <div *ngIf="!LinksFlag">
@@ -102,13 +76,13 @@
           <label>Card Number:</label>
           </div>
           <div class="col-sm-3" id="readText">
-              8976-58XX-XXXX-3366
+              4488-XXXX-XXXX-5518
           </div>
           <div class="col-sm-2" id="detailsid">
               <label>Last Statement Date:</label>
               </div>
               <div class="col-sm-3" id="readText">
-                  07/20/2018
+                  &nbsp;&nbsp;04/30/2018
               </div>
         </div>
       
@@ -123,7 +97,7 @@
             <label>Next Statement Date:</label>
           </div>
           <div class="col-sm-3" id="readText">
-              09/20/2018
+                &nbsp;&nbsp;05/31/2018
           </div>
       </div>
       <div class="form-group row">
@@ -142,13 +116,13 @@
             <label>Secondary Card #:</label>
           </div>
           <div class="col-sm-3" id="readText">
-              4748-38XX-XXXX-5565
+              4488-XXXX-XXXX-5500
           </div>
           <div class="col-sm-2" id="detailsid"> 
-              <label>Wallet Balance - USD:</label>
+              <label>Account Balance - USD:</label>
               </div>
               <div class="col-sm-3" id="readText">
-              628.80
+                    &nbsp;&nbsp;628.80
             </div>
       </div>  
       <div class="form-group row">
