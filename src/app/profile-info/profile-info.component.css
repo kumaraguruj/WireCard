@@ -1,31 +1,34 @@
-#detailsid{
-    font-size: 16px; color: #656565;
-    font-family: MyriadPro-Regular;
-    text-align:left;
-    width:12%;
+input { display: inline; }
+
+#custName{
+    font-size: 16px; Color: #656565;
+    font-family: MyriadPro-Regular; 
 }
+
 #divid{
-    font-size: 19px; color: #656565;
-    font-family: MyriadPro-Regular;
+    font-size: 19px; Color: #656565;
+    font-family: MyriadPro-Regular; 
+}
+
+#detailsid{
+font-size: 16px; Color:#656565;
+font-family: MyriadPro-Regular; 
+text-align:left;
 }
 
 .form-group {
     margin-bottom: 0%;
 }
 
-/* .col-sm-3 {
-    width: 15%;
-    text-align: right;
-} */
+/*.col-sm-3 {
+    /* width: 20%;
+    text-align:right; 
+}*/
 
-#textInfo{
+#readText{
     text-align:left;
-    font-family: MyriadPro-Regular;    
+    font-family: MyriadPro-Regular;
 }
-
 #line{
     Border-color:#a9a9a9;
-}
-#colspace{
-    width:12%;
 }
