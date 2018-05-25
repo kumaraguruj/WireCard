@@ -21,7 +21,7 @@ export class BlockCardComponent implements OnInit {
       {
         alert("Your card has been blocked")
 
-        window.location.reload();
+        //window.location.reload();
       }
     }
   }
@@ -35,7 +35,7 @@ export class BlockCardComponent implements OnInit {
 
   refresh(): void {
     //this._router.navigate(['/SelfService']);
-    window.location.reload();
+    //window.location.reload();
 }
 
 
