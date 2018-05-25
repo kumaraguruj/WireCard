@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InformationService } from '../Common/information.service';
 
 @Component({
   selector: 'app-generate-pin',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GeneratePinComponent implements OnInit {
 
-  constructor() { }
+  LinksFlag:boolean;
+
+  constructor() {
+    this.LinksFlag=InformationService.UserType==='CreditUser'?false:true;
+   }
 
   ngOnInit() {
   }
