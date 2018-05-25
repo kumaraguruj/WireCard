@@ -1,7 +1,7 @@
 <div class="container">
       
       
-    <div class=" form-group">
+    <div class="form-group">
             <h3 style="font-size: 19px;color: #656565; font-family:MyriadPro-Regular;">Generate Pin</h3>
     
         <hr>
@@ -35,11 +35,11 @@
         </div>
         <div class="row form-group" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
 
-            <div class="col-xs-6" *ngIf="isSelected('Yes')" style="width: 100%;">
+            <div class="col-sm-12" *ngIf="isSelected('Yes')" style="width: 100%;">
                 <div class="panel panel-default" id="divId">
                    
                     <div class="panel-body form-group" id="collapseOne">
-                            <div class="form-group row" *ngIf="!LinksFlag">
+                            <div *ngIf="!LinksFlag">
                                     <label for="cardnumber" class="control-label col-sm-3" style="text-align:left;font-size:16px; color:#656565; font-family:MyriadPro-Regular; width:13%">
                                         Card Number:</label>
                                     <div class="col-sm-3">
@@ -72,9 +72,9 @@
                                 <input type="password" class="form-control" style="Border-radius:5px; background-color: #ffffff;"/>
                             </div>
                         </div>
-                        <div class="row form-group">
+                        <div class="row form-group" style="padding-left:18%">
 
-                            <div class="col-sm-3" style="font-size:16px; color:#656565;  font-family:MyriadPro-Regular; width:38%">
+                            <div class="col-sm-3" style="font-size:16px; color:#656565;  font-family:MyriadPro-Regular;">
                                 <button type="submit" style="float:right;" class="btn btn-primary" (click)='OldPinGenerated()'>
                                     Submit</button>
                             </div>
