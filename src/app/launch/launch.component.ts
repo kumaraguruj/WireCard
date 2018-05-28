@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import {InformationService } from '../Common/information.service';
-
+import{TranslateService} from 'ng2-translate';
 @Component({
   selector: 'app-launch',
   templateUrl: './launch.component.html',
@@ -11,8 +11,12 @@ export class LaunchComponent implements OnInit {
 
   tab:string="CardSummary";
   LinksFlag:boolean=false;
-  constructor(private _router:Router) { 
+  constructor(private _router:Router,private translate:TranslateService) { 
    this.LinksFlag=InformationService.UserType==='CreditUser'?false:true;
+   translate.addLangs(["en","ar"]);
+    translate.setDefaultLang("en");
+    let browserLang=translate.getBrowserLang();
+    translate.use(browserLang.match(/en|ar/)?browserLang:"en"   );
   }
 
   ngOnInit() {
@@ -30,5 +34,9 @@ export class LaunchComponent implements OnInit {
   {
     alert("ok");
   }
- 
+  changeLanguage(lang)
+  {
+
+this.translate.use(lang);
+  }
 }

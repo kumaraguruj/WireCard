@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import{TranslateService} from 'ng2-translate';
 
 @Component({
   selector: 'app-self-limit',
@@ -8,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class SelfLimitComponent implements OnInit {
 
   showHide: boolean;
-  constructor() {this.showHide=false; }
+  //private translate:TranslateService
+  constructor(private translate:TranslateService) {
+    this.showHide=false;
+    translate.addLangs(["en","ar"]);
+    translate.setDefaultLang("en");
+    let browserLang=translate.getBrowserLang();
+    translate.use(browserLang.match(/en|ar/)?browserLang:"en"   );
+   // translate.use("ar" );
+  }
 
   ngOnInit() {
   }
@@ -19,6 +28,11 @@ export class SelfLimitComponent implements OnInit {
   btn_Submit_Click()
   {
     alert('Record saved successfully.')
+  }
+  changeLanguage(lang)
+  {
+
+this.translate.use(lang);
   }
   
 }

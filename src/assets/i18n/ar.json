@@ -1,0 +1,53 @@
+
+   {
+    
+   "Lunch":
+   {
+"home":"الصفحة الرئيسية",
+
+"selfService":"خدمة ذاتية، إخدم نفسك بنفسك",
+"moveMoney":"تحرك المال",
+"reports":"تقارير",
+"english":"الإنجليزية",
+"arabic":"عربى"
+
+   },
+    
+    
+
+    "selfCardLimit":{
+
+    "cardLimit":"حد البطاقة",
+    "card": "بطاقة:",
+    "name":"اسم:",
+    "bob":"تمايل",
+    "a/c":"الحساب:",
+    "status":"الحالة:",
+    "active":"نشيط",
+    "setExpensesRule":"مجموعة قواعد النفقات",
+    "allowInternationalUse":"السماح بالاستخدام الدولي:",
+    "allowCashAccess":"السماح بالوصول النقدي:",
+    "allowPINPurchase":"السماح بشراء رقم التعريف الشخصي:",
+    "singleTransLimit":"حد عبر واحد:",
+    "yes":"نعم فعلا",
+    "no":"لا",
+    "dailyTransactionLimit":"حد المعاملة اليومي",
+    "weeklyTransactionLimit":"حدود المعاملة الأسبوعية",
+    "monthlyTransactionLimit":"حد المعاملات الشهري",
+    "yearlyTransactionLimit":"حد المعاملات السنوي",
+    "count":"عد",
+    "transactionAmount":"قيمة التحويل",
+    "merchantCategories":"فئات التاجر",
+    "dailyLimit":"الحد اليومي",
+    "weeklyLimit":"الحد الأسبوعي",
+    "monthlyLimit":"الحد الشهري",
+    "yearlyLimit":"الحد الشهري",
+    "submit":"خضع",
+    "reset":"إعادة تعيين"
+    }
+}
+        
+    
+
+
+ 

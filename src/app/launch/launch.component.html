@@ -7,7 +7,25 @@
         <div class="row">
                 <div style="background-color: #004165;" class="col-sm-12">    
                     <img src="assets/images/logo.png" style="padding:20px 10px 20px 10px;" >
+
+                    <ul class="nav nav-pills pull-right">
+                    
+                        
+                        <li class="dropdown" style="color: #ffffff;">
+                          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >
+                          Languages<span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu" >
+                            <li><a (click)="changeLanguage('en')">{{'Lunch.english'|translate}}</a></li>
+                            <li><a (click)="changeLanguage('ar')">{{'Lunch.arabic'|translate}}</a></li>
+                                                
+                          </ul>
+                        </li>
+                      </ul>
                 </div>  
+
+                
+            
+            
         </div> 
         <div class="row" style="background-color: #e2e2e2;padding: 6px;">
     <!--For Mobile start -->
@@ -44,7 +62,7 @@
                                         <ul class="nav nav-tabs" role="tablist">         
                                                 <li style="width: 100%;">
                                                    
-                                                    <a role="tab"  data-toggle="tab"    [routerLink]="['/Home/Summary']"  >HOME</a>
+                                                    <a role="tab"  data-toggle="tab"    [routerLink]="['/Home/Summary']"  >{{'Lunch.home'|translate}}</a>
                                                     </li>      
                                                 <li style="width: 100%;">
                                                     <a role="tab"  [routerLink]="['/SelfService/SelfLimit']" data-toggle="tab" >SELF SERVICE</a>
@@ -55,6 +73,19 @@
                                                 <li style="width: 100%;">
                                                     <a role="tab"  data-toggle="tab" [routerLink]="['/Reports/yearlyReports']">REPORTS</a>
                                                 </li> 
+
+
+                                                          <li class="dropdown" style="width: 100%;">
+                      <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" >
+                      Languages<span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a (click)="changeLanguage('en')">{{'Lunch.english'|translate}}</a></li>
+                        <li><a (click)="changeLanguage('ar')">{{'Lunch.arabic'|translate}}</a></li>
+                                            
+                      </ul>
+                    </li> 
+                                               
+                                                
                                                 </ul>
                                   </div>
                                 </div>
@@ -159,21 +190,21 @@
                                             <ul class="nav nav-tabs" role="tablist">         
                                             <li routerLinkActive="actiVV" #homeroute="routerLinkActive">
                                                
-                                                <a role="tab"  data-toggle="tab" [ngClass]="{'actiVV':homeroute.isActive}"   [routerLink]="['/Home/Summary']" style="background-color:#004165;font-family: MyriadPro-Regular;Font-size:17px;" >HOME</a>
+                                                <a role="tab"  data-toggle="tab" [ngClass]="{'actiVV':homeroute.isActive}"   [routerLink]="['/Home/Summary']" style="background-color:#004165;font-family: MyriadPro-Regular;Font-size:17px;" >{{'Lunch.home'|translate}}</a>
                                                 <a role="tab" data-toggle="tab" [routerLink]="['/Home/']" style="display:none;" ></a>
                                                
                                              
                                             </li>      
                                             <li routerLinkActive="actiVV" #selfroute="routerLinkActive">
-                                                <a role="tab"[ngClass]="{'actiVV':selfroute.isActive}" [routerLink]="['/SelfService/Statement']" data-toggle="tab" style="background-color:#004165;font-family: MyriadPro-Regular;Font-size:17px;">SELF SERVICE</a>
+                                                <a role="tab"[ngClass]="{'actiVV':selfroute.isActive}" [routerLink]="['/SelfService/Statement']" data-toggle="tab" style="background-color:#004165;font-family: MyriadPro-Regular;Font-size:17px;">{{'Lunch.selfService'|translate}}</a>
                                                 <a role="tab" data-toggle="tab" [routerLink]="['/SelfService/']" style="display:none;" ></a>
                                             </li>
                                             <li *ngIf="LinksFlag" routerLinkActive="actiVV" #cardroute="routerLinkActive">
-                                                <a role="tab" [ngClass]="{'actiVV':cardroute.isActive}" data-toggle="tab" [routerLink]="['/CardTransfers/WalletTransfers']" style="background-color:#004165;font-family: MyriadPro-Regular;Font-size:17px;">MOVE MONEY</a>
+                                                <a role="tab" [ngClass]="{'actiVV':cardroute.isActive}" data-toggle="tab" [routerLink]="['/CardTransfers/WalletTransfers']" style="background-color:#004165;font-family: MyriadPro-Regular;Font-size:17px;">{{'Lunch.moveMoney'|translate}}</a>
                                                 <a role="tab" data-toggle="tab" [routerLink]="['/CardTransfers/']" style="display:none;" ></a>
                                             </li>
                                             <li routerLinkActive="actiVV" #reportsroute="routerLinkActive">
-                                                <a role="tab" [ngClass]="{'actiVV':reportsroute.isActive}" data-toggle="tab" [routerLink]="['/Reports/yearlyReports']" style="background-color:#004165;font-family: MyriadPro-Regular;Font-size:17px;">REPORTS</a>
+                                                <a role="tab" [ngClass]="{'actiVV':reportsroute.isActive}" data-toggle="tab" [routerLink]="['/Reports/yearlyReports']" style="background-color:#004165;font-family: MyriadPro-Regular;Font-size:17px;">{{'Lunch.reports'|translate}}</a>
                                                 <a role="tab" data-toggle="tab" [routerLink]="['/Reports/']" style="display:none;" ></a>
                                             </li> 
                                             </ul>

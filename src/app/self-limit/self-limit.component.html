@@ -1,14 +1,15 @@
 <div class="container divContainer">
 
 
-        <h3 class="title">Card Limit</h3>
+        <h3 class="title" > {{'selfCardLimit.cardLimit'|translate}} </h3>
 
+       
         
       <hr>
         <div class="panel-body" id="panelGorup1">
                 <div class="form-group row"  >
                         <div class="col-sm-1 labelAllign">
-                                <label for="sourceCard">Card:</label>
+                                <label for="sourceCard">{{'selfCardLimit.card'|translate}}</label>
                         </div>
                         <div class="col-sm-2">
                                 <!-- <input type="text" readonly class="form-control" value="4448-88XX-XXXX-5500"> -->
@@ -23,17 +24,17 @@
                                 <div >
                         <div class="form-group row"  >
                                 <div class="col-sm-1 labelAllign">
-                                        <label for="sourceCard">Name:</label>
+                                        <label for="sourceCard">{{'selfCardLimit.name'|translate}}</label>
                                 </div>
                                 <div class="col-sm-3">
-                                        Bob
+                                        {{'selfCardLimit.bob'|translate}}
                                 </div>
 
 
                         </div>
                         <div class="form-group row"  >
                                 <div class="col-sm-1 labelAllign">
-                                        <label for="sourceCard">A/C:</label>
+                                        <label for="sourceCard"> {{'selfCardLimit.a/c'|translate}}</label>
                                 </div>
                                 <div class="col-sm-3">
                                         1003000000000124092
@@ -44,10 +45,10 @@
 
                         <div class="form-group row"  >
                                 <div class="col-sm-1 labelAllign">
-                                        <label for="sourceCard">Status:</label>
+                                        <label for="sourceCard"> {{'selfCardLimit.status'|translate}}</label>
                                 </div>
                                 <div class="col-sm-3">
-                                        Active
+                                        {{'selfCardLimit.active'|translate}}
                                 </div>
 
 
@@ -62,7 +63,7 @@
                                 <div class="panel-heading" style="min-height: 40px;padding-left:1px">
                                         <div class=col-sm-12>
                                                 <a data-toggle="collapse" class="panel-title glyphicon glyphicon-th-list" style="cursor: pointer;" (click)="showHidePanel = !showHidePanel"></a>
-                                               <label> Set Expenses Rules</label>
+                                               <label>  {{'selfCardLimit.setExpensesRule'|translate}}</label>
                                         </div>
                                 </div>
                                 <div class="panel-body col-sm-16"   *ngIf="showHidePanel" style="background-color: #e9e9e9;">
@@ -70,57 +71,57 @@
                                       
                                         <div class="form-group row"  >
                                                 <div class="col-sm-2 labelAllign"  >
-                                                        <label for="sourceCard">Allow International Use:</label>
+                                                        <label for="sourceCard">{{'selfCardLimit.allowInternationalUse'|translate}}</label>
                                                 </div>
                                                 <div class="col-sm-1 ">
                                                         <input class="form-check-input" name="InternationalUse" type="radio" id="radioInternationalYes" value="Yes" checked='checked'>
-                                                        <label class="form-check-label" for="radioInternationalYes" >Yes</label>
+                                                        <label class="form-check-label" for="radioInternationalYes" >{{'selfCardLimit.yes'|translate}}</label>
                                                 </div>
                                                 <div class="col-sm-1">
                                                         <input class="form-check-input" name="InternationalUse" type="radio" id="radioInternationalNo" value="No">
-                                                        <label class="form-check-label" for="radioInternationalNo" >No</label>
+                                                        <label class="form-check-label" for="radioInternationalNo" >{{'selfCardLimit.no'|translate}}</label>
                                                 </div>
 
                                         </div>
                                         <div class="form-group row"  >
                                                 <div class="col-sm-2 labelAllign" >
-                                                        <label for="sourceCard" class="labelAllign">Allow Cash Access:</label>
+                                                        <label for="sourceCard" class="labelAllign">{{'selfCardLimit.allowCashAccess'|translate}}</label>
                                                 </div>
                                                 <div class="col-sm-1">
                                                         <input class="form-check-input" name="CashAccess" type="radio" id="radioCashAccessYes" value="Yes" checked='checked'>
-                                                        <label class="form-check-label" for="radioCashAccessYes" >Yes</label>
+                                                        <label class="form-check-label" for="radioCashAccessYes" >{{'selfCardLimit.yes'|translate}}</label>
                                                 </div>
                                                 <div class="col-sm-1">
                                                         <input class="form-check-input" name="CashAccess" type="radio" id="radioCashAccessNo" value="No">
-                                                        <label class="form-check-label" for="radioCashAccessNo">No</label>
+                                                        <label class="form-check-label" for="radioCashAccessNo">{{'selfCardLimit.no'|translate}}</label>
                                                 </div>
 
                                         </div>
                                         <div class="form-group row"  >
                                                 <div class="col-sm-2 labelAllign" >
-                                                        <label for="sourceCard">Allow PIN Purchase:</label>
+                                                        <label for="sourceCard">{{'selfCardLimit.allowPINPurchase'|translate}}</label>
                                                 </div>
                                                 <div class="col-sm-1">
                                                         <input class="form-check-input" name="PinPurchase" type="radio" id="radioPinPurchaseYes" value="Yes" checked='checked'>
-                                                        <label class="form-check-label" for="radioPinPurchaseYes" >Yes</label>
+                                                        <label class="form-check-label" for="radioPinPurchaseYes" >{{'selfCardLimit.yes'|translate}}</label>
                                                 </div>
                                                 <div class="col-sm-1">
                                                         <input class="form-check-input" name="PinPurchase" type="radio" id="radioPinPurchaseNo" value="No">
-                                                        <label class="form-check-label" for="radioPinPurchaseNo" >No</label>
+                                                        <label class="form-check-label" for="radioPinPurchaseNo" >{{'selfCardLimit.no'|translate}}</label>
                                                 </div>
 
                                         </div>
                                         <div class="form-group row" style="padding-bottom: 5px"  >
                                                 <div class="col-sm-2 labelAllign" >
-                                                        <label for="sourceCard">Single Trans Limit:</label>
+                                                        <label for="sourceCard">{{'selfCardLimit.singleTransLimit'|translate}}</label>
                                                 </div>
                                                 <div class="col-sm-1">
                                                         <input class="form-check-input" name="SingleTrans" type="radio" id="radioSingleTransYes" value="Yes" checked='checked'>
-                                                        <label class="form-check-label" for="radioSingleTransYes" >Yes</label>
+                                                        <label class="form-check-label" for="radioSingleTransYes" >{{'selfCardLimit.yes'|translate}}</label>
                                                 </div>
                                                 <div class="col-sm-1">
                                                         <input class="form-check-input" name="SingleTrans" type="radio" id="radioSingleTransNo" value="No">
-                                                        <label class="form-check-label" for="radioSingleTransNo" >No</label>
+                                                        <label class="form-check-label" for="radioSingleTransNo" >{{'selfCardLimit.no'|translate}}</label>
                                                 </div>
 
                                         </div>
@@ -128,11 +129,11 @@
                                        
                                         <div class="form-group row"  >
                                                 <div class="col-sm-3" style="background-color: #d7d7d7;padding-top:5px">
-                                                        Daily Transaction Limit
+                                                        {{'selfCardLimit.dailyTransactionLimit'|translate}}
                                                         <table class="table">
                                                                 <tr>
-                                                                        <th>Count</th>
-                                                                        <th colspan="2">Transaction Amount</th>
+                                                                        <th> {{'selfCardLimit.count'|translate}}</th>
+                                                                        <th colspan="2">{{'selfCardLimit.transactionAmount'|translate}}</th>
                                                                 </tr>
                                                                 <tr>
                                                                         <td>
@@ -153,11 +154,11 @@
                                                         </table>
                                                 </div>
                                                 <div class="col-sm-3" style="background-color: #d7d7d7;padding-top: 5px">
-                                                        Weekly Transaction Limit
+                                                        {{'selfCardLimit.weeklyTransactionLimit'|translate}}
                                                         <table class="table">
                                                                 <tr>
-                                                                        <th>Count</th>
-                                                                        <th colspan="2">Transaction Amount</th>
+                                                                        <th> {{'selfCardLimit.count'|translate}}</th>
+                                                                        <th colspan="2">{{'selfCardLimit.transactionAmount'|translate}}</th>
                                                                 </tr>
                                                                 <tr>
                                                                         <td>
@@ -178,11 +179,11 @@
                                                         </table>
                                                 </div>
                                                 <div class="col-sm-3" style="background-color: #d7d7d7;padding-top: 5px">
-                                                        Monthly Transaction Limit
+                                                        {{'selfCardLimit.monthlyTransactionLimit'|translate}}
                                                         <table class="table">
                                                                 <tr>
-                                                                        <th>Count</th>
-                                                                        <th colspan="2">Transaction Amount</th>
+                                                                        <th> {{'selfCardLimit.count'|translate}}</th>
+                                                                        <th colspan="2">{{'selfCardLimit.transactionAmount'|translate}}</th>
                                                                 </tr>
                                                                 <tr>
                                                                         <td>
@@ -202,11 +203,11 @@
                                                         </table>
                                                 </div>
                                                 <div class="col-sm-3" style="background-color: #d7d7d7;padding-top:5px">
-                                                        Yearly Transaction Limit
+                                                        {{'selfCardLimit.yearlyTransactionLimit'|translate}}
                                                         <table class="table">
                                                                 <tr>
-                                                                        <th>Count</th>
-                                                                        <th colspan="2">Transaction Amount</th>
+                                                                        <th> {{'selfCardLimit.count'|translate}}</th>
+                                                                        <th colspan="2">{{'selfCardLimit.transactionAmount'|translate}}</th>
                                                                 </tr>
                                                                 <tr>
                                                                         <td>
@@ -235,7 +236,7 @@
                                                 
                                                         <div class="sm-col-2" style="width:140%; ">
                                                                 <!-- <div style="width:100%;float:left;padding-top:20px "> -->
-                                                                        Merchant Categories
+                                                                        {{'selfCardLimit.merchantCategories'|translate}}
                                                                         <select name="sourceCard" id="dropDownCurrency" class="form-control" style="width:22%">
                                                                                 <option value="Betting">Betting</option>
                                                                                 <option value="Video Game">Video Game</option>
@@ -258,11 +259,11 @@
                                                 <!--Weekly-->
                                                 <div class="col-sm-3" style="background-color: #d7d7d7;padding-top: 5px">
 
-                                                        Daily Limit
+                                                        {{'selfCardLimit.dailyLimit'|translate}}
                                                         <table class="table">
                                                                 <tr>
-                                                                        <th>Count</th>
-                                                                        <th colspan="2">Transaction Amount</th>
+                                                                        <th> {{'selfCardLimit.count'|translate}}</th>
+                                                                        <th colspan="2">{{'selfCardLimit.transactionAmount'|translate}}</th>
                                                                 </tr>
                                                                 <tr>
                                                                         <td>
@@ -284,11 +285,11 @@
                                                 <!--Monthly-->
                                                 <div class="col-sm-3" style="background-color: #d7d7d7;padding-top: 5px">
 
-                                                        Weekly Limit
+                                                        {{'selfCardLimit.weeklyLimit'|translate}}
                                                         <table class="table">
                                                                 <tr>
-                                                                        <th>Count</th>
-                                                                        <th colspan="2">Transaction Amount</th>
+                                                                        <th> {{'selfCardLimit.count'|translate}}</th>
+                                                                        <th colspan="2">{{'selfCardLimit.transactionAmount'|translate}}</th>
                                                                 </tr>
                                                                 <tr>
                                                                         <td>
@@ -310,11 +311,11 @@
 
                                                 <div class="col-sm-3" style="background-color: #d7d7d7;padding-top:5px">
 
-                                                        Monthly Limit
+                                                        {{'selfCardLimit.monthlyLimit'|translate}}
                                                         <table class="table">
                                                                 <tr>
-                                                                        <th>Count</th>
-                                                                        <th colspan="2">Transaction Amount</th>
+                                                                        <th> {{'selfCardLimit.count'|translate}}</th>
+                                                                        <th colspan="2">{{'selfCardLimit.transactionAmount'|translate}}</th>
                                                                 </tr>
                                                                 <tr>
                                                                         <td>
@@ -335,11 +336,11 @@
                                                 </div>
                                                 <div class="col-sm-3" style="background-color: #d7d7d7;padding-top: 5px">
 
-                                                        Yearly Limit
+                                                        {{'selfCardLimit.yearlyLimit'|translate}}
                                                         <table class="table">
                                                                 <tr>
-                                                                        <th>Count</th>
-                                                                        <th colspan="2">Transaction Amount</th>
+                                                                        <th> {{'selfCardLimit.count'|translate}}</th>
+                                                                        <th colspan="2">{{'selfCardLimit.transactionAmount'|translate}}</th>
                                                                 </tr>
                                                                 <tr>
                                                                         <td>
@@ -366,9 +367,9 @@
                                         <div class="row form-group" >
                                                         <div class="col-sm-4">
                                                                 <button type="submit" class="btn btn-primary" (click)='btn_Submit_Click()'>
-                                                                        Submit</button>
+                                                                        {{'selfCardLimit.submit'|translate}}</button>
                                                                 <button type="submit" class="btn btn-primary" (click)='btn_Reset_Click()'>
-                                                                        Reset</button>
+                                                                        {{'selfCardLimit.reset'|translate}}</button>
                                                         </div>
                                                 </div>
                                 </div>

@@ -1,8 +1,13 @@
 import { SignoutComponent } from './signout/signout.component';
 import { BrowserModule } from '@angular/platform-browser';
+import{HttpModule,Http} from '@angular/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import{TranslateModule,TranslateStaticLoader,TranslateLoader } from 'ng2-translate';
 import { RouterModule,Routes,Router} from '@angular/router';
+
+
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { PageNotComponent  } from './page-not/page-not.component';
@@ -46,7 +51,9 @@ import { BlockCardComponent } from './block-card/block-card.component';
 import { DataService } from './Common/data.service';
 import {NgxPaginationModule} from 'ngx-pagination'; 
 
-
+// export function HttpLoaderFactory(http: Http) {
+//   return new this.TranslateHttpLoader(http, "../../assets/i18n/", ".json");
+// }
 
 
 const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
@@ -215,13 +222,23 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
     BlockCardComponent,
   ],
   imports: [
-    BrowserModule,FormsModule,RouterModule.forRoot(appRoutes),
-    AmChartsModule,NgxPaginationModule
+    BrowserModule,FormsModule,RouterModule.forRoot(appRoutes),HttpModule,
+    AmChartsModule,NgxPaginationModule,
+    TranslateModule.forRoot({ 
+      provide: TranslateLoader,
+      useFactory: (http: Http) => new TranslateStaticLoader(http, '/assets/i18n', '.json'),
+      deps: [Http]
+    }) 
+    
     
   ],
+  exports: [BrowserModule, HttpModule, TranslateModule],
   providers: [InformationService,DataService],
   bootstrap: [AppComponent]
 })
 
 
-export class AppModule { }
+export class AppModule {
+
+  
+ }
