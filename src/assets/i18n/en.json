@@ -31,7 +31,7 @@
     "allowPINPurchase":"Allow PIN Purchase:",
     "singleTransLimit":"Single Trans Limit:",
     "yes":"Yes",
-    "No":"No",
+    "no":"No",
     "dailyTransactionLimit":"Daily Transaction Limit",
     "weeklyTransactionLimit":"Weekly Transaction Limit",
     "monthlyTransactionLimit":"Monthly Transaction Limit",
