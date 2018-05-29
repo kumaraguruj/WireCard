@@ -9,7 +9,26 @@
  "reports":"REPORTS",
  "language":"Select Language",
  "english":"ENGLISH",
- "arabic":"ARABIC"
+ "arabic":"ARABIC",
+ "cardSummary":"Card Summary",
+"transactions":"Transactions",
+"profileInfo":"Profile Info",
+"statement":"Statement",
+"generatePin":"Generate Pin",
+"selfCardLimit":"Self Card Limit",
+"blockCard":"Block Card",
+"walletTransfers":"Wallet Transfers",
+"expensesByCategory":"Expenses By Category",
+"monthlyExpensesPrepaidCard":"Monthly Expenses Prepaid Card",
+"creditCardAvgBalance":"Credit Card Avg Balance",
+"bob":"Bob",
+"lastLoginBob":"Last Login",
+"accountNumberBob":"Account Number",
+"accountBalanceBob":"Account Balance",
+"alice":"Alice",
+"lastLoginAlice":"Last Login",
+"accountNumberAlice":"AccountNumber",
+"accountBalanceAlice":"Account Balance"
  
     },
      
