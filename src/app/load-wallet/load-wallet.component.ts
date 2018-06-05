@@ -11,6 +11,10 @@ export class LoadWalletComponent implements OnInit {
 
   ngOnInit() {
   }
+  confirmPay()
+ {
+   alert("Your wallet is loaded successfully");
+ }
   CardType:string;
   
   setradio(CardType){
@@ -27,5 +31,5 @@ export class LoadWalletComponent implements OnInit {
       document.getElementById('creditCard').style.display = "none";
     }
  }
-
+ 
 }
