@@ -49,7 +49,9 @@ import { MonthlyExpensesPrepaidCardComponent } from './monthly-expenses-prepaid-
 import { MonthlyExpensesPrepaidCardTopComponent } from './monthly-expenses-prepaid-card-top/monthly-expenses-prepaid-card-top.component';
 import { BlockCardComponent } from './block-card/block-card.component';
 import { DataService } from './Common/data.service';
-import {NgxPaginationModule} from 'ngx-pagination'; 
+import {NgxPaginationModule} from 'ngx-pagination';
+import { AutopayComponent } from './autopay/autopay.component';
+import { BalancerTransferComponent } from './balancer-transfer/balancer-transfer.component'; 
 
 // export function HttpLoaderFactory(http: Http) {
 //   return new this.TranslateHttpLoader(http, "../../assets/i18n/", ".json");
@@ -160,6 +162,12 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
       path: 'WalletTransfers', component: WalletTransfersComponent
     },
     {
+      path: 'AutoPay', component: AutopayComponent
+    },
+    {
+      path: 'BalanceTransfer', component: BalancerTransferComponent
+    },
+    {
     path: 'SupplementTransfers', component: SupplementTransfersComponent
     },
     {
@@ -220,6 +228,10 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
     MonthlyExpensesPrepaidCardTopComponent ,
   
     BlockCardComponent,
+  
+    AutopayComponent,
+  
+    BalancerTransferComponent,
   ],
   imports: [
     BrowserModule,FormsModule,RouterModule.forRoot(appRoutes),HttpModule,

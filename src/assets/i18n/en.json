@@ -18,6 +18,8 @@
 "selfCardLimit":"Self Card Limit",
 "blockCard":"Block Card",
 "walletTransfers":"Wallet Transfers",
+"Autopay":"Auto Pay",
+"BalanceTransfer":"Balance Transfer",
 "expensesByCategory":"Expenses By Category",
 "monthlyExpensesPrepaidCard":"Monthly Expenses Prepaid Card",
 "creditCardAvgBalance":"Credit Card Avg Balance",
