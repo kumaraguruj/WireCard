@@ -1,0 +1,34 @@
+input { display: inline; }
+
+#custName{
+    font-size: 16px; Color: #656565;
+    font-family: MyriadPro-Regular; 
+}
+
+#divid{
+    font-size: 19px; Color: #656565;
+    font-family: MyriadPro-Regular; 
+}
+
+#detailsid{
+font-size: 16px; Color:#656565;
+font-family: MyriadPro-Regular; 
+text-align:left;
+}
+
+.form-group {
+    margin-bottom: 0%;
+}
+
+
+#readText{
+    text-align:left;
+    font-family: MyriadPro-Regular;
+}
+#line{
+    Border-color:#a9a9a9;
+}
+.openingBalance, .rewardsEarned, .pointsRedeemd, .closingBalance
+{
+    border: 1px solid #e5e5e5;
+}

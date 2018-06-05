@@ -1,0 +1,157 @@
+<div class="container">
+
+  
+  <div class="container">
+      <h3 id="divid">Rewards</h3>
+      <hr id="line">
+     
+    <div *ngIf="LinksFlag">
+      <div class="form-group row" >
+          <div class="col-sm-2" id="detailsid">
+              <label>Card:</label>
+          </div>
+          <div class="col-sm-3" id="readText">
+            4448-XXX-XXXX-8743
+          </div>
+      </div>
+      <div class="form-group row" >
+          <div class="col-sm-2" id="detailsid">
+            <label><u>Rewards Summary</u></label>
+            </div>
+            <div id="detailsid" class="col-sm-10" style="padding:0px 0px 0px 10px; float: right;width: 24.5%; " alt="Have Questions?" title="Have Questions?" (click) ="havequestions()">    
+                <a>Have Questions?</a>
+         </div>
+          </div>
+          <div class="form-group row" >
+              <div class="col-sm-2" id="detailsid">
+                <label></label>
+                </div>
+                <div class="col-sm-3" id="readText">
+                  
+                </div>
+              </div>
+              <div class="form-group row" >
+              <div class="col-sm-2" id="detailsid">
+                <label>Total Reward Points: 
+                </label>
+                </div>
+                <div class="col-sm-3" id="readText">
+                  966 Points
+                </div>
+              </div>
+              <div class="col-12 col-md-2 openingBalance">
+                <p>Opening <br>Balance</p>
+                <label>41,298</label>
+            </div>
+            <div class="col-12 col-md-1 faPlus"><b><br>+</b></div>
+            <div class="col-12 col-md-2 rewardsEarned"> 
+                <p>Rewards Points Earned</p>
+                <label>31,668</label>
+            </div>
+            <div class="col-12 col-md-1"><b><br>-</b></div>
+            <div class="col-12 col-md-2 pointsRedeemd">
+                <p>Points Redeemed / Expired</p>
+               <label>72,000</label>
+            </div>
+            <div class="col-12 col-md-1"><b><br>=</b></div>
+            <div class="col-12 col-md-2 closingBalance">
+                <p>Closing Balance ( as of Today )</p>
+                <label>966</label>
+            </div>
+              
+    </div>
+    <div *ngIf="!LinksFlag">
+      <div class="card-body-transactions card-block">
+        <div class="form-group row" >
+          <div class="col-sm-3" id="detailsid">
+            <label>Card:</label>
+          </div>
+        <div class="col-sm-3">
+          <select (change)="onChange(this)"  [(ngModel)]="CardType" class="form-control">
+              <option value="" disabled select>Select</option>
+              <option value ="card1">4448-XXXX-XXXX-5518</option>
+              <option value ="card2">4448-XXXX-XXXX-5500</option>
+          </select>
+      </div>
+      </div>
+        <div class="row form-group">
+            <div class="col-12 col-md-9" id="detailsid">
+                <label class=" form-control-label"><u>Rewards Summary</u></label>
+            </div>
+           <!-- <div class="col-12 col-md-3" id="detailsid">
+                <label><i class="far fa-question-circle"></i><a>Have Questions?</a></label>
+            </div>-->
+            <div  id="detailsid" class="col-sm-10" style="padding:0px 0px 0px 10px; float: right;width: 24.5%; " alt="Have Questions?" title="Have Questions?" (click) ="havequestions()">    
+                <a>Have Questions?</a>
+         </div> 
+        </div>
+            <div class="row form-group rewardsContent" id="card1Reward"  style="display:none;">
+              <!--div class="col-12 col-md-12" id="detailsid">
+                  <label class=" form-control-label">Total Reward Points:</label>
+              </div>
+              <div class="col-sm-3" id="readText">
+                966 Points
+              </div>-->
+              <div class="form-group row" >
+                <div class="col-sm-3" id="detailsid">
+                  <label>&nbsp;&nbsp;&nbsp;&nbsp;Total Reward Points:</label>
+                </div>
+              <div class="col-sm-3" id="readText">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;966 Points
+            </div>
+            </div>
+              <div class="col-12 col-md-2 openingBalance">
+                  <p>Opening<br/>Balance</p>
+                  <label>41,298</label>
+              </div>
+              <div class="col-12 col-md-1 faPlus"><b><br>+</b><!--<i class="fas fa-plus"></i>--></div>
+              <div class="col-12 col-md-2 rewardsEarned"> 
+                  <p>Rewards Points Earned</p>
+                  <label>31,668</label>
+              </div>
+              <div class="col-12 col-md-1"><b><br>-</b><!--<i class="fas fa-minus"></i>--></div>
+              <div class="col-12 col-md-2 pointsRedeemd">
+                  <p>Points Redeemed / Expired</p>
+                  <label>72,000</label>
+              </div>
+              <div class="col-12 col-md-1"><b><br>=</b><!--<i class="fas fa-equals"></i>--></div>
+              <div class="col-12 col-md-2 closingBalance">
+                  <p>Closing Balance ( as of Today )</p>
+                  <label>966</label>
+              </div>
+          </div>
+          <div class="row form-group rewardsContent" id="card2Reward" style="display:none;">
+              
+              <div class="form-group row" >
+                <div class="col-sm-3" id="detailsid">
+                  <label>&nbsp;&nbsp;&nbsp;&nbsp;Total Reward Points:</label>
+                </div>
+              <div class="col-sm-3" id="readText">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3,933 Points
+            </div>
+            </div>
+              <div class="col-12 col-md-2 openingBalance">
+                  <p>Opening <br>Balance</p>
+                  <label>3,724</label>
+              </div>
+              <div class="col-12 col-md-1 faPlus"><b><br>+</b></div>
+              <div class="col-12 col-md-2 rewardsEarned"> 
+                  <p>Rewards Points Earned</p>
+                  <label>2,534</label>
+              </div>
+              <div class="col-12 col-md-1"><b><br>-</b><!--<i class="fas fa-minus"></i>--></div>
+              <div class="col-12 col-md-2 pointsRedeemd">
+                  <p>Points Redeemed / Expired</p>
+                  <label>1,725</label>
+              </div>
+              <div class="col-12 col-md-1"><b><br>=</b><!--<i class="fas fa-equals"></i>--></div>
+              <div class="col-12 col-md-2 closingBalance">
+                  <p>Closing Balance ( as of Today )</p>
+                  <label>3,933</label>
+              </div>
+          </div>
+      
+</div>
+
+</div>
+  </div>

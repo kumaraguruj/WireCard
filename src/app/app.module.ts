@@ -49,7 +49,10 @@ import { MonthlyExpensesPrepaidCardComponent } from './monthly-expenses-prepaid-
 import { MonthlyExpensesPrepaidCardTopComponent } from './monthly-expenses-prepaid-card-top/monthly-expenses-prepaid-card-top.component';
 import { BlockCardComponent } from './block-card/block-card.component';
 import { DataService } from './Common/data.service';
-import {NgxPaginationModule} from 'ngx-pagination'; 
+import {NgxPaginationModule} from 'ngx-pagination';
+import { RewardsComponent } from './rewards/rewards.component';
+import { UpgradeRequestComponent } from './upgrade-request/upgrade-request.component';
+import { LoadWalletComponent } from './load-wallet/load-wallet.component'; 
 
 // export function HttpLoaderFactory(http: Http) {
 //   return new this.TranslateHttpLoader(http, "../../assets/i18n/", ".json");
@@ -99,6 +102,14 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
     {
       path: 'FeesWaivers', component: FeesWaiversComponent
     }
+    ,
+    {
+      path: 'rewards', component: RewardsComponent
+    },
+    {
+      path: 'upgrade-request', component: UpgradeRequestComponent
+    }
+    
     
 ]
 },
@@ -156,6 +167,7 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
 },
   { path: 'CardTransfers', component: CardTransfersComponent,children:
   [
+    
     {
       path: 'WalletTransfers', component: WalletTransfersComponent
     },
@@ -164,7 +176,11 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
     },
     {
       path: 'calculateTransfers', component: CalculateTransfersComponent
+    },
+    {
+      path: 'load-wallet', component: LoadWalletComponent
     }
+    
 ]},
   { path: '',redirectTo:'/login', pathMatch: 'full' },
   { path: '**', component: PageNotComponent }  
@@ -220,6 +236,12 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
     MonthlyExpensesPrepaidCardTopComponent ,
   
     BlockCardComponent,
+  
+    RewardsComponent,
+  
+    UpgradeRequestComponent,
+  
+    LoadWalletComponent,
   ],
   imports: [
     BrowserModule,FormsModule,RouterModule.forRoot(appRoutes),HttpModule,
