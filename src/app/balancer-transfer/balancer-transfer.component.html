@@ -1,0 +1,109 @@
+<div class="container">
+  <h3 id="divid">Balance Transfer</h3>
+  <hr id="line">
+
+<div *ngIf="!LinksFlag">
+
+  <div class="form-group row" >
+    <div class="col-sm-3" id="detailsid">
+      <label>Card Number:</label>
+    </div>
+  <div class="col-sm-3">
+    <select (change)="onChange($event)" class="form-control">
+        <option value="" disabled select>Select</option>
+        <option value ="card1">4448-XXXX-XXXX-5518</option>
+        <option value ="card1">4448-XXXX-XXXX-5500</option>
+    </select>
+</div>
+</div>
+<div class="form-group row">
+  <label for="inputOldPin" class="control-label col-sm-3" style="text-align:left;font-size:16px; color:#656565; font-family:MyriadPro-Regular; ">
+      Account Number:</label>
+  <div class="col-sm-3" id="detailsid">
+      1003000000000124555
+  </div>
+  <label for="inputOldPin" class="control-label col-sm-3" style="text-align:left;font-size:16px; color:#656565; font-family:MyriadPro-Regular; ">
+    Account Balance:</label>
+<div class="col-sm-3" id="detailsid">
+  USD 628.80</div>
+
+</div>
+<h3 id="divid"><u>External credit card details</u></h3>
+
+
+<div class="row form-group">
+  <label for="inputNewPin" class="control-label col-sm-3" style="text-align:left;font-size:16px; color:#656565; font-family:MyriadPro-Regular;">
+      Credit card number:</label>
+  <div class="col-sm-3">
+      <input type="text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" style="Border-radius:5px; background-color: #ffffff;" />
+  </div>
+</div>
+<div class="form-group row">
+  <label for="inputOldPin" class="control-label col-sm-3" style="text-align:left;font-size:16px; color:#656565; font-family:MyriadPro-Regular; ">
+      Name of issuing bank:</label>
+  <div class="col-sm-3">
+      <input type="Text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" style="Border-radius:5px; background-color: #ffffff;"/>
+  </div>
+</div>
+<div class="form-group row">
+    <label for="inputOldPin" class="control-label col-sm-3" style="text-align:left;font-size:16px; color:#656565; font-family:MyriadPro-Regular; ">
+        Amount to be transfered:</label>
+    <div class="col-sm-3">
+        <input type="Text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" style="Border-radius:5px; background-color: #ffffff;"/>
+    </div>
+  </div>
+  <div class="form-group row" >
+      <div class="col-sm-3" id="detailsid">
+        <label>Select your offer:</label>
+      </div>
+    <div class="col-sm-3"  id="detailsid">
+      <select (change)="onChange($event)" class="form-control">
+          <option value="" disabled select>Select</option>
+          <option value ="card1">6 months 3% interest</option>
+          <option value ="card1">12 months 6% interest</option>
+          <option value ="card1">18 months 9% interest</option>
+      </select>
+  </div>
+  </div>
+  <h3 id="divid"><u>Verify and confirm your banking</u></h3>
+
+  <div class="row form-group">
+      <div class="col-12 col-md-3 box" id="detailsid">
+          <label>Transfer from other bank<br>credit card</label>
+          <p></p>
+      </div>
+      <div class="col-12 col-md-3 box" id="detailsid">
+              <label>Amount to be transfered</label>
+              <p>XXXXX</p>
+      </div>
+      <div class="col-12 col-md-2 box"id="detailsid">
+              <label>Tenure (in days)</label>
+              <p>180 days</p>
+      </div>
+      <div class="col-12 col-md-2 box" id="detailsid">
+              <label>Rate of interest %pm</label>
+              <br>
+              <p>X% pm</p>
+      </div>
+      <div class="col-12 col-md-2 box" id="detailsid">
+              <label> Processing fee</label>
+              <p>2000 USD</p>
+      </div>
+  </div>
+  <div class="row form-group">
+      <div class="col col-md-12"  id="detailsid">
+              <label class=" form-control-label" style="font-size:14px;"><input type="checkbox" value="">
+                  I have agree to the Balance Transfer Terms and Condition
+              </label>
+      </div>
+  </div>
+  <div class="row form-group">
+      <div class="col-sm-3" id="detailsid"></div>
+      <div class="col-sm-3" style="text-align: right">
+       <button type="button" class="btn btn-primary"  (click)="clickMethod()" style="background-color: #004165" >Confirm</button>
+       <button type="button" class="btn btn-primary" (click)="refresh()" style="background-color: #004165 " >Cancel</button>
+        
+  </div>
+</div>
+</div>
+</div>

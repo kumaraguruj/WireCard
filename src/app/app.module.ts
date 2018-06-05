@@ -53,6 +53,8 @@ import {NgxPaginationModule} from 'ngx-pagination';
 import { RewardsComponent } from './rewards/rewards.component';
 import { UpgradeRequestComponent } from './upgrade-request/upgrade-request.component';
 import { LoadWalletComponent } from './load-wallet/load-wallet.component'; 
+import { AutopayComponent } from './autopay/autopay.component';
+import { BalancerTransferComponent } from './balancer-transfer/balancer-transfer.component'; 
 
 // export function HttpLoaderFactory(http: Http) {
 //   return new this.TranslateHttpLoader(http, "../../assets/i18n/", ".json");
@@ -172,6 +174,12 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
       path: 'WalletTransfers', component: WalletTransfersComponent
     },
     {
+      path: 'AutoPay', component: AutopayComponent
+    },
+    {
+      path: 'BalanceTransfer', component: BalancerTransferComponent
+    },
+    {
     path: 'SupplementTransfers', component: SupplementTransfersComponent
     },
     {
@@ -242,6 +250,9 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
     UpgradeRequestComponent,
   
     LoadWalletComponent,
+    AutopayComponent,
+  
+    BalancerTransferComponent,
   ],
   imports: [
     BrowserModule,FormsModule,RouterModule.forRoot(appRoutes),HttpModule,

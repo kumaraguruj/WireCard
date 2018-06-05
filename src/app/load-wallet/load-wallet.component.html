@@ -11,16 +11,16 @@
             </div>
             <div class="col-sm-3" id="detailsid">
                 
-                <input class="form-check-input" name="OldPin" type="radio" id="radio100"  value="BankAccount" checked='checked'  (click)="setradio('BankAccount')">
+                <input class="form-check-input" name="CardType"  type="radio" id="radio100"  value="BankAccount" checked='checked'  (click)="setradio('BankAccount')">
                 <label class="form-check-label" for="radio100">Bank Account</label>
           
             </div>
             <div class="col-sm-3" id="detailsid">
-                <input class="form-check-input" name="OldPin" type="radio" id="radio100"  value="CreditCard"  (click)="setradio('CreditCard')">
+                <input class="form-check-input" name="CardType"   type="radio" id="radio100"  value="CreditCard"  (click)="setradio('CreditCard')">
                 <label class="form-check-label" for="radio100">Credit Card</label>
           </div>
         </div>
-        <div id="bankAccount" style="display:none">
+        <div id="bankAccount">
         <div class="form-group row">
                 <div class="col-sm-3" id="detailsid">
                         <label>Payee Name:</label>
@@ -64,7 +64,6 @@
                             <option value="USD">USD</option>
                             <option value="INR">INR</option>
                             <option value="SGD">SGD</option>
-        
                         </select>
                     </div>
         </div>
@@ -88,11 +87,10 @@
                                 <option value="USD">INR</option>
                                 <option value="SGD">SGD</option>
                         </select>
-                   
-                    </div>
-                    <div class="col-sm-2" style="padding-left:3%">
-                            <input type="text" class="form-control" />
-                    </div>
+                </div>
+                <div class="col-sm-2">
+                        <input type="text" class="form-control" />
+                </div>
         </div>
         <br>
         <div class="form-group row">
@@ -105,14 +103,13 @@
                                 <option value="USD">INR</option>
                                 <option value="SGD">SGD</option>
                         </select>
-                   
-                    </div>
-                    <div class="col-sm-2" style="padding-left:3%">
+                </div>
+                    <div class="col-sm-2">
                             <input type="text" class="form-control" style=" background-color:#e2e2e2;" />
                     </div>
         </div>
     </div>
-    <div id="creditCard" style="display:block">
+    <div id="creditCard" style="display:none">
             <br>
             <div class="form-group row">
                     <div class="col-sm-3" id="detailsid">
@@ -130,10 +127,10 @@
                     <div class="col-sm-3">
                         <input id="date" type="date"  [(ngModel)]="eDate" class="form-control">
                     </div>
-                    <div class="col-sm-3" id="detailsid">
+                    <div class="col-sm-2" id="detailsid">
                             <label>CVV:</label>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-2" >
                             <input type="text" class="form-control" />
                     </div>
             </div>
@@ -152,12 +149,11 @@
                     <div class="col-sm-3" id="detailsid">
                             <label>Destination Wallet:</label>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="col-sm-2">
                             <select name="DestCard" id="cssid" class="form-control" style="width:74%">
                                 <option value="USD">USD</option>
                                 <option value="INR">INR</option>
-                                <option value="SGD">SGD</option>
-            
+                                <option value="SGD">SGD</option>            
                             </select>
                         </div>
             </div>
@@ -204,112 +200,19 @@
                                 <input type="text" class="form-control" style=" background-color:#e2e2e2;" />
                         </div>
             </div>
-
+            <br>
             
         
-       <!-- <div class="form-group row">
-
-            <label for="sourceCard" >Amount to be Transferred:</label>
-            <div class="col-sm-2" style="width:5%;">
-                <select name="DestCard" id="newid" style="text-align:left;font-family:MyriadPro-Regular;color:#656565;font-size:16px;">
-                    <option value="INR">INR</option>
-                    <option value="USD">USD</option>
-                    <option value="SGD">SGD</option>
-
-                </select>
-            </div>
-            <div class="col-sm-2" style="padding-left:3%">
-                <input value="1000" id="newid" type="text" name="AmtTranfed" style="width:82%;">
-            </div>
-
-        </div>
-        <div class="form-group row">
-            <labe>Exchange Rate:</label>
-            <div class="col-sm-2" style="width:5%;">
-                <select name="DestCard" id="newid" style="text-align:left;font-family:MyriadPro-Regular;color:#656565;font-size:16px; background-color:#e2e2e2" disabled>
-                    <option value="INR">INR</option>
-                    <option value="USD">USD</option>
-                    <option value="SGD">SGD</option>
-
-                </select>
-            </div>
-            <div class="col-sm-2" style="padding-left:3%">
-                <input value="0.00675" id="newid" type="text" name="AmtTranfed" style="width:82%;">
-            </div>
-
-        </div>
-       
-
-        
-        <div class="form-group row" style="padding-left:30%;">
-            <div class="col-sm-8" id="cssid">
-                <button style="float:right;background-color: #004165" class="btn btn-primary" [disabled]="divFlag" (click)="Calculate()"
-                    Value="ConfirmPay">Confirm Pay</button>
-            </div>
-        </div>
-
-    </div>-->
 </div>
-
-
-
-    <div *ngIf="divFlag">
-        <h3 style="font-size: 19px;color: #656565; font-family:MyriadPro-Regular;">Card Transfer Information</h3>
-        <hr>
-        <div class="form-group row">
-            <label for="sourceCard" style="text-align:left;font-family:MyriadPro-Regular;color:#656565;font-size:16px;width:18%;" class="col-sm-2">Amount to be Transferred:</label>
-            <div class="col-sm-2" style="width:5%;">
-                <select name="DestCard" id="newid" style="text-align:left;font-family:MyriadPro-Regular;color:#656565;font-size:16px;">
-                    <option value="INR">INR</option>
-                    <option value="USD">USD</option>
-                    <option value="SGD">SGD</option>
-
-                </select>
-            </div>
-            <div class="col-sm-2" style="padding-left:3%">
-                <input value="1000" id="newid" type="text" name="AmtTranfed" style="width:82%;">
-            </div>
-
+<br>
+<div class="form-group row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+                <button type="button" style="float: right;background-color: #004165;font-family: MyriadPro-Regular;" class="btn btn-primary" (click)="applynow()">Confirm Pay</button>
         </div>
-        <div class="form-group row">
-            <label for="sourceCard" style="text-align:left;font-family:MyriadPro-Regular;color:#656565;font-size:16px;width:18%;" class="col-sm-2">Exchange rate:</label>
-            <div class="col-sm-2" style="width:5%;">
-                <select name="DestCard" id="newid" style="text-align:left;font-family:MyriadPro-Regular;color:#656565;font-size:16px; background-color:#e2e2e2" disabled>
-                    <option value="INR">INR</option>
-                    <option value="USD">USD</option>
-                    <option value="SGD">SGD</option>
+</div>
+      
+      
 
-                </select>
-            </div>
-            <div class="col-sm-2" style="padding-left:3%">
-                <input value="0.00675" id="newid" type="text" name="AmtTranfed" style="width:82%;">
-            </div>
 
-        </div>
-       
-        <div class="form-group row">
-
-            <label for="sourceCard" style="text-align:left;font-family:MyriadPro-Regular;color:#656565;font-size:16px;width:18%;" class="col-sm-2">Amount to be debited:</label>
-            <div class="col-sm-2" style="width:5%;">
-                <select name="DestCard" id="newid" style="text-align:left;font-family:MyriadPro-Regular;color:#656565;font-size:16px;">
-                    <option value="INR">INR</option>
-                    <option value="USD">USD</option>
-                    <option value="SGD">SGD</option>
-
-                </select>
-            </div>
-            <div class="col-sm-2" style="padding-left:3%">
-                <input value="1000" id="newid" type="text" name="AmtTranfed" style="width:82%;">
-            </div>
-        </div>
-
-            <div class="form-group row" style="padding-left:57.3%">
-
-                <div class="col-sm-9" id="cssid">
-                    <button style="background-color:#004165" class="btn btn-primary" Value="Confirm" (click)="clickMethod()">Confirm</button>&nbsp;
-                    <button style="background-color:#004165" class="btn btn-primary" Value="Cannel" (click)="CancelMethod()">Cancel</button>&nbsp;
-                    <button style="background-color:#004165" class="btn btn-primary" Value="Reset">Reset</button>
-                </div>
-            </div>
     
-</div>

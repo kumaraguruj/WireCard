@@ -1,0 +1,32 @@
+.form-group {
+    margin-bottom: 1%;
+}
+#detailsid{
+    font-size: 16px; color: #656565;
+    font-family: MyriadPro-Regular;
+    text-align:left;
+    
+}
+#divid{
+    font-size: 19px; color: #656565;
+    font-family: MyriadPro-Regular;
+}
+
+#textInfo{
+    text-align:left;
+    font-family: MyriadPro-Regular;
+}
+
+#line{
+    Border-color:#a9a9a9;
+}
+.box
+{    
+ border: 1px solid #e5e5e5;
+}
+input{
+    Background-color:#c6c6c6;
+    Border-radius:5px;
+    Background-color:#ffffff;
+    Background-color:#8b8b8b;
+}
