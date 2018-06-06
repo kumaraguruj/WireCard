@@ -1,19 +1,43 @@
 {
     
-    "Lunch":
-    {
+"Lunch":
+{
  "home":"HOME",
- 
  "selfService":"SELF SERVICE",
  "moveMoney":"MOVE MONEY",
  "reports":"REPORTS",
  "language":"Select Language",
  "english":"ENGLISH",
- "arabic":"ARABIC"
- 
-    },
+ "arabic":"ARABIC",
+ "cardSummary":"Card Summary",
+ "transactions": "Transactions",
+ "profileInfo":"Profile Info"
+
+},
      
-     
+"home":
+{
+"cardSummary":"Card Summary",
+"transactions":"Transactions",
+"profileInfo":"Profile Info",
+"Rewards":"Rewards",
+"Upgrade Request" :"Upgrade Request"  
+},
+
+"selfService":    
+{
+"statement": "Statement",
+"generatePin": "Generate Pin",
+"selfCardLimit":"Self Card Limit",
+"blockCard": "Block Card"
+},
+"moveMoney":
+{
+ "walletTransfers"  :"Wallet Transfers" ,
+ "Autopay":"Autopay",
+ "BalanceTransfer":"Balance Transfer",
+ "Load Wallet": "Load Wallet"
+},
  
      "selfCardLimit":{
  

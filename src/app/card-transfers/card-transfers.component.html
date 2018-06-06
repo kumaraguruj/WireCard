@@ -10,21 +10,21 @@
   
     <li *ngIf="LinksFlag" style="text-align: center"><a routerLinkActive="actiVV" [routerLink]="['/CardTransfers/WalletTransfers']" data-toggle="tab" >
             <img src="assets/images/wallet.png" style="height:auto;width: 70%;"  alt="Self Card Transfers" title="Self Card Transfers">
-            <div style="Font-size:8px;Color:#000000;font-family: MyriadPro-Regular;">{{'Lunch.walletTransfers'|translate}}</div>
+            <div style="Font-size:8px;Color:#000000;font-family: MyriadPro-Regular;">{{'moveMoney.walletTransfers'|translate}}</div>
            
         </a></li>
   
         <li *ngIf="!LinksFlag" style="text-align: center"><a routerLinkActive="actiVV" [routerLink]="['/CardTransfers/AutoPay']" data-toggle="tab" >
             <img src="assets/images/wallet.png" style="height:auto;width: 70%;"  alt="AutoPay" title="AutoPay">
-            <div style="Font-size:8px;Color:#000000;font-family: MyriadPro-Regular;">{{'Lunch.Autopay'|translate}}</div>            
+            <div style="Font-size:8px;Color:#000000;font-family: MyriadPro-Regular;">{{'moveMoney.Autopay'|translate}}</div>            
         </a></li>
         <li *ngIf="!LinksFlag" style="text-align: center"><a routerLinkActive="actiVV" [routerLink]="['/CardTransfers/BalanceTransfer']" data-toggle="tab" >
             <img src="assets/images/wallet.png" style="height:auto;width: 70%;"  alt="BalanceTransfer" title="BalanceTransfer">
-            <div style="Font-size:8px;Color:#000000;font-family: MyriadPro-Regular;">{{'Lunch.BalanceTransfer'|translate}}</div>            
+            <div style="Font-size:8px;Color:#000000;font-family: MyriadPro-Regular;">{{'moveMoney.BalanceTransfer'|translate}}</div>            
         </a></li>
         <li *ngIf="LinksFlag" style="text-align: center"><a routerLinkActive="actiVV" [routerLink]="['/CardTransfers/load-wallet']" data-toggle="tab" >
             <img src="assets/images/wallet.png" style="height:auto;width: 70%;"  alt="Load Wallet" title="Load Wallet">
-            <div style="Font-size:8px;Color:#000000;font-family: MyriadPro-Regular;">Load Wallet</div>
+            <div style="Font-size:8px;Color:#000000;font-family: MyriadPro-Regular;">{{'moveMoney.Load Wallet'|translate}}</div>
         </a></li>
     
   </ul>
