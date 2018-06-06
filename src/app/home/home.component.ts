@@ -1,5 +1,6 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import {InformationService } from '../Common/information.service';
 
 @Component({
   selector: 'app-home',
@@ -7,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor(private _router:Router) { }
+  LinksFlag:boolean=false;
+  constructor(private _router:Router) { 
+    this.LinksFlag=InformationService.UserType==='CreditUser'?false:true;
+  }
 
   ngOnInit() {
   }

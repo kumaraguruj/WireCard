@@ -1,6 +1,6 @@
-import { Component, OnInit,ElementRef, Inject } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import {InformationService } from '../Common/information.service';
-declare var jQuery:any;
+
 @Component({
   selector: 'app-redeem-points',
   templateUrl: './redeem-points.component.html',
@@ -8,10 +8,8 @@ declare var jQuery:any;
 })
 export class RedeemPointsComponent implements OnInit {
   LinksFlag:boolean=false;
-  elementRef: ElementRef;
-    slideValue: number;
-  constructor(@Inject(ElementRef) elementRef: ElementRef) { 
-    this.elementRef = elementRef;
+  constructor() { 
+
     this.LinksFlag=InformationService.UserType==='CreditUser'?false:true;
   
   }
@@ -37,6 +35,7 @@ setradioPaytoType(CardType){
   {
     document.getElementById('PaytoCreditCard').style.display = "block";
     document.getElementById('PaytoBankAccount').style.display = "none";
+    
   }
   if(CardType=='BankAccount')
   {
@@ -65,9 +64,27 @@ setradio(RedeemType)
   }
   
 }
+
+CardType1:string;
+
+  onChange(){
+    
+    if(this.CardType1=='card1')
+    {
+      //document.getElementById('card1Reward').style.display = "block";
+      //document.getElementById('card2Reward').style.display = "none";
+      document.getElementById('PointsAvailable').textContent="966";
+    }
+    if(this.CardType1=='card2')
+    {
+      //document.getElementById('card2Reward').style.display = "block";
+     // document.getElementById('card1Reward').style.display = "none";
+      document.getElementById('PointsAvailable').textContent="3933";
+    }
+ }
   ngOnInit() {
 
-    jQuery(this.elementRef.nativeElement).find("#amount1").slider({
+    /*jQuery(this.elementRef.nativeElement).find("#amount1").slider({
       range: false,
       orientation: "vertical",
       min: 0,
@@ -77,7 +94,7 @@ setradio(RedeemType)
         this.slideValue = ui.value; //doesn't seem to work
         jQuery(this.elementRef.nativeElement)( "#amount1").val( ui.value ); 
       }
-    });
+    });*/
   }
 
 }
