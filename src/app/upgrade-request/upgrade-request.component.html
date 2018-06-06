@@ -28,15 +28,15 @@
       <label>Eligible Card Limit:</label>
     </div>
     <div class="col-sm-3" id="readText" >
-        <input type="range" min="0" max="200000" value="200000" class="slider" id="cardlimitSlider">
-
+        
+        <input type="range" [(ngModel)]="slideValue" id="amount" min="0" max="200000" value="200000" class="slider" id="cardlimitSlider" >
     </div>
     <div class="col-sm-2" id="detailsid">
         <label>Requested Card Limit:</label>
       </div>
       <div class="col-sm-3" id="readText" style="display: inherit;">
           
-            <label id="requestedCardLimit">200000</label>USD
+            <label id="requestedCardLimit">{{slideValue}}</label>&nbsp;USD
 
       </div>
   </div>
