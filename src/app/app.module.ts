@@ -54,7 +54,8 @@ import { RewardsComponent } from './rewards/rewards.component';
 import { UpgradeRequestComponent } from './upgrade-request/upgrade-request.component';
 import { LoadWalletComponent } from './load-wallet/load-wallet.component'; 
 import { AutopayComponent } from './autopay/autopay.component';
-import { BalancerTransferComponent } from './balancer-transfer/balancer-transfer.component'; 
+import { BalancerTransferComponent } from './balancer-transfer/balancer-transfer.component';
+import { RedeemPointsComponent } from './redeem-points/redeem-points.component'; 
 
 // export function HttpLoaderFactory(http: Http) {
 //   return new this.TranslateHttpLoader(http, "../../assets/i18n/", ".json");
@@ -161,7 +162,9 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
     {
       path: 'BlockCard', component: BlockCardComponent
     },
-    
+    {
+      path: 'RedeemPointsComponent', component: RedeemPointsComponent
+    },
 ]
 
 
@@ -253,6 +256,8 @@ const appRoutes: Routes = [{ path: 'Emps', component: AppComponent },
     AutopayComponent,
   
     BalancerTransferComponent,
+  
+    RedeemPointsComponent,
   ],
   imports: [
     BrowserModule,FormsModule,RouterModule.forRoot(appRoutes),HttpModule,

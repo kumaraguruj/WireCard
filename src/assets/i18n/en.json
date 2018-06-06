@@ -39,7 +39,8 @@
 "statement": "Statement",
 "generatePin": "Generate Pin",
 "selfCardLimit":"Self Card Limit",
-"blockCard": "Block Card"
+"blockCard": "Block Card",
+"RedeemPoints":"Redeem Points"
 },
 "moveMoney":
 {

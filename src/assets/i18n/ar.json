@@ -48,7 +48,8 @@
  "statement":"بيان",
  "generatePin":"توليد دبوس",
  "selfCardLimit":"حد البطاقة الذاتية",
- "blockCard":"بلوك كارد"
+ "blockCard":"بلوك كارد",
+ "RedeemPoints":"استبدال النقاط"
 },
 "moveMoney":
 {
