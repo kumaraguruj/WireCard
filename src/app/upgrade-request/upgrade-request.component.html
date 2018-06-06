@@ -22,21 +22,25 @@
   </div>
     
   </div>
-
+<br>
 <div class="form-group row">
     <div class="col-sm-2" id="detailsid">
       <label>Eligible Card Limit:</label>
     </div>
-    <div class="col-sm-3" id="readText">
-        
+    <div class="col-sm-3" id="readText" >
+        <input type="range" min="0" max="200000" value="200000" class="slider" id="cardlimitSlider">
+
     </div>
     <div class="col-sm-2" id="detailsid">
         <label>Requested Card Limit:</label>
       </div>
-      <div class="col-sm-3" id="readText">
-            &nbsp;&nbsp;10302.78 USD
+      <div class="col-sm-3 slidecontainer" id="readText" style="display: inherit;">
+          
+            <label id="requestedCardLimit">200000</label>USD
+
       </div>
   </div>
+  <br>
 <div class="form-group row">
  
     <div class="col-sm-2" id="detailsid">

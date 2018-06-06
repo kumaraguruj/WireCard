@@ -11,61 +11,64 @@
             </div>
             <div class="col-sm-3" id="detailsid">
                 
-                <input class="form-check-input" name="CardType"  type="radio" id="radio100"  value="BankAccount" checked='checked'  (click)="setradio('BankAccount')">
+                <input class="form-check-input" name="OldPin" type="radio" id="radio100"  value="BankAccount" checked='checked'  (click)="setradio('BankAccount')">
                 <label class="form-check-label" for="radio100">Bank Account</label>
           
             </div>
             <div class="col-sm-3" id="detailsid">
-                <input class="form-check-input" name="CardType"   type="radio" id="radio100"  value="CreditCard"  (click)="setradio('CreditCard')">
+                <input class="form-check-input" name="OldPin" type="radio" id="radio100"  value="CreditCard"  (click)="setradio('CreditCard')">
                 <label class="form-check-label" for="radio100">Credit Card</label>
           </div>
         </div>
-        <div id="bankAccount">
-        <div class="form-group row">
-                <div class="col-sm-3" id="detailsid">
-                        <label>Payee Name:</label>
+        <hr id="line">
+
+        <div id="bankAccount" style="display:block">
+                <div class="form-group row">
+                        <div class="col-sm-3" id="detailsid">
+                                <label>Payee Name:</label>
+                        </div>
+                        <div class="col-sm-3" id="readText">
+                                Bob
+                        </div>
                 </div>
-                <div class="col-sm-3" id="readText">
-                        Bob
+                <div class="form-group row">
+                        <div class="col-sm-3" id="detailsid">
+                                <label>Account Number:</label>
+                        </div>
+                        <div class="col-sm-3" id="readText">
+                        *******
+                        </div>
                 </div>
-        </div>
-        <div class="form-group row">
-                <div class="col-sm-3" id="detailsid">
-                        <label>Account Number:</label>
+                <div class="form-group row">
+                        <div class="col-sm-3" id="detailsid">
+                                <label>Confirm Account Number:</label>
+                        </div>
+                        <div class="col-sm-3">
+                                <input type="text" class="form-control" />
+                        </div>
                 </div>
-                <div class="col-sm-3" id="readText">
-                    *******
+                <br>
+                <div class="form-group row">
+                        <div class="col-sm-3" id="detailsid">
+                                <label>IFSC Code:</label>
+                        </div>
+                        <div class="col-sm-3">
+                                <input type="text" class="form-control" />
+                        </div>
                 </div>
-        </div>
-        <div class="form-group row">
-                <div class="col-sm-3" id="detailsid">
-                        <label>Confirm Account Number:</label>
-                </div>
-                <div class="col-sm-3">
-                        <input type="text" class="form-control" />
-                </div>
-        </div>
-        <br>
-        <div class="form-group row">
-                <div class="col-sm-3" id="detailsid">
-                        <label>IFSC Code:</label>
-                </div>
-                <div class="col-sm-3">
-                        <input type="text" class="form-control" />
-                </div>
-        </div>
         <br>
         <div class="form-group row">
                 <div class="col-sm-3" id="detailsid">
                         <label>Destination Wallet:</label>
                 </div>
-                <div class="col-sm-3">
-                        <select name="DestCard" id="cssid" class="form-control" style="width:74%">
-                            <option value="USD">USD</option>
-                            <option value="INR">INR</option>
-                            <option value="SGD">SGD</option>
-                        </select>
-                    </div>
+                <div class="col-sm-2" style="width:10%;">
+                                <select name="sourceCard" id="dropDownCurrency" class="form-control">
+                                        <option value="USD">USD</option>
+                                        <option value="USD">INR</option>
+                                        <option value="SGD">SGD</option>
+                                </select>
+                           
+                            </div>
         </div>
         <br>
         <div class="form-group row">
@@ -87,10 +90,11 @@
                                 <option value="USD">INR</option>
                                 <option value="SGD">SGD</option>
                         </select>
-                </div>
-                <div class="col-sm-2">
-                        <input type="text" class="form-control" />
-                </div>
+                   
+                    </div>
+                    <div class="col-sm-2" style="padding-left:3%">
+                            <input type="text" class="form-control" />
+                    </div>
         </div>
         <br>
         <div class="form-group row">
@@ -103,8 +107,9 @@
                                 <option value="USD">INR</option>
                                 <option value="SGD">SGD</option>
                         </select>
-                </div>
-                    <div class="col-sm-2">
+                   
+                    </div>
+                    <div class="col-sm-2" style="padding-left:3%">
                             <input type="text" class="form-control" style=" background-color:#e2e2e2;" />
                     </div>
         </div>
@@ -127,10 +132,13 @@
                     <div class="col-sm-3">
                         <input id="date" type="date"  [(ngModel)]="eDate" class="form-control">
                     </div>
-                    <div class="col-sm-2" id="detailsid">
+                </div>
+                <br>
+                <div class="form-group row">
+                    <div class="col-sm-3" id="detailsid">
                             <label>CVV:</label>
                     </div>
-                    <div class="col-sm-2" >
+                    <div class="col-sm-3">
                             <input type="text" class="form-control" />
                     </div>
             </div>
@@ -149,13 +157,14 @@
                     <div class="col-sm-3" id="detailsid">
                             <label>Destination Wallet:</label>
                     </div>
-                    <div class="col-sm-2">
-                            <select name="DestCard" id="cssid" class="form-control" style="width:74%">
-                                <option value="USD">USD</option>
-                                <option value="INR">INR</option>
-                                <option value="SGD">SGD</option>            
-                            </select>
-                        </div>
+                    <div class="col-sm-2" style="width:10%;">
+                                <select name="sourceCard" id="dropDownCurrency" class="form-control">
+                                        <option value="USD">USD</option>
+                                        <option value="INR">INR</option>
+                                        <option value="SGD">SGD</option>
+                                </select>
+                           
+                            </div>
             </div>
             <br>
             <div class="form-group row">
@@ -194,24 +203,19 @@
                                     <option value="USD">INR</option>
                                     <option value="SGD">SGD</option>
                             </select>
+                       
                         </div>
                         <div class="col-sm-2" style="padding-left:3%">
                                 <input type="text" class="form-control" style=" background-color:#e2e2e2;" />
                         </div>
             </div>
-            <br>
-            
-        
 </div>
+
 <br>
 <div class="form-group row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-3">
-                <button type="button" style="float: right;background-color: #004165;font-family: MyriadPro-Regular;" class="btn btn-primary" (click)="confirmPay()">Confirm Pay</button>
-        </div>
+  <div class="col-sm-2"></div>
+ 
+  <div class="col-sm-4">
+  <button type="button" style="float: right;background-color: #004165;font-family: MyriadPro-Regular;" class="btn btn-primary" (click)="confirmPay()">Confirm Pay</button>
 </div>
-      
-      
-
-
-    
+</div>

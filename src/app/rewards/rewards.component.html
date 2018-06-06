@@ -19,7 +19,7 @@
             <label><u>Rewards Summary</u></label>
             </div>
             <div id="detailsid" class="col-sm-10" style="padding:0px 0px 0px 10px; float: right;width: 24.5%; " alt="Have Questions?" title="Have Questions?" (click) ="havequestions()">    
-                <a>Have Questions?</a>
+            <a><label id="detailsid">Have Questions?</label></a>
          </div>
           </div>
           <div class="form-group row" >
@@ -39,22 +39,23 @@
                   966 Points
                 </div>
               </div>
-              <div class="col-12 col-md-2 openingBalance">
-                <p>Opening <br>Balance</p>
+              <div class="col-12 col-md-2 openingBalance"  id="detailsid">
+                <p>Opening<br>Balance</p>
                 <label>41,298</label>
             </div>
             <div class="col-12 col-md-1 faPlus"><b><br>+</b></div>
-            <div class="col-12 col-md-2 rewardsEarned"> 
-                <p>Rewards Points Earned</p>
+            <div class="col-12 col-md-2 rewardsEarned" id="detailsid"> 
+                <p>Rewards Points <br>Earned</p>
+                
                 <label>31,668</label>
             </div>
             <div class="col-12 col-md-1"><b><br>-</b></div>
-            <div class="col-12 col-md-2 pointsRedeemd">
+            <div class="col-12 col-md-2 pointsRedeemd" id="detailsid">
                 <p>Points Redeemed / Expired</p>
                <label>72,000</label>
             </div>
             <div class="col-12 col-md-1"><b><br>=</b></div>
-            <div class="col-12 col-md-2 closingBalance">
+            <div class="col-12 col-md-2 closingBalance" id="detailsid">
                 <p>Closing Balance ( as of Today )</p>
                 <label>966</label>
             </div>
@@ -78,44 +79,35 @@
             <div class="col-12 col-md-9" id="detailsid">
                 <label class=" form-control-label"><u>Rewards Summary</u></label>
             </div>
-           <!-- <div class="col-12 col-md-3" id="detailsid">
-                <label><i class="far fa-question-circle"></i><a>Have Questions?</a></label>
-            </div>-->
-            <div  id="detailsid" class="col-sm-10" style="padding:0px 0px 0px 10px; float: right;width: 24.5%; " alt="Have Questions?" title="Have Questions?" (click) ="havequestions()">    
-                <a>Have Questions?</a>
+            <div   class="col-sm-10" style="padding:0px 0px 0px 10px; float: right;width:24.5%; " alt="Have Questions?" title="Have Questions?" (click) ="havequestions()">    
+                <a><label id="detailsid">Have Questions?</label></a>
          </div> 
         </div>
             <div class="row form-group rewardsContent" id="card1Reward"  style="display:none;">
-              <!--div class="col-12 col-md-12" id="detailsid">
-                  <label class=" form-control-label">Total Reward Points:</label>
-              </div>
-              <div class="col-sm-3" id="readText">
-                966 Points
-              </div>-->
-              <div class="form-group row" >
+            <div class="form-group row" >
                 <div class="col-sm-3" id="detailsid">
                   <label>&nbsp;&nbsp;&nbsp;&nbsp;Total Reward Points:</label>
-                </div>
+            </div>
               <div class="col-sm-3" id="readText">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;966 Points
             </div>
             </div>
-              <div class="col-12 col-md-2 openingBalance">
+              <div class="col-12 col-md-2 openingBalance" id="detailsid">
                   <p>Opening<br/>Balance</p>
                   <label>41,298</label>
               </div>
-              <div class="col-12 col-md-1 faPlus"><b><br>+</b><!--<i class="fas fa-plus"></i>--></div>
-              <div class="col-12 col-md-2 rewardsEarned"> 
-                  <p>Rewards Points Earned</p>
+              <div class="col-12 col-md-1 faPlus"><b><br>+</b></div>
+              <div class="col-12 col-md-2 rewardsEarned" id="detailsid"> 
+                  <p>Rewards Points<br> Earned</p>
                   <label>31,668</label>
               </div>
-              <div class="col-12 col-md-1"><b><br>-</b><!--<i class="fas fa-minus"></i>--></div>
-              <div class="col-12 col-md-2 pointsRedeemd">
+              <div class="col-12 col-md-1"><b><br>-</b></div>
+              <div class="col-12 col-md-2 pointsRedeemd" id="detailsid">
                   <p>Points Redeemed / Expired</p>
                   <label>72,000</label>
               </div>
-              <div class="col-12 col-md-1"><b><br>=</b><!--<i class="fas fa-equals"></i>--></div>
-              <div class="col-12 col-md-2 closingBalance">
+              <div class="col-12 col-md-1"><b><br>=</b></div>
+              <div class="col-12 col-md-2 closingBalance" id="detailsid">
                   <p>Closing Balance ( as of Today )</p>
                   <label>966</label>
               </div>
@@ -130,28 +122,27 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3,933 Points
             </div>
             </div>
-              <div class="col-12 col-md-2 openingBalance">
+              <div class="col-12 col-md-2 openingBalance" id="detailsid">
                   <p>Opening <br>Balance</p>
                   <label>3,724</label>
               </div>
-              <div class="col-12 col-md-1 faPlus"><b><br>+</b></div>
-              <div class="col-12 col-md-2 rewardsEarned"> 
-                  <p>Rewards Points Earned</p>
+              <div class="col-2 col-md-1 faPlus"><b><br>+</b></div>
+              <div class="col-12 col-md-2 rewardsEarned" id="detailsid"> 
+                  <p>Rewards Points<br> Earned</p>
                   <label>2,534</label>
               </div>
-              <div class="col-12 col-md-1"><b><br>-</b><!--<i class="fas fa-minus"></i>--></div>
-              <div class="col-12 col-md-2 pointsRedeemd">
+              <div class="col-2 col-md-1"><b><br>-</b></div>
+              <div class="col-12 col-md-2 pointsRedeemd" id="detailsid">
                   <p>Points Redeemed / Expired</p>
                   <label>1,725</label>
               </div>
-              <div class="col-12 col-md-1"><b><br>=</b><!--<i class="fas fa-equals"></i>--></div>
-              <div class="col-12 col-md-2 closingBalance">
+              <div class="col-2 col-md-1"><br><b>=</b></div>
+              <div class="col-12 col-md-2 closingBalance" id="detailsid">
                   <p>Closing Balance ( as of Today )</p>
                   <label>3,933</label>
               </div>
           </div>
       
 </div>
-
 </div>
-  </div>
+</div>
