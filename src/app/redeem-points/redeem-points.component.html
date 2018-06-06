@@ -1,62 +1,49 @@
 <div class="container">
   <h3 id="divid">Redeem Points</h3>
   <hr id="line">
- 
+ <!--Alice-->
   <div class="form-group row">
     <div class="col-sm-3" id="detailsid">
-      <input class="form-check-input" name="RedeemType" type="radio" id="radio100"  value="BankAccount" checked='checked'  (click)="setradio('BankAccount')">
+      <input class="form-check-input" name="RedeemType" type="radio" id="radio100"  value="BankAccount" checked='checked'  (click)="setradio('PointsOnly')">
       <label class="form-check-label" for="radio100">Redemption Points Only</label>
-
-    </div>
+  </div>
     <div class="col-sm-3" id="detailsid">
-        
-        <input class="form-check-input" name="RedeemType" type="radio" id="radio100"  value="BankAccount"   (click)="setradio('BankAccount')">
+       <input class="form-check-input" name="RedeemType" type="radio" id="radio100"  value="BankAccount"   (click)="setradio('PointsplusPay')">
         <label class="form-check-label" for="radio100">Points + Pay</label>
-  
     </div>
     <div class="col-sm-3" id="detailsid">
-        <input class="form-check-input" name="RedeemType" type="radio" id="radio100"  value="CreditCard"  (click)="setradio('CreditCard')">
+        <input class="form-check-input" name="RedeemType" type="radio" id="radio100"  value="CreditCard"  (click)="setradio('Cash')">
         <label class="form-check-label" for="radio100">Cash Redemptions</label>
   </div>
 </div>
+<!--Redemption Points Only radio button-->
 <hr id="line">
-
 <div class="form-group row" >
-  <div class="col-sm-2" id="detailsid">
-    <label>Card Number*:</label>
-    </div>
+    <div class="col-sm-2" id="detailsid"><label>Card Number*:</label></div>
     <div class="col-sm-3" id="detailsid">
       <select (change)="onChange(this)"  [(ngModel)]="CardType" class="form-control">
           <option value="" disabled select>Select</option>
           <option value ="card1">4448-XXXX-XXXX-5518</option>
           <option value ="card2">4448-XXXX-XXXX-5500</option>
       </select>
-  </div>        
-  <div class="col-sm-2" id="detailsid"> 
-    <label>Points Available:</label>
-    </div>
-    <div class="col-sm-3" id="readText">
-            100000 USD
-  </div>
-    
-  </div>
+    </div>        
+    <div class="col-sm-2" id="detailsid"><label>Points Available:</label></div>
+    <div class="col-sm-3" id="readText">100000 USD</div>
+</div>
 <br>
 <div class="form-group row">
     <div class="col-sm-2" id="detailsid">
       <label>Points Range:</label>
     </div>
     <div class="col-sm-3" id="readText" >
-        
-        <input type="range" [(ngModel)]="slideValue" id="amount" min="0" max="200000" value="200000" class="slider" id="cardlimitSlider" >
+       <input type="range" [(ngModel)]="slideValue" id="amount" min="0" max="200000" value="200000" class="slider" id="cardlimitSlider" >
     </div>
     <div class="col-sm-2" id="detailsid">
         <label>Points Selected:</label>
       </div>
       <div class="col-sm-3" id="readText" style="display: inherit;">
-          
             <label id="requestedCardLimit">{{slideValue}}</label>&nbsp;USD
-
-      </div>
+     </div>
   </div>
   <br>
 <div class="form-group row">
@@ -66,31 +53,225 @@
     <div class="col-sm-3" id="detailsid">
       <select (Change)="onChange($event)" class="form-control">
         <option value="" disabled select>Select</option>
-          <option value>OverSeas</option>
-          <option value>Monthly Spend Increase</option>
-          <option value>Offers Accepted</option>
+          <option value>My Apperal</option>
+          <option value>My Charity</option>
+          <option value>My Dining</option>
+          <option value>My Electronics</option>
+          <option value>My Home</option>
       </select>
   </div>
 
-  <div class="col-sm-2" id="detailsid">
-    <label>Points Left:</label>
-  </div>
+  <div class="col-sm-2" id="detailsid"><label>Points Left:</label></div>
   <div class="col-sm-3" id="readText" style="display: inherit;">
-      
-        <label id="requestedCardLimit">{{slideValue}}</label>&nbsp;USD
-
+      <label id="requestedCardLimit">{{slideValue}}</label>&nbsp;USD
   </div>
-                    
 </div>  
 <br>
-
-<div class="form-group row">
+ <div class="form-group row">
   <div class="col-sm-3"></div>
   <div class="col-sm-2">
-  <button type="button" style="float: right;background-color: #004165;font-family: MyriadPro-Regular;" class="btn btn-primary" (click)="applynow()">Apply Now</button>
+  <button type="button" style="float: right;background-color: #004165;font-family: MyriadPro-Regular;" class="btn btn-primary" (click)="view()">View</button>
 </div>
 </div>
-
+<!--Points plus Pay radio button-->
+<div id="PointsPlusPay" style="display:none">
+    <hr id="line">
+    <div class="form-group row" >
+        <div class="col-sm-2" id="detailsid">
+          <label>Item Selected:</label>
+          </div>
+          <div class="col-sm-3" id="detailsid">
+              XXXXXXXXXXXXXXXX
+        </div>        
+        <div class="col-sm-2" id="detailsid"> 
+          <label>Item Value:</label>
+          </div>
+          <div class="col-sm-3" id="readText">
+              XXXX Points
+       </div>
+      </div>
+      <br>
+      <div class="form-group row" >
+          <div class="col-sm-2" id="detailsid">
+            <label>Points Required:</label>
+            </div>
+            <div class="col-sm-3" id="detailsid">
+                XXXXXXXXXXXXXXXX
+          </div>        
+          <div class="col-sm-2" id="detailsid"> 
+            <label>Equivlaent USD:</label>
+            </div>
+            <div class="col-sm-3" id="readText">
+                XXXX 
+         </div>
+        </div>
+      <br>
+      <div class="form-group row" >
+          <div class="col-sm-2" id="detailsid">
+            <label>Required Amount:</label>
+            </div>
+            <div class="col-sm-3" id="detailsid">
+                XXXXXX
+          </div>        
+          <div class="col-sm-2" id="detailsid"> 
+            <label>Card Balance:</label>
+            </div>
+            <div class="col-sm-3" id="readText">
+                XXXXX 
+         </div>
+        </div>
+      <br>
+      <div class="form-group row" >
+          <div class="col-sm-2" id="detailsid">
+            <label>Amount Debited:</label>
+            </div>
+            <div class="col-sm-3" id="detailsid">
+                XXXXXX
+          </div>        
+          <div class="col-sm-2" id="detailsid"> 
+            <label></label>
+            </div>
+            <div class="col-sm-3" id="readText">
+                 
+         </div>
+        </div>
+      <br>
+      <div class="form-group row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-2">
+          <button type="button" style="float: right;background-color: #004165;font-family: MyriadPro-Regular;" class="btn btn-primary" (click)="confirmPointsPay()">Confirm</button>
+        </div>
+        </div>
+</div>
+<!--CashRedimption radio button-->
+<div id="CashRedimption" style="display:none">
+    <hr id="line">
+    <div class="form-group row" >
+        <div class="col-sm-3" id="detailsid">
+          <label>Equivalent Amount (USD):</label>
+          </div>
+          <div class="col-sm-3" id="detailsid">
+              XXXXXXXXXXXXXXXX
+        </div>        
+        <div class="col-sm-2" id="detailsid"> 
+          <label></label>
+          </div>
+          <div class="col-sm-3" id="readText">
+              
+       </div>
+      </div>
+      <br>
+      
+          <div class="form-group row" >
+              <div class="col-sm-2" id="detailsid">
+                <label>Pay To</label>
+                </div>
+                <div class="col-sm-3" id="detailsid">
+                    <input class="form-check-input" name="PaytoType" type="radio" id="radio100"  value="BankAccount" checked='checked'  (click)="setradioPaytoType('BankAccount')">
+                    <label class="form-check-label" for="radio100">Bank Account</label>
+                    <input class="form-check-input" name="PaytoType" type="radio" id="radio100"  value="CreditCard"   (click)="setradioPaytoType('CreditCard')">
+                    <label class="form-check-label" for="radio100">Credit Card</label>
+                </div>
+          </div>  
+          <br> 
+          <!-- Bank Account-->    
+          <div id="PaytoBankAccount">
+          <div class="form-group row">
+                <div class="col-sm-2" id="detailsid">
+                  <label>Payee Name:</label>
+                  </div>
+                  <div class="col-sm-3" id="detailsid">
+                      <input type="text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" style="Border-radius:5px; background-color: #ffffff;" />
+                 </div> 
+          </div> 
+          <br> 
+          <div class="form-group row">    
+                <div class="col-sm-2" id="detailsid"> 
+                  <label>Account Number:</label>
+                  </div>
+                  <div class="col-sm-3" id="readText">
+                      <input type="text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" style="Border-radius:5px; background-color: #ffffff;" />
+                </div>
+              </div>
+              <br>
+              <div class="form-group row">    
+                  <div class="col-sm-2" id="detailsid"> 
+                    <label>Confirm Account #:</label>
+                    </div>
+                    <div class="col-sm-3" id="readText">
+                        <input type="text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" style="Border-radius:5px; background-color: #ffffff;" />
+                  </div>
+                </div>
+                <br>
+                <div class="form-group row">    
+                    <div class="col-sm-2" id="detailsid"> 
+                      <label>IFSC Code:</label>
+                      </div>
+                      <div class="col-sm-3" id="readText">
+                          <input type="text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" style="Border-radius:5px; background-color: #ffffff;" />
+                    </div>
+                  </div>
+                  <br>
+                  <div class="form-group row">    
+                      <div class="col-sm-2" id="detailsid"> 
+                        <label>Amount to be debited:</label>
+                        </div>
+                        <div class="col-sm-3" id="readText">
+                            <input type="text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" style="Border-radius:5px; background-color: #ffffff;" />
+                      </div>
+                    </div>
+                    <br>
+              </div>  
+              <!-- Credit Card-->
+              <div id="PaytoCreditCard" style="display:none">
+                                  
+                  <div class="form-group row">    
+                        <div class="col-sm-2" id="detailsid"> 
+                          <label>Account Number:</label>
+                          </div>
+                          <div class="col-sm-3" id="readText">
+                              <input type="text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" style="Border-radius:5px; background-color: #ffffff;" />
+                        </div>
+                      </div>
+                      <br>
+                      <div class="form-group row">    
+                          <div class="col-sm-2" id="detailsid"> 
+                            <label>Expiration Date:</label>
+                            </div>
+                            <div class="col-sm-3" id="readText">
+                                <input type="text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" style="Border-radius:5px; background-color: #ffffff;" />
+                          </div>
+                        </div>
+                        <br>
+                        <div class="form-group row">    
+                            <div class="col-sm-2" id="detailsid"> 
+                              <label>Card Secure Number:</label>
+                              </div>
+                              <div class="col-sm-3" id="readText">
+                                  <input type="text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" style="Border-radius:5px; background-color: #ffffff;" />
+                            </div>
+                          </div>
+                          <br>
+                          <div class="form-group row">    
+                              <div class="col-sm-2" id="detailsid"> 
+                                <label>Amount to be debited:</label>
+                                </div>
+                                <div class="col-sm-3" id="readText">
+                                    <input type="text" class="form-control" style="font-size:16px; color:#656565; font-family:MyriadPro-Regular;" style="Border-radius:5px; background-color: #ffffff;" />
+                              </div>
+                            </div>
+                            <br>
+                      </div>     
+                      <br>
+                      <div class="form-group row">
+                       <div class="col-sm-3"></div>
+                       <div class="col-sm-2">
+                       <button type="button" style="float: right;background-color: #004165;font-family: MyriadPro-Regular;" class="btn btn-primary" (click)="confirmCash()">Confirm</button>
+                     </div>
+                     </div>
+                <hr id="line">
+                                              
+</div>
 <hr>
 </div>
 

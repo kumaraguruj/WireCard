@@ -19,7 +19,6 @@ export class LoadWalletComponent implements OnInit {
   
   setradio(CardType){
   
-
     if(CardType=='CreditCard')
     {
       document.getElementById('creditCard').style.display = "block";
