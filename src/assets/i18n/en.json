@@ -49,35 +49,35 @@
  "Load Wallet": "Load Wallet"
 },
  
-     "selfCardLimit":{
- 
-     "cardLimit":"Card Limit",
-     "card": "Card:",
-     "name":"Name:",
-     "bob":"Bob",
-     "a/c":"A/C:",
-     "status":"Status:",
-     "active":"Active",
-     "setExpensesRule":"Set Expenses Rules",
-     
-    "allowInternationalUse":"Allow International Use:",
-    "allowCashAccess":"Allow Cash Access:",
-    "allowPINPurchase":"Allow PIN Purchase:",
-    "singleTransLimit":"Single Trans Limit:",
-    "yes":"Yes",
-    "no":"No",
-    "dailyTransactionLimit":"Daily Transaction Limit",
-    "weeklyTransactionLimit":"Weekly Transaction Limit",
-    "monthlyTransactionLimit":"Monthly Transaction Limit",
-    "yearlyTransactionLimit":"Yearly Transaction Limit",
-    "count":"Count",
-    "transactionAmount":"Transaction Amount",
-    "merchantCategories":"Merchant Categories",
-    "dailyLimit":"Daily Limit",
-    "weeklyLimit":"Weekly Limit",
-    "monthlyLimit":"Monthly Limit",
-    "yearlyLimit":"Yearly Limit",
-    "submit":"Submit",
-    "reset":"Reset"
-     }
- }
+"selfCardLimit":{
+
+"cardLimit":"Card Limit",
+"card": "Card:",
+"name":"Name:",
+"bob":"Bob",
+"a/c":"A/C:",
+"status":"Status:",
+"active":"Active",
+"setExpensesRule":"Set Expenses Rules",
+    
+"allowInternationalUse":"Allow International Use:",
+"allowCashAccess":"Allow Cash Access:",
+"allowPINPurchase":"Allow PIN Purchase:",
+"singleTransLimit":"Single Trans Limit:",
+"yes":"Yes",
+"no":"No",
+"dailyTransactionLimit":"Daily Transaction Limit",
+"weeklyTransactionLimit":"Weekly Transaction Limit",
+"monthlyTransactionLimit":"Monthly Transaction Limit",
+"yearlyTransactionLimit":"Yearly Transaction Limit",
+"count":"Count",
+"transactionAmount":"Transaction Amount",
+"merchantCategories":"Merchant Categories",
+"dailyLimit":"Daily Limit",
+"weeklyLimit":"Weekly Limit",
+"monthlyLimit":"Monthly Limit",
+"yearlyLimit":"Yearly Limit",
+"submit":"Submit",
+"reset":"Reset"
+    }
+}
