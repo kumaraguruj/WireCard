@@ -1,3 +1,96 @@
-<p>
-  redeem-points works!
-</p>
+<div class="container">
+  <h3 id="divid">Redeem Points</h3>
+  <hr id="line">
+ 
+  <div class="form-group row">
+    <div class="col-sm-3" id="detailsid">
+      <input class="form-check-input" name="RedeemType" type="radio" id="radio100"  value="BankAccount" checked='checked'  (click)="setradio('BankAccount')">
+      <label class="form-check-label" for="radio100">Redemption Points Only</label>
+
+    </div>
+    <div class="col-sm-3" id="detailsid">
+        
+        <input class="form-check-input" name="RedeemType" type="radio" id="radio100"  value="BankAccount"   (click)="setradio('BankAccount')">
+        <label class="form-check-label" for="radio100">Points + Pay</label>
+  
+    </div>
+    <div class="col-sm-3" id="detailsid">
+        <input class="form-check-input" name="RedeemType" type="radio" id="radio100"  value="CreditCard"  (click)="setradio('CreditCard')">
+        <label class="form-check-label" for="radio100">Cash Redemptions</label>
+  </div>
+</div>
+<hr id="line">
+
+<div class="form-group row" >
+  <div class="col-sm-2" id="detailsid">
+    <label>Card Number*:</label>
+    </div>
+    <div class="col-sm-3" id="detailsid">
+      <select (change)="onChange(this)"  [(ngModel)]="CardType" class="form-control">
+          <option value="" disabled select>Select</option>
+          <option value ="card1">4448-XXXX-XXXX-5518</option>
+          <option value ="card2">4448-XXXX-XXXX-5500</option>
+      </select>
+  </div>        
+  <div class="col-sm-2" id="detailsid"> 
+    <label>Points Available:</label>
+    </div>
+    <div class="col-sm-3" id="readText">
+            100000 USD
+  </div>
+    
+  </div>
+<br>
+<div class="form-group row">
+    <div class="col-sm-2" id="detailsid">
+      <label>Points Range:</label>
+    </div>
+    <div class="col-sm-3" id="readText" >
+        
+        <input type="range" [(ngModel)]="slideValue" id="amount" min="0" max="200000" value="200000" class="slider" id="cardlimitSlider" >
+    </div>
+    <div class="col-sm-2" id="detailsid">
+        <label>Points Selected:</label>
+      </div>
+      <div class="col-sm-3" id="readText" style="display: inherit;">
+          
+            <label id="requestedCardLimit">{{slideValue}}</label>&nbsp;USD
+
+      </div>
+  </div>
+  <br>
+<div class="form-group row">
+  <div class="col-sm-2" id="detailsid">
+    <label>Item Category:</label>
+    </div>
+    <div class="col-sm-3" id="detailsid">
+      <select (Change)="onChange($event)" class="form-control">
+        <option value="" disabled select>Select</option>
+          <option value>OverSeas</option>
+          <option value>Monthly Spend Increase</option>
+          <option value>Offers Accepted</option>
+      </select>
+  </div>
+
+  <div class="col-sm-2" id="detailsid">
+    <label>Points Left:</label>
+  </div>
+  <div class="col-sm-3" id="readText" style="display: inherit;">
+      
+        <label id="requestedCardLimit">{{slideValue}}</label>&nbsp;USD
+
+  </div>
+                    
+</div>  
+<br>
+
+<div class="form-group row">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-2">
+  <button type="button" style="float: right;background-color: #004165;font-family: MyriadPro-Regular;" class="btn btn-primary" (click)="applynow()">Apply Now</button>
+</div>
+</div>
+
+<hr>
+</div>
+
