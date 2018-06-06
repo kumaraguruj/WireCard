@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ElementRef, Inject } from '@angular/core';
 import {InformationService } from '../Common/information.service';
-
+declare var jQuery:any;
 @Component({
   selector: 'app-redeem-points',
   templateUrl: './redeem-points.component.html',
@@ -8,7 +8,10 @@ import {InformationService } from '../Common/information.service';
 })
 export class RedeemPointsComponent implements OnInit {
   LinksFlag:boolean=false;
-  constructor() { 
+  elementRef: ElementRef;
+    slideValue: number;
+  constructor(@Inject(ElementRef) elementRef: ElementRef) { 
+    this.elementRef = elementRef;
     this.LinksFlag=InformationService.UserType==='CreditUser'?false:true;
   
   }
@@ -63,6 +66,18 @@ setradio(RedeemType)
   
 }
   ngOnInit() {
+
+    jQuery(this.elementRef.nativeElement).find("#amount1").slider({
+      range: false,
+      orientation: "vertical",
+      min: 0,
+      max: 200000,
+      value: 200000,
+      slide: function( event, ui ) {
+        this.slideValue = ui.value; //doesn't seem to work
+        jQuery(this.elementRef.nativeElement)( "#amount1" ).val( ui.value ); 
+      }
+    });
   }
 
 }
