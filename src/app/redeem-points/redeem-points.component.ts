@@ -73,9 +73,9 @@ setradio(RedeemType)
       min: 0,
       max: 200000,
       value: 200000,
-      slide: function( event, ui ) {
+      slide: function( event, ui) {
         this.slideValue = ui.value; //doesn't seem to work
-        jQuery(this.elementRef.nativeElement)( "#amount1" ).val( ui.value ); 
+        jQuery(this.elementRef.nativeElement)( "#amount1").val( ui.value ); 
       }
     });
   }
