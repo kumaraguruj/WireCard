@@ -11,8 +11,18 @@
  "arabic":"ARABIC",
  "cardSummary":"Card Summary",
  "transactions": "Transactions",
- "profileInfo":"Profile Info"
-
+ "profileInfo":"Profile Info",
+ "bob": "Bob",
+ "alice":"Alice",
+ "lastLoginBob": "Last Login",
+ "accountNumberBob": "Account Number",
+ "accountBalanceBob":"Account Balance",
+ "monthlyExpensesPrepaidCard" :"Monthly Expenses Prepaid Card",
+ "expensesByCategory":"Expenses By Category",
+ "lastLoginAlice": "Last Login",
+ "accountNumberAlice": "Account Number",
+ "accountBalanceAlice":"Account Balance",
+ "creditCardAvgBalance":"Credit Card Avg Balance"
 },
      
 "home":
