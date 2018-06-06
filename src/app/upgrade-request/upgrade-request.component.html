@@ -7,7 +7,7 @@
   <div class="col-sm-2" id="detailsid">
     <label>Card Number*:</label>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-3" id="detailsid">
       <select (change)="onChange(this)"  [(ngModel)]="CardType" class="form-control">
           <option value="" disabled select>Select</option>
           <option value ="card1">4448-XXXX-XXXX-5518</option>
@@ -34,7 +34,7 @@
     <div class="col-sm-2" id="detailsid">
         <label>Requested Card Limit:</label>
       </div>
-      <div class="col-sm-3 slidecontainer" id="readText" style="display: inherit;">
+      <div class="col-sm-3" id="readText" style="display: inherit;">
           
             <label id="requestedCardLimit">200000</label>USD
 
@@ -52,7 +52,7 @@
     <div class="col-sm-2" id="detailsid">
             <label>Reason for Increase:</label>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3" id="detailsid">
               <select (Change)="onChange($event)" class="form-control">
                 <option value="" disabled select>Select</option>
                   <option value>OverSeas</option>
