@@ -1,5 +1,7 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit,ElementRef, Inject} from '@angular/core';
 import {InformationService } from '../Common/information.service';
+
+declare var jQuery:any;
 
 @Component({
   selector: 'app-redeem-points',
@@ -8,8 +10,11 @@ import {InformationService } from '../Common/information.service';
 })
 export class RedeemPointsComponent implements OnInit {
   LinksFlag:boolean=false;
-  constructor() { 
+  elementRef: ElementRef;
+  slideValue1: number;
 
+  constructor(@Inject(ElementRef) elementRef: ElementRef) { 
+    this.elementRef = elementRef;
     this.LinksFlag=InformationService.UserType==='CreditUser'?false:true;
   
   }
@@ -71,15 +76,20 @@ CardType1:string;
     
     if(this.CardType1=='card1')
     {
-      //document.getElementById('card1Reward').style.display = "block";
-      //document.getElementById('card2Reward').style.display = "none";
       document.getElementById('PointsAvailable').textContent="966";
+      document.getElementById('card550').style.display = "none";
+      document.getElementById('card550-1').style.display = "none";
+      document.getElementById('card518').style.display = "block";
+      document.getElementById('card518-1').style.display = "block";
+
     }
     if(this.CardType1=='card2')
     {
-      //document.getElementById('card2Reward').style.display = "block";
-     // document.getElementById('card1Reward').style.display = "none";
       document.getElementById('PointsAvailable').textContent="3933";
+      document.getElementById('card550').style.display = "block";
+      document.getElementById('card550-1').style.display = "block";
+      document.getElementById('card518').style.display = "none";
+      document.getElementById('card518-1').style.display = "none";
     }
  }
   ngOnInit() {
@@ -88,10 +98,10 @@ CardType1:string;
       range: false,
       orientation: "vertical",
       min: 0,
-      max: 200000,
-      value: 200000,
+      max: 966,
+      value: 966,
       slide: function( event, ui) {
-        this.slideValue = ui.value; //doesn't seem to work
+        this.slideValue1 = ui.value; //doesn't seem to work
         jQuery(this.elementRef.nativeElement)( "#amount1").val( ui.value ); 
       }
     });*/

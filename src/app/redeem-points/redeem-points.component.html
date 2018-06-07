@@ -32,21 +32,34 @@
     <div class="col-sm-3" id="readText"><span id="PointsAvailable"></span> USD</div>
 </div>
 <br>
-<div class="form-group row">
-    <div class="col-sm-2" id="detailsid">
-      <label>Points Range:</label>
-    </div>
-    <div class="col-sm-3" id="readText" >
-       <input type="range" [(ngModel)]="slideValue" id="amount1" min="0" max="200000" value="200000" class="slider" id="cardlimitSlider" >
-    </div>
-    <div class="col-sm-2" id="detailsid">
-        <label>Points Selected:</label>
+<div id="card518">
+  <div class="form-group row">
+      <div class="col-sm-2" id="detailsid"><label>Points Range:</label></div>
+      <div class="col-sm-3" id="readText" >
+        <input type="range" [(ngModel)]="slideValue" id="amount1" min="0" max="966" value="966" class="slider" id="cardlimitSlider" >
       </div>
+      <div class="col-sm-2" id="detailsid"><label>Points Selected:</label></div>
       <div class="col-sm-3" id="readText" style="display: inherit;">
-            <label id="requestedCardLimit">{{slideValue}}</label>&nbsp;USD
-     </div>
-  </div>
-  <br>
+              <label id="requestedCardLimit">{{slideValue}}</label>&nbsp;USD
+      </div>
+    </div>   
+</div>
+ <!--for card550-->  
+ <div id="card550" style="display:none">
+  
+    <div class="form-group row">
+        <div class="col-sm-2" id="detailsid"><label>Points Range:</label></div>
+        <div class="col-sm-3" id="readText" >
+          <input type="range" [(ngModel)]="slideValue" id="amount1" min="0" max="3933" value="3933" class="slider" id="cardlimitSlider" >
+        </div>
+        <div class="col-sm-2" id="detailsid"><label>Points Selected:</label></div>
+        <div class="col-sm-3" id="readText" style="display: inherit;">
+                <label id="requestedCardLimit">{{slideValue}}</label>&nbsp;USD
+          </div>
+    </div>
+ </div>
+<br>
+
 <div class="form-group row">
   <div class="col-sm-2" id="detailsid">
     <label>Item Category:</label>
@@ -61,12 +74,19 @@
           <option value>My Home</option>
       </select>
   </div>
-
-  <div class="col-sm-2" id="detailsid"><label>Points Left:</label></div>
-  <div class="col-sm-3" id="readText" style="display: inherit;">
-      <label id="requestedCardLimit">{{slideValue}}</label>&nbsp;USD
-  </div>
-</div>  
+  <div id="card518-1">
+    <div class="col-sm-2" id="detailsid"><label>Points Left:</label></div>
+    <div class="col-sm-3" id="readText" style="display: inherit;">
+        <label id="requestedCardLimit">{{966-slideValue}}</label>&nbsp;USD
+    </div>
+  </div>  
+  <div id="card550-1" style="display:none">
+      <div class="col-sm-2" id="detailsid"><label>Points Left:</label></div>
+      <div class="col-sm-3" id="readText" style="display: inherit;">
+          <label id="requestedCardLimit">{{3933-slideValue}}</label>&nbsp;USD
+      </div>
+    </div>  
+</div>
 <br>
  <div class="form-group row">
   <div class="col-sm-3"></div>
@@ -308,7 +328,7 @@
         <label>Points Range:</label>
       </div>
       <div class="col-sm-3" id="readText" >
-         <input type="range" [(ngModel)]="slideValue" id="amount1" min="0" max="200000" value="200000" class="slider" id="cardlimitSlider" >
+         <input type="range" [(ngModel)]="slideValue" id="amount1" min="0" max="966" value="966" class="slider" id="cardlimitSlider" >
       </div>
       <div class="col-sm-2" id="detailsid">
           <label>Points Selected:</label>
@@ -335,7 +355,7 @@
   
     <div class="col-sm-2" id="detailsid"><label>Points Left:</label></div>
     <div class="col-sm-3" id="readText" style="display: inherit;">
-        <label id="requestedCardLimit">{{slideValue}}</label>&nbsp;USD
+        <label id="requestedCardLimit">{{966-slideValue}}</label>&nbsp;USD
     </div>
   </div>  
   <br>
