@@ -11,7 +11,7 @@ declare var jQuery:any;
 export class RedeemPointsComponent implements OnInit {
   LinksFlag:boolean=false;
   elementRef: ElementRef;
-  slideValue1: number;
+  slideValue1: number=0;
 
   constructor(@Inject(ElementRef) elementRef: ElementRef) { 
     this.elementRef = elementRef;
@@ -94,17 +94,7 @@ CardType1:string;
  }
   ngOnInit() {
 
-    /*jQuery(this.elementRef.nativeElement).find("#amount1").slider({
-      range: false,
-      orientation: "vertical",
-      min: 0,
-      max: 966,
-      value: 966,
-      slide: function( event, ui) {
-        this.slideValue1 = ui.value; //doesn't seem to work
-        jQuery(this.elementRef.nativeElement)( "#amount1").val( ui.value ); 
-      }
-    });*/
+    
   }
 
 }

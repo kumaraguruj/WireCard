@@ -8,7 +8,9 @@ declare var jQuery:any;
 })
 export class UpgradeRequestComponent implements OnInit {
   elementRef: ElementRef;
-    slideValue: number;
+  slideValue: number;
+
+   
 
   LinksFlag:boolean=false;
   constructor(@Inject(ElementRef) elementRef: ElementRef) { 
@@ -29,7 +31,7 @@ export class UpgradeRequestComponent implements OnInit {
       value: 200000,
       slide: function( event, ui ) {
         this.slideValue = ui.value; //doesn't seem to work
-        jQuery(this.elementRef.nativeElement)( "#amount" ).val( ui.value ); 
+        jQuery(this.elementRef.nativeElement)( "#amount" ).val(ui.value); 
       }
     });
   }

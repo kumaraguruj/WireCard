@@ -29,7 +29,7 @@
       </select>
     </div>        
     <div class="col-sm-2" id="detailsid"><label>Points Available:</label></div>
-    <div class="col-sm-3" id="readText"><span id="PointsAvailable"></span> USD</div>
+    <div class="col-sm-3" id="readText"><span id="PointsAvailable"></span></div>
 </div>
 <br>
 <div id="card518">
@@ -40,7 +40,7 @@
       </div>
       <div class="col-sm-2" id="detailsid"><label>Points Selected:</label></div>
       <div class="col-sm-3" id="readText" style="display: inherit;">
-              <label id="requestedCardLimit">{{slideValue}}</label>&nbsp;USD
+              <label id="requestedCardLimit">{{slideValue||0}}</label>&nbsp;Points
       </div>
     </div>   
 </div>
@@ -54,7 +54,7 @@
         </div>
         <div class="col-sm-2" id="detailsid"><label>Points Selected:</label></div>
         <div class="col-sm-3" id="readText" style="display: inherit;">
-                <label id="requestedCardLimit">{{slideValue}}</label>&nbsp;USD
+                <label id="requestedCardLimit">{{slideValue||0}}</label>&nbsp;Points
           </div>
     </div>
  </div>
@@ -77,13 +77,13 @@
   <div id="card518-1">
     <div class="col-sm-2" id="detailsid"><label>Points Left:</label></div>
     <div class="col-sm-3" id="readText" style="display: inherit;">
-        <label id="requestedCardLimit">{{966-slideValue}}</label>&nbsp;USD
+        <label id="requestedCardLimit">{{966-slideValue||'0'}}</label>&nbsp;Points
     </div>
   </div>  
   <div id="card550-1" style="display:none">
       <div class="col-sm-2" id="detailsid"><label>Points Left:</label></div>
       <div class="col-sm-3" id="readText" style="display: inherit;">
-          <label id="requestedCardLimit">{{3933-slideValue}}</label>&nbsp;USD
+          <label id="requestedCardLimit">{{3933-slideValue||'0'}}</label>&nbsp;Points
       </div>
     </div>  
 </div>
@@ -120,7 +120,7 @@
                 XXXXXXXXXXXXXXXX
           </div>        
           <div class="col-sm-2" id="detailsid"> 
-            <label>Equivlaent USD:</label>
+            <label>Equivalent USD:</label>
             </div>
             <div class="col-sm-3" id="readText">
                 XXXX 
@@ -320,7 +320,7 @@
 
       </div>        
       <div class="col-sm-2" id="detailsid"><label>Points Available:</label></div>
-      <div class="col-sm-3" id="readText">966 USD</div>
+      <div class="col-sm-3" id="readText">966</div>
   </div>
   <br>
   <div class="form-group row">
@@ -334,7 +334,7 @@
           <label>Points Selected:</label>
         </div>
         <div class="col-sm-3" id="readText" style="display: inherit;">
-              <label id="requestedCardLimit">{{slideValue}}</label>&nbsp;USD
+              <label id="requestedCardLimit">{{slideValue||0}}</label>&nbsp;Points
        </div>
     </div>
     <br>
@@ -355,7 +355,7 @@
   
     <div class="col-sm-2" id="detailsid"><label>Points Left:</label></div>
     <div class="col-sm-3" id="readText" style="display: inherit;">
-        <label id="requestedCardLimit">{{966-slideValue}}</label>&nbsp;USD
+        <label id="requestedCardLimit">{{966-slideValue||'0'}}</label>&nbsp;Points
     </div>
   </div>  
   <br>
