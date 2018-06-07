@@ -222,7 +222,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
   color: black;
 }
 .contentBox{
-  Background-color:#ffff; min-height: 350px;
+  Background-color:#ffff; min-height: 310px;
   margin-left: 5.2px;
 
   -webkit-box-shadow: 2px 2px 18px -1px rgba(0,0,0,0.75);
